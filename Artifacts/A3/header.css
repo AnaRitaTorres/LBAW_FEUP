@@ -1,0 +1,60 @@
+header
+{
+background-color: black;
+border-bottom: 4px solid orange;
+width:100%;
+height: auto;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-bottom: 10px;
+position: fixed;
+z-index: 1;
+opacity: 0.9;
+}
+
+header  .navbar-nav > .active > a
+{
+background-color : #04A3ED;
+color: white;
+font-weight: bold;
+}
+
+header  .navbar-nav >  li >  a
+{
+font-size: 13px;
+color: white;
+padding: 10px 35px;
+
+}
+header  .navbar-nav >  li >  a:hover
+{
+background-color: orange;
+}
+
+.navbar-header > a
+{
+font-family: 'Ubuntu Condensed', sans-serif;
+padding: 0px;
+margin: 0px;
+text-decoration: none;
+color: white;
+font-size: 25px;
+padding: 5px 30px;
+}
+.navbar-header > a:hover
+{
+text-decoration: none;
+color: orange;
+}
+
+header .container-fluid .col-md-7
+{
+  padding-left: 150px;
+}
+
+#custom-search-input button{
+    background-color: orange;
+    border-color: orange;
+}
+
+

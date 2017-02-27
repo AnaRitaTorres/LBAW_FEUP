@@ -1,0 +1,10 @@
+body{
+    margin-bottom:50px;
+}
+
+footer
+{
+  position: absolute;
+  padding-top: 100px;
+  padding-bottom: 0;
+}
