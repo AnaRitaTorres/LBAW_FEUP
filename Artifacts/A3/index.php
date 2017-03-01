@@ -1,12 +1,12 @@
 <?php 
-    include 'header.php';
+    include ('header.php');
 ?>
 <div class="container">
    Text
 
 </div>
 <?php 
-    include 'footer.php';
+    include ('footer.php');
 ?>
 
 

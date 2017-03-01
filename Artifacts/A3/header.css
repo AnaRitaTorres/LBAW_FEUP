@@ -1,15 +1,16 @@
 header
 {
 background-color: black;
-border-bottom: 4px solid orange;
-width:100%;
+border-bottom: 4px solid blue;
+width:auto;
+min-width:20%;
 height: auto;
+max-height: 20%;
 padding-top: 10px;
 padding-bottom: 10px;
 margin-bottom: 10px;
 position: fixed;
-z-index: 1;
-opacity: 0.9;
+z-index: 2;
 }
 
 header  .navbar-nav > .active > a
@@ -19,7 +20,7 @@ color: white;
 font-weight: bold;
 }
 
-header  .navbar-nav >  li >  a
+header  .navbar-nav >  li > a
 {
 font-size: 13px;
 color: white;
@@ -28,7 +29,7 @@ padding: 10px 35px;
 }
 header  .navbar-nav >  li >  a:hover
 {
-background-color: orange;
+background-color: blue;
 }
 
 .navbar-header > a
@@ -40,11 +41,12 @@ text-decoration: none;
 color: white;
 font-size: 25px;
 padding: 5px 30px;
+
 }
 .navbar-header > a:hover
 {
 text-decoration: none;
-color: orange;
+color: blue;
 }
 
 header .container-fluid .col-md-7
@@ -53,8 +55,14 @@ header .container-fluid .col-md-7
 }
 
 #custom-search-input button{
-    background-color: orange;
-    border-color: orange;
+    background-color: blue;
+    border-color: blue;
+}
+
+.container{
+  padding-top: 150px;
+  position:relative;
+  z-index: 1;
 }
 
 
