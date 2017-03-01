@@ -1,7 +1,10 @@
 <?php
     include ('header.php');
 ?>
+
+
 <link rel="stylesheet" href="index.css">
+
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -55,7 +58,7 @@
       </a>
 
   </div>
-
+</div>
 <?php
     include ('footer.php');
 ?>

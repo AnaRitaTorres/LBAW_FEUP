@@ -1,7 +1,7 @@
 <?php
     include_once('header.php');
 ?>
- 
+
     <div class="row">
       <div class="col-md-10 ">
         <form class="form-horizontal">
@@ -11,7 +11,7 @@
 
             <!-- Name input-->
            <div class="form-group">
-            <label class="col-md-4 control-label" for="Name">Name</label>  
+            <label class="col-md-4 control-label" for="Name">Name</label>
             <div class="col-md-4">
              <div class="input-group">
               <div class="input-group-addon">
@@ -24,7 +24,7 @@
 
           <!--Surname Input-->
           <div class="form-group">
-            <label class="col-md-4 control-label" for="Surname">Surname</label>  
+            <label class="col-md-4 control-label" for="Surname">Surname</label>
             <div class="col-md-4">
              <div class="input-group">
               <div class="input-group-addon">
@@ -35,7 +35,7 @@
             </div>
           </div>
 
-            <!-- Upload Photo Button --> 
+            <!-- Upload Photo Button -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="Upload photo">Upload photo</label>
   <div class="col-md-4">
@@ -45,7 +45,7 @@
 
           <!-- Date Of Birth Input-->
           <div class="form-group">
-            <label class="col-md-4 control-label" for="Date Of Birth">Date Of Birth</label>  
+            <label class="col-md-4 control-label" for="Date Of Birth">Date Of Birth</label>
               <div class="col-md-4">
                 <div class="input-group">
                   <div class="input-group-addon">
@@ -59,13 +59,13 @@
           <!-- Gender Radios (inline) -->
           <div class="form-group">
             <label class="col-md-4 control-label" for="Gender">Gender</label>
-            <div class="col-md-4"> 
+            <div class="col-md-4">
               <label class="radio-inline" for="Gender-0">
                 <input type="radio" name="Gender" id="Gender-0" value="1" checked="checked">Male
-              </label> 
+              </label>
               <label class="radio-inline" for="Gender-1">
                 <input type="radio" name="Gender" id="Gender-1" value="2">Female
-             </label> 
+             </label>
              <label class="radio-inline" for="Gender-2">
                <input type="radio" name="Gender" id="Gender-2" value="3">Other
              </label>
@@ -74,7 +74,7 @@
 
         <!-- Adress inputs -->
         <div class="form-group">
-          <label class="col-md-4 control-label col-xs-12" for="Address">Address</label>  
+          <label class="col-md-4 control-label col-xs-12" for="Address">Address</label>
           <div class="col-md-2  col-xs-4">
             <input id="Address" name="Address" type="text" placeholder="District" class="form-control input-md ">
         </div>
@@ -84,7 +84,7 @@
       </div>
 
       <div class="form-group">
-        <label class="col-md-4 control-label" for="Address"></label>  
+        <label class="col-md-4 control-label" for="Address"></label>
         <div class="col-md-2  col-xs-4">
           <input id="Address" name="Address" type="text" placeholder="Street" class="form-control input-md ">
         </div>
@@ -95,7 +95,7 @@
 
       <!-- Job input-->
       <div class="form-group">
-        <label class="col-md-4 control-label" for="Job">Job</label>  
+        <label class="col-md-4 control-label" for="Job">Job</label>
         <div class="col-md-4">
           <div class="input-group">
             <div class="input-group-addon">
@@ -105,11 +105,11 @@
             </div>
           </div>
         </div>
-        
+
 
       <!-- Phone Number input-->
       <div class="form-group">
-        <label class="col-md-4 control-label" for="Phone number ">Phone Number </label>  
+        <label class="col-md-4 control-label" for="Phone number ">Phone Number </label>
         <div class="col-md-4">
             <div class="input-group">
               <div class="input-group-addon">
@@ -122,7 +122,7 @@
 
       <!-- Email address input-->
       <div class="form-group">
-        <label class="col-md-4 control-label" for="Email Address">Email Address</label>  
+        <label class="col-md-4 control-label" for="Email Address">Email Address</label>
         <div class="col-md-4">
          <div class="input-group">
           <div class="input-group-addon">
@@ -136,14 +136,14 @@
       <!-- Overview textarea -->
       <div class="form-group">
         <label class="col-md-4 control-label" for="Overview (max 200 words)">Overview (max 200 words)</label>
-        <div class="col-md-4">                     
+        <div class="col-md-4">
           <textarea class="form-control" rows="10"  id="Overview (max 200 words)" name="Overview (max 200 words)">Overview</textarea>
         </div>
       </div>
 
       <!-- Submit and Cancel Button -->
       <div class="form-group">
-       <label class="col-md-4 control-label" ></label>  
+       <label class="col-md-4 control-label" ></label>
         <div class="col-md-4">
          <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok-sign"></span> Submit</a>
          <a href="#" class="btn btn-danger" value=""><span class="glyphicon glyphicon-remove-sign"></span> Cancel</a>
@@ -155,8 +155,8 @@
 
 </div>
 </div>
-        
-<?php 
+
+<?php
     $cssPath= "editProfile.css";
     include ('footer.php');
 ?>
