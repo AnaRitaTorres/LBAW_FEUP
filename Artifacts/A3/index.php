@@ -3,6 +3,7 @@
 ?>
 
 
+</div>
 <link rel="stylesheet" href="index.css">
 
 
@@ -23,6 +24,9 @@
                   <h2>
                     The best event manager!
                   </h2>
+                  <p>
+                    Check all the events
+                  </p>
               </div>
           </div>
 
@@ -58,7 +62,6 @@
       </a>
 
   </div>
-</div>
 <?php
     include ('footer.php');
 ?>
