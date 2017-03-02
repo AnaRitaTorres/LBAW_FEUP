@@ -1,0 +1,32 @@
+.container{
+  margin-top: 100px;
+}
+
+#back_picture{
+  z-index: -1;
+}
+
+#front_picture{
+  z-index: 8;
+  margin: -150px 0px 0px 200px;
+}
+
+h3,h4{
+  text-align: center;
+}
+
+.information{
+  padding-left: 20px;
+}
+
+h5{
+  padding-left: 8px;
+  padding-right: 5px;
+}
+
+.navbar-default .btn-info{
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
