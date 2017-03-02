@@ -157,6 +157,6 @@
 </div>
 
 <?php
-    $cssPath= "editProfile.css";
+    $cssPath= "style.css";
     include ('footer.php');
 ?>
