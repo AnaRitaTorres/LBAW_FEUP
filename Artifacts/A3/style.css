@@ -13,7 +13,7 @@ header .navbar-default{
 header .navbar-brand{
   font-family: 'Playfair Display', serif;
   font-size: 50px;
-  padding-left: 30px;
+  padding-left: 40px;
   padding-top: 20px;
 }
 
@@ -31,7 +31,6 @@ header .navbar-nav .row{
 }
 
 header .navbar-nav .dropdown{
-  font-family: 'Playfair Display', serif;
   border-radius:5px;
 }
 

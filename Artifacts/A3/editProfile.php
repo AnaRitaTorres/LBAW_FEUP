@@ -15,7 +15,7 @@
             <div class="col-md-4">
              <div class="input-group">
               <div class="input-group-addon">
-                <i class="fa fa-user"></i>
+                <i class="glyphicon glyphicon-user"></i>
               </div>
                 <input id="Name" name="Name" type="text" placeholder="Name" class="form-control input-md">
               </div>
@@ -28,7 +28,7 @@
             <div class="col-md-4">
              <div class="input-group">
               <div class="input-group-addon">
-                <i class="fa fa-user"></i>
+                <i class="glyphicon glyphicon-user"></i>
               </div>
                 <input id="Surname" name="Surname" type="text" placeholder="Surname" class="form-control input-md">
               </div>
@@ -113,7 +113,7 @@
         <div class="col-md-4">
             <div class="input-group">
               <div class="input-group-addon">
-                <i class="fa fa-phone"></i>
+                <i class="glyphicon glyphicon-phone"></i>
              </div>
               <input id="Phone Number " name="Phone Number " type="tel" placeholder="Primary Phone Number " class="form-control input-md">
             </div>
@@ -126,7 +126,7 @@
         <div class="col-md-4">
          <div class="input-group">
           <div class="input-group-addon">
-           <i class="fa fa-envelope-o"></i>
+           <i class="glyphicon glyphicon-envelope"></i>
           </div>
           <input id="Email Address" name="Email Address" type="text" placeholder="Email Address" class="form-control input-md">
          </div>
@@ -145,8 +145,8 @@
       <div class="form-group">
        <label class="col-md-4 control-label" ></label>
         <div class="col-md-4">
-         <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok-sign"></span> Submit</a>
-         <a href="#" class="btn btn-danger" value=""><span class="glyphicon glyphicon-remove-sign"></span> Cancel</a>
+         <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Submit</a>
+         <a href="#" class="btn btn-danger" value=""><span class="glyphicon glyphicon-remove"></span> Cancel</a>
        </div>
       </div>
     </fieldset>

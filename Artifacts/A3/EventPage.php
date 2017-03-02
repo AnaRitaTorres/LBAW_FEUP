@@ -18,7 +18,7 @@
 										<tr>
 											<td>
 												<p>
-													<i class="fa fa-map-marker">&nbsp;&nbsp;&nbsp;</i>
+													<i class="glyphicon glyphicon-map-marker">&nbsp;&nbsp;</i>
 												</p>
 											</td>
 											<td align="right">
@@ -33,7 +33,7 @@
 										<tr>
 											<td>
 												<p>
-													<i class="fa fa-calendar">&nbsp;&nbsp;&nbsp;</i>
+													<i class="glyphicon glyphicon-calendar">&nbsp;&nbsp;</i>
 												</p>
 											</td>
 											<td align="right">
@@ -48,7 +48,7 @@
 										<tr >
 											<td>
 												<p>
-													<i class="fa fa-clock-o">&nbsp;&nbsp;&nbsp;</i>
+													<i class="glyphicon glyphicon-time">&nbsp;&nbsp;</i>
 												</p>
 											</td>
 											<td align="right">
@@ -96,10 +96,10 @@
 
 									<div id="like-buttons" class="btn-group pull-right">
 										<a href="#" class="btn btn-default stat-item">
-											<i class="fa fa-thumbs-up icon"></i>10
+											<i class="fa fa-thumbs-up icon"></i>&nbsp;10
 										</a>
 										<a href="#" class="btn btn-default stat-item ">
-											<i class="fa fa-thumbs-down icon"></i>24
+											<i class="fa fa-thumbs-down icon"></i>&nbsp;24
 										</a>
 									</div>
 								</div>
@@ -123,10 +123,10 @@
 
 									<div id="like-buttons" class="btn-group pull-right">
 										<a href="#" class="btn btn-default stat-item">
-											<i class="fa fa-thumbs-up icon"></i>10
+											<i class="fa fa-thumbs-up icon"></i>&nbsp;10
 										</a>
 										<a href="#" class="btn btn-default stat-item ">
-											<i class="fa fa-thumbs-down icon"></i>24
+											<i class="fa fa-thumbs-down icon"></i>&nbsp;24
 										</a>
 								</div>
 
@@ -156,8 +156,8 @@
 								<input type="text" class="form-control input-lg" id="search-church" placeholder="Comment something here...">
 
 								<div class="panel-heading">
-									<button type="submit" class="btn btn-success green"><i class="fa fa-comment "></i> Comment</button>
-									<button type="button" class="btn btn-danger red"><i class="fa fa-times"></i>&nbsp;Cancel</button>
+									<button type="submit" class="btn btn-success green"><i class="glyphicon glyphicon-comment"></i> Comment</button>
+									<button type="button" class="btn btn-danger red"><i class="glyphicon glyphicon-remove"></i>&nbsp;Cancel</button>
 								</div>
 							</div><!-- /panel panel-default -->
 						</div><!-- /col-sm-5 -->
