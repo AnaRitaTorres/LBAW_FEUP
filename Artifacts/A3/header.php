@@ -11,77 +11,84 @@
     </head>
     <body>
         <header>
-          <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-                 <!-- Brand and toggle get grouped for better mobile display -->
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">evO</a>
+                    </button>
+                    <a class="navbar-brand" href="#">evO</a>
                 </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <form class="navbar-form navbar-left">
-                  <!--<div class="col-md-20">-->
-                    <div id="custom-search-input">
-                        <div class="input-group col-md-40">
-                            <input type="text" class="form-control input-md" placeholder="Search" />
-                            <span class="input-group-btn">
-                                <button class="btn btn-info btn-md" type="button">
-                                    <i class="glyphicon glyphicon-search"></i>
-                                </button>
-                            </span>
-                         </div>
+                    <div class="col-sm-4 col-md-8 col-sm-offset-3 col-md-offset-1">
+                        <form class="navbar-form" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-info" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                        </form>
                     </div>
-                 <!--</div>-->
-                </form>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Register</b> <span class="caret"></span></a>
+                    <ul class="nav navbar-nav navbar-right pull-left">
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Register</b> <span <span class="glyphicon glyphicon-user"></span></a>
 			            <ul id="register-dp" class="dropdown-menu">
 				    	<div class="row">
 							<div class="col-md-26">
 							    <form class="form" role="form" method="post" action="register" accept-charset="UTF-8" id="register-nav">
-										<div class="form-group">
-											 <label class="sr-only" for="exampleInputEmail2">Email Address</label>
-											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email Address" required>
-										</div>
-										<div class="form-group">
-											 <label class="sr-only" for="exampleInputPassword2">Password</label>
-											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                        </div>
-                                    </form>
-							    </div>
+                                    <div class="form-group">
+                                        <p>
+                                            <label for="exampleInputPassword2">Name</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword2" placeholder="Name" required>
+                                        </p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label  for="exampleInputEmail2">Surname</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Surname" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword2">Email Address</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword2">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword2">Repeat Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Repeat Password" required>
+                                    </div>
+                                    <a href="#" class="btn btn-info btn-md"><span class="glyphicon glyphicon-ok"></span></a>
+                                </form>
+							  </div>
 						     </div>
                             </ul>
                         </li>
-                   <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
-			            <ul id="login-dp" class="dropdown-menu">
-				    	<div class="row">
-							<div class="col-md-26">
-							    <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-										<div class="form-group">
-											 <label class="sr-only" for="exampleInputEmail2">Email Address</label>
-											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email Address" required>
-										</div>
-										<div class="form-group">
-											 <label class="sr-only" for="exampleInputPassword2">Password</label>
-											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="glyphicon glyphicon-log-in"></span></a>
+                            <ul id="login-dp" class="dropdown-menu">
+                            <div class="row">
+                                <div class="col-md-26">
+                                    <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                        <div class="form-group">
+                                            <label  for="exampleInputEmail2">Email Address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email Address" required>
                                         </div>
+                                        <div class="form-group">
+                                            <label  for="exampleInputPassword2">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                        </div>
+                                        <a href="#" class="btn btn-info btn-md"><span class="glyphicon glyphicon-ok"></span></a>
                                     </form>
-							    </div>
-						     </div>
-                            </ul>
-                        </li>
-                </ul>
+                                </div>
+                            </div>
+                        </ul>
+                     </li>
+                    </ul>
                 </div>
-            </div>
             </nav>
-     </header>
+          </header>
      <div class="content">
