@@ -3,13 +3,6 @@ header{
   z-index:2;
 }
 
-header .container{
-  margin-right:0px;
-  margin-left: 0px;
-  border:0px;
-  padding:0px;
- }
-
 header .navbar-default{
   margin-bottom: 0px;
   border:none;
@@ -21,11 +14,11 @@ header .navbar-brand{
   font-family: 'Playfair Display', serif;
   font-size: 50px;
   padding-top: 20px;
-  padding-left: 50px;
+  
 }
 
 header .navbar-nav{
-  padding-left: 100px;
+  padding-left: 50px;
   padding-top: 10px;
 }
 
@@ -40,7 +33,7 @@ header .navbar-nav .dropdown:hover{
 }
 
 header .navbar-form{
-  padding-left:500px;
+  padding-left:350px;
   padding-top:10px;
 }
 
@@ -57,6 +50,9 @@ header .navbar-nav .row{
   font-family: 'Playfair Display', serif;
 }
 
+.container{
+  padding-right: 0px;
+}
 .content{
   padding-top: 80px;
   z-index:1;
