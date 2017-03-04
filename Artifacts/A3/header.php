@@ -38,33 +38,73 @@
 			            <ul id="register-dp" class="dropdown-menu">
 				    	<div class="row">
 							<div class="col-md-26">
-							    <form class="form" role="form" method="post" action="register" accept-charset="UTF-8" id="register-nav">
+							    <form id="form_register" class="form" role="form" method="post" action="register" accept-charset="UTF-8" id="register-nav">
                                     <div class="form-group">
-                                        <p>
+                                        <div class="row">
+                                          <div class="col-xs-2 col-xs-offset-0">
                                             <label for="exampleInputPassword2">Name</label>
+                                          </div>
+                                          <div class="col-sm-8 col-sm-offset-2">
                                             <input type="text" class="form-control" id="exampleInputPassword2" placeholder="Name" required>
-                                        </p>
+                                          </div>
+                                        </div>
+                                        <!-- <p>
+                                            <label for="exampleInputPassword2" align="left">Name</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword2" placeholder="Name" required align="rigth">
+                                        </p> -->
                                     </div>
                                     <div class="form-group">
-                                        <label  for="exampleInputEmail2">Surname</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Surname" required>
+                                      <div class="row">
+                                        <div class="col-xs-2 col-xs-offset-0">
+                                          <label  for="exampleInputEmail2">Surname</label>
+                                        </div>
+                                        <div class="col-sm-8 col-sm-offset-2">
+                                          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Surname" required>
+                                        </div>
+                                      </div>
+                                        <!-- <label  for="exampleInputEmail2">Surname</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Surname" required> -->
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputPassword2">Email Address</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Email Address" required>
+                                      <div class="row">
+                                        <div class="col-xs-2 col-xs-offset-0">
+                                          <label for="exampleInputPassword2">Email Address</label>
+                                        </div>
+                                        <div class="col-sm-8 col-sm-offset-2">
+                                          <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Email Address" required>
+                                        </div>
+                                      </div>
+                                        <!-- <label for="exampleInputPassword2">Email Address</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Email Address" required> -->
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputPassword2">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                      <div class="row">
+                                        <div class="col-xs-2 col-xs-offset-0">
+                                          <label for="exampleInputPassword2">Password</label>
+                                        </div>
+                                        <div class="col-sm-8 col-sm-offset-2">
+                                          <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                        </div>
+                                      </div>
+                                        <!-- <label for="exampleInputPassword2">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required> -->
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputPassword2">Repeat Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Repeat Password" required>
+                                      <div class="row">
+                                        <div class="col-xs-2 col-xs-offset-0">
+                                          <label for="exampleInputPassword2">Repeat Password</label>
+                                        </div>
+                                        <div class="col-sm-8 col-sm-offset-2">
+                                          <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Repeat Password" required>
+                                        </div>
+                                      </div>
+                                        <!-- <label for="exampleInputPassword2">Repeat Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Repeat Password" required> -->
                                     </div>
                                     <a href="#" class="btn btn-info btn-md"><span class="glyphicon glyphicon-ok"></span></a>
                                 </form>
-							  </div>
-						     </div>
+							   </div>
+						    </div>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -72,14 +112,30 @@
                             <ul id="login-dp" class="dropdown-menu">
                             <div class="row">
                                 <div class="col-md-26">
-                                    <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                    <form id="form_login" class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
                                         <div class="form-group">
-                                            <label  for="exampleInputEmail2">Email Address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email Address" required>
+                                          <div class="row">
+                                            <div class="col-xs-2 col-xs-offset-0">
+                                              <label  for="exampleInputEmail2">Email Address</label>
+                                            </div>
+                                            <div class="col-sm-15 col-sm-offset-3">
+                                              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email Address" required>
+                                            </div>
+                                          </div>
+                                            <!-- <label  for="exampleInputEmail2">Email Address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email Address" required> -->
                                         </div>
                                         <div class="form-group">
-                                            <label  for="exampleInputPassword2">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                          <div class="row">
+                                            <div class="col-xs-2 col-xs-offset-0">
+                                              <label  for="exampleInputPassword2">Password</label>
+                                            </div>
+                                            <div class="col-sm-15 col-sm-offset-3">
+                                              <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                            </div>
+                                          </div>
+                                            <!-- <label  for="exampleInputPassword2">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required> -->
                                         </div>
                                         <a href="#" class="btn btn-info btn-md"><span class="glyphicon glyphicon-ok"></span></a>
                                     </form>
