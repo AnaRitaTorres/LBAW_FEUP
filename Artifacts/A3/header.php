@@ -13,7 +13,7 @@
         <header>
           <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
+                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -81,7 +81,7 @@
                         </li>
                 </ul>
                 </div>
-               </div>
+            </div>
             </nav>
      </header>
      <div class="content">
