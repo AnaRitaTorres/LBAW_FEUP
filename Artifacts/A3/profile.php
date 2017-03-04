@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+    include ('header.php');
+?>
+
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -12,7 +15,7 @@
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/profile.css">
+		<link rel="stylesheet" href="profile.css">
 
 
 	</head>
@@ -27,7 +30,7 @@
 
 			<nav class="navbar navbar-default">
 					 <h4><a href="#InfoContent" data-toggle="collapse"><b>Info</b></a><h4>
-				<div id="InfoContent" class="row collapse in">
+				<div id="InfoContent" class="row collapse">
 					<div class="row">
 						<div class="col-xs-1" align="right">
 							&nbsp;<i class="fa fa-user" aria-hidden="true"></i>
@@ -81,15 +84,6 @@
 							969392919
 						</div>
 					</div>
-					<!--
-					<p class="information" align="left">
-						&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i>
-						&nbsp;miriamtorres69@sapo.pt
-					</p>
-					<p class="information" align="left">
-						&nbsp;<i class="fa fa-mobile" aria-hidden="true"></i>
-						&nbsp;&nbsp;&nbsp;969392919
-					</p> -->
 				</div>
 			</nav>
 
@@ -114,26 +108,171 @@
 				</table>
 			</nav>
 
-			<nav class="navbar navbar-default">
-				<div class="row">
-					<h2 align="center">
-						Events
-					</h2>
+			<div class="row">
+				<div class="col-md-4 col-md-offset-1">
+					<div id="col1" class="panel panel-info">
+							<div class="panel-heading">
+									<h3 class="panel-title">
+											<span class="glyphicon glyphicon-calendar"></span>
+											Organized Events
+									</h3>
+							</div>
+							<div class="panel-body">
+									<ul class="media-list">
+											<li class="media">
+													<div class="media-left">
+															<div class="panel panel-info text-center date">
+																	<div class="panel-heading month">
+																			<span class="panel-title strong">
+																					Jun
+																			</span>
+																	</div>
+																	<div class="panel-body day text-danger">
+																			2
+																	</div>
+															</div>
+													</div>
+													<div class="media-body">
+															<a href="#" class="media-heading">
+																	Eu Pulvinar Mauris
+															</a>
+															<p>
+																	Vivamus pulvinar mauris eu placerat blandit. In euismod tellus vel ex vestibulum congue.
+															</p>
+													</div>
+											</li>
+											<li class="media">
+													<div class="media-left">
+															<div class="panel panel-info text-center date">
+																	<div class="panel-heading month">
+																			<span class="panel-title strong">
+																					Feb
+																			</span>
+																	</div>
+																	<div class="panel-body text-danger day">
+																			25
+																	</div>
+															</div>
+													</div>
+													<div class="media-body">
+															<a href="#" class="media-heading">
+																	Aenean Ultricies Consectetur
+															</a>
+															<p>
+																	Curabitur vel malesuada tortor, sit amet ultricies mauris. Aenean consectetur ultricies luctus.
+															</p>
+													</div>
+											</li>
+											<li class="media">
+													<div class="media-left">
+															<div class="panel panel-info text-center date">
+																	<div class="panel-heading month">
+																			<span class="panel-title strong all-caps">
+																					Oct
+																			</span>
+																	</div>
+																	<div class="panel-body text-danger day">
+																			9
+																	</div>
+															</div>
+													</div>
+													<div class="media-body">
+															<a href="#" class="media-heading">
+																	Consectetur Praesent Tincidunt
+															</a>
+															<p>
+																	Sed convallis dignissim magna et dignissim. Praesent tincidunt sapien eu gravida dignissim.
+															</p>
+													</div>
+											</li>
+									</ul>
+									<a href="#" class="btn btn-default btn-block">More Events »</a>
+							</div>
+					</div>
 				</div>
 
-				<div class="col-md-6">
-					<legend align="center">
-						TO ORGANIZE
-					</legend>
+				<div id="col2" class="col-md-4 col-md-offset-2">
+					<div class="panel panel-info">
+							<div class="panel-heading">
+									<h3 class="panel-title">
+											<span class="glyphicon glyphicon-calendar"></span>
+											Events to Go
+									</h3>
+							</div>
+							<div class="panel-body">
+									<ul class="media-list">
+											<li class="media">
+													<div class="media-left">
+															<div class="panel panel-info text-center date">
+																	<div class="panel-heading month">
+																			<span class="panel-title strong">
+																					Mar
+																			</span>
+																	</div>
+																	<div class="panel-body day text-danger">
+																			23
+																	</div>
+															</div>
+													</div>
+													<div class="media-body">
+															<a href="#" class="media-heading">
+																	Pulvinar Mauris Eu
+															</a>
+															<p>
+																	Vivamus pulvinar mauris eu placerat blandit. In euismod tellus vel ex vestibulum congue.
+															</p>
+													</div>
+											</li>
+											<li class="media">
+													<div class="media-left">
+															<div class="panel panel-info text-center date">
+																	<div class="panel-heading month">
+																			<span class="panel-title strong">
+																					Jan
+																			</span>
+																	</div>
+																	<div class="panel-body text-danger day">
+																			16
+																	</div>
+															</div>
+													</div>
+													<div class="media-body">
+															<a href="#" class="media-heading">
+																	Aenean Consectetur Ultricies
+															</a>
+															<p>
+																	Curabitur vel malesuada tortor, sit amet ultricies mauris. Aenean consectetur ultricies luctus.
+															</p>
+													</div>
+											</li>
+											<li class="media">
+													<div class="media-left">
+															<div class="panel panel-info text-center date">
+																	<div class="panel-heading month">
+																			<span class="panel-title strong all-caps">
+																					Dec
+																			</span>
+																	</div>
+																	<div class="panel-body text-danger day">
+																			8
+																	</div>
+															</div>
+													</div>
+													<div class="media-body">
+															<a href="#" class="media-heading">
+																	Praesent Tincidunt
+															</a>
+															<p>
+																	Sed convallis dignissim magna et dignissim. Praesent tincidunt sapien eu gravida dignissim.
+															</p>
+													</div>
+											</li>
+									</ul>
+									<a href="#" class="btn btn-default btn-block">More Events »</a>
+							</div>
+					</div>
 				</div>
-
-				<div class="col-md-6">
-					<legend align="center">
-						TO GO
-					</legend>
-				</div>
-			</nav>
-
+			</div>
 
 
 		</div>
