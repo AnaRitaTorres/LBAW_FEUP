@@ -2,13 +2,14 @@
     include ('header.php');
 ?>
 
+<div class="container">
 	<nav id="event-image" class="navbar navbar-default">
-		<img align="left" id="profile_picture" class="img-rounded" src="internet-troll.jpg" style="width: 100%; height: 350px">
+		<img align="left" id="profile_picture" class="img-rounded" src="images/internet-troll.jpg" style="width: 100%; height: 350px">
 	</nav>
 
 	<nav id="event-info" class="navbar navbar-default">
 		<div class="container">
-			<div>
+			<div class="info">
 				<h3>
 					<span>Event Info</span>
 					<button id="EditButton" type="submit" class="btn btn-info pull-right"><i class="glyphicon glyphicon-pencil"></i> Edit</button>
@@ -50,7 +51,7 @@
 			<div class="row">
 				<div class="col-sm-1 col-sm-offset-1">
 					<div class="thumbnail">
-						<img class="img user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+						<img class="img user-photo" src="images/person.jpg">
 					</div>
 				</div>
 
@@ -77,7 +78,7 @@
 			<div class="row">
 				<div class="col-sm-1 col-sm-offset-1">
 					<div class="thumbnail">
-						<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+						<img class="img-responsive user-photo" src="images/person.jpg">
 					</div>
 					<!-- /thumbnail -->
 				</div>
@@ -108,7 +109,7 @@
 			<div class="row">
 				<div class="col-sm-1 col-sm-offset-1">
 					<div class="thumbnail">
-						<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+						<img class="img-responsive user-photo" src="images/person.jpg">
 					</div>
 					<!-- /thumbnail -->
 				</div>
@@ -130,8 +131,7 @@
 			</div>
 		</div>
 	</nav>
-
+</div>
 <?php
-	$cssPath= "eventPage.css";
 	include ('footer.php');
 ?>

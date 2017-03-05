@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="profilePage.css">
+    <link rel="stylesheet" href="eventPage.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -46,50 +47,50 @@
                       <div class="form-group">
                         <div class="row">
                           <div class="col-xs-2 col-xs-offset-0">
-                            <label for="exampleInputPassword2">Name</label>
+                            <label>Name</label>
                           </div>
                           <div class="col-xs-8 col-xs-offset-2">
-                            <input type="text" class="form-control" id="exampleInputPassword2" placeholder="Name" required>
+                            <input type="text" class="form-control" placeholder="Name" required>
                           </div>
                         </div>
                       </div>
                       <div class="form-group">
                         <div class="row">
                           <div class="col-xs-2 col-xs-offset-0">
-                            <label for="exampleInputEmail2">Surname</label>
+                            <label>Surname</label>
                           </div>
                           <div class="col-xs-8 col-xs-offset-2">
-                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Surname" required>
+                            <input type="text" class="form-control" placeholder="Surname" required>
                           </div>
                         </div>
                       </div>
                       <div class="form-group">
                         <div class="row">
                           <div class="col-xs-2 col-xs-offset-0">
-                            <label for="exampleInputPassword2">Email Address</label>
+                            <label>Email Address</label>
                           </div>
                           <div class="col-xs-8 col-xs-offset-2">
-                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Email Address" required>
+                            <input type="email" class="form-control" placeholder="Email Address" required>
                           </div>
                         </div>
                       </div>
                       <div class="form-group">
                         <div class="row">
                           <div class="col-xs-2 col-xs-offset-0">
-                            <label for="exampleInputPassword2">Password</label>
+                            <label>Password</label>
                           </div>
                           <div class="col-xs-8 col-xs-offset-2">
-                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                            <input type="password" class="form-control" placeholder="Password" required>
                           </div>
                         </div>
                       </div>
                       <div class="form-group">
                         <div class="row">
                           <div class="col-xs-2 col-xs-offset-0">
-                            <label for="exampleInputPassword2">Repeat Password</label>
+                            <label>Repeat Password</label>
                           </div>
                           <div class="col-xs-8 col-xs-offset-2">
-                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Repeat Password" required>
+                            <input type="password" class="form-control" placeholder="Repeat Password" required>
                           </div>
                         </div>
                       </div>
@@ -108,20 +109,20 @@
                       <div class="form-group">
                         <div class="row">
                           <div class="col-xs-2 col-xs-offset-0">
-                            <label for="exampleInputEmail2">Email Address</label>
+                            <label>Email Address</label>
                           </div>
                           <div class="col-xs-8 col-xs-offset-2">
-                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email Address" required>
+                            <input type="email" class="form-control" placeholder="Email Address" required>
                           </div>
                         </div>
                       </div>
                       <div class="form-group">
                         <div class="row">
                           <div class="col-xs-2 col-xs-offset-0">
-                            <label for="exampleInputPassword2">Password</label>
+                            <label >Password</label>
                           </div>
                           <div class="col-xs-8 col-xs-offset-2">
-                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                            <input type="password" class="form-control"  placeholder="Password" required>
                           </div>
                         </div>
                       </div>

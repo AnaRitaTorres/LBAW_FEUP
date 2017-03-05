@@ -83,10 +83,12 @@ h5{
 
 .content .navbar-default a{
   color:#5bc0de;
+  font-weight: bold;
 }
 
-.content .navbar-default h4{
+.content .navbar-default #description h4{
    color:#5bc0de;
+   font-weight: bold;
 }
 
 .row .panel{
@@ -94,7 +96,7 @@ h5{
 }
 
 .panel-info{
-  border-color:#DCDCDC;
+  border-color:#777;
 }
 .media-heading{
   color:#5bc0de;
@@ -121,6 +123,36 @@ h5{
     padding: 3px 0px;
     font-weight: 700;
     font-size: 1.5em;
+}
+
+/*event page*/
+.thumbnail {
+    padding:0px;
+}
+
+.panel>.panel-heading:after,.panel>.panel-heading:before{
+	position:absolute;
+	top:11px;left:-16px;
+	right:100%;
+	width:0;
+	height:0;
+	display:block;
+	content:" ";
+	border-color:transparent;
+	border-style:solid solid outset;
+	pointer-events:none;
+}
+
+.panel>.panel-heading:after{
+	border-width:7px;
+	border-right-color:#f7f7f7;
+	margin-top:1px;
+	margin-left:2px;
+}
+
+
+#event-info h3{
+  padding-right: 50px;
 }
 
 /*all of the pages*/

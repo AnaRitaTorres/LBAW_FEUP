@@ -10,7 +10,7 @@
 				<u>Miriam Torres</u> (Nabas) </h2>
 		</nav>
 		<nav class="navbar navbar-default">
-			<h4><a href="#InfoContent" data-toggle="collapse"><b>Info</b></a>
+			<h4><a href="#InfoContent" data-toggle="collapse">Info</a>
 				<h4>
 					<div id="InfoContent" class="row collapse">
 						<div class="row">
@@ -50,7 +50,7 @@
 
 						<div class="row">
 							<div class="col-xs-1" align="right">
-								&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i>
+								&nbsp;<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
 							</div>
 							<div class="col-xs-3" align="left">
 								miriamtorres69@sapo.pt
@@ -59,7 +59,7 @@
 
 						<div class="row">
 							<div class="col-xs-1" align="right">
-								&nbsp;<i class="fa fa-mobile" aria-hidden="true"></i>
+								&nbsp;<i class="glyphicon glyphicon-phone" aria-hidden="true"></i>
 							</div>
 							<div class="col-xs-3" align="left">
 								969392919
@@ -69,11 +69,11 @@
 		</nav>
 
 		<nav class="navbar navbar-default">
+			<div id="description">
 			<table class="table">
 				<thead>
 					<tr>
-						<h4><b>Description</b>
-							<h4>
+						<h4>Description<h4>
 					</tr>
 					<hr>
 				</thead>
@@ -90,6 +90,7 @@
 						velit iaculis ornare vel eget nisi. Nulla faucibus dignissim malesuada.</h5>
 				</tbody>
 			</table>
+			</div>
 		</nav>
 
 		<div class="row">
