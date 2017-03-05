@@ -39,7 +39,7 @@
         </div>
         <ul class="nav navbar-nav navbar-right pull-left">
           <!-- before login-->
-          <!--<li class="dropdown">
+          <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span <span class="glyphicon glyphicon-user"></span>&nbsp;Register</a>
               <ul id="register-dp" class="dropdown-menu">
                 <div class="row">
@@ -102,7 +102,7 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in">&nbsp;Login</span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a>
               <ul id="login-dp" class="dropdown-menu">
                 <div class="row">
                   <div class="col-md-26">
@@ -132,9 +132,9 @@
                   </div>
                 </div>
               </ul>
-            </li>-->
+            </li>
           <!-- after login -->
-          <li class="dropdown">
+          <!--<li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span <span class="glyphicon glyphicon-user"></span>&nbsp;Username</a>
              <ul class="dropdown-menu">
               <li>
@@ -157,12 +157,12 @@
             </ul>
           </li>
           <li class="logout">
-                <a href="#">
-                  <span class="glyphicon glyphicon-log-out"></span>&nbsp;Logout
-                </a>
-              </li>
-            </ul>
+              <a href="#">
+                <span class="glyphicon glyphicon-log-out"></span>&nbsp;Logout
+              </a>
+          </li>-->
+        </ul>
       </div>
     </nav>
-  </header>
+    </header>
   <div class="content">

@@ -176,6 +176,18 @@ h5{
 }
 
 /*event page*/
+
+h3 button{
+ text-align: right;
+}
+
+h3{
+  text-align: center;
+}
+#event-info .row{
+  padding-left: 20px;
+}
+
 .thumbnail {
     padding:0px;
 }
@@ -200,16 +212,19 @@ h5{
 	margin-left:2px;
 }
 
+.panel-default, .panel-heading{
+  border: 1px solid #777;
+}
 
-#event-info h3{
-  padding-right: 50px;
+.stat-item{
+  border: 1px solid #777;
 }
 
 /*all of the pages*/
+
 .content{
   padding-top: 120px;
   z-index:1;
-  position:relative;
   overflow:hidden;
 }
 
