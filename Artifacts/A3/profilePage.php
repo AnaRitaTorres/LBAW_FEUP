@@ -7,86 +7,91 @@
 			<img align="left" id="back_picture" class="img-rounded" src="images/image2.jpg" style="width: 100%; height: 350px">
 			<img align="left" id="front_picture" class="img-circle" src="images/person.jpg" style="width: 200px; height: 200px">
 			<h2 align="left" id="name" class="name">
-				<u>Miriam Torres</u> (Nabas) </h2>
-		</nav>
-		<nav class="navbar navbar-default">
-			<h4><a href="#InfoContent" data-toggle="collapse">Info</a>
-				<h4>
-					<div id="InfoContent" class="row collapse">
-						<div class="row">
-							<div class="col-xs-1" align="right">
-								&nbsp;<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
-							</div>
-							<div class="col-xs-3" align="left">
-								Miriam Rita Gonçalves Torres
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-1" align="right">
-								&nbsp;<i class="fa fa-birthday-cake" aria-hidden="true"></i>
-							</div>
-							<div class="col-xs-3" align="left">
-								12-02-2017
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-xs-1" align="right">
-								&nbsp;<i class="fa fa-globe" aria-hidden="true"></i>
-							</div>
-							<div class="col-xs-3" align="left">
-								Portugal
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-xs-1" align="right">
-								&nbsp;<i class="fa fa-venus" aria-hidden="true"></i>
-							</div>
-							<div class="col-xs-3" align="left">
-								Female
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-xs-1" align="right">
-								&nbsp;<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
-							</div>
-							<div class="col-xs-3" align="left">
-								miriamtorres69@sapo.pt
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-xs-1" align="right">
-								&nbsp;<i class="glyphicon glyphicon-phone" aria-hidden="true"></i>
-							</div>
-							<div class="col-xs-3" align="left">
-								969392919
-							</div>
-						</div>
-					</div>
+				<u>Miriam Torres</u> (MiriNiri) </h2>
 		</nav>
 
-		<nav class="navbar navbar-default">
-			<h4><a href="#DescriptionContent" data-toggle="collapse">Description</a><h4>
-			<div id="DescriptionContent" class="row collapse">
-			<table class="table">
-				<tbody>
-					<h5 class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus aliquet magna, ut tristique tellus sollicitudin
-						at. Sed non blandit neque. Nullam ac justo et augue faucibus aliquet id sit amet mauris. Aliquam tempor, felis quis
-						molestie venenatis, nulla lacus aliquam magna, non vulputate sapien ex tempus mi. Vestibulum volutpat turpis nisl.
-						Proin pretium mauris ut lacus ullamcorper, eget hendrerit urna tincidunt. Ut sit amet imperdiet dui. Sed malesuada
-						vel nulla sed cursus. Curabitur ac massa metus. Integer ullamcorper ligula at neque tempus, id malesuada orci porta.
-						Vestibulum ante neque, laoreet id ante in, accumsan pretium lectus. Cras pulvinar neque ac dui imperdiet, in fringilla
-						justo porttitor.<br><br> Cras placerat ullamcorper ligula, sit amet egestas tortor pellentesque ac. Aenean commodo
-						scelerisque dolor, non pulvinar mauris finibus vel. Nullam at mauris sed tellus scelerisque venenatis et ac nisl. Sed
-						suscipit erat quis nisi cursus faucibus. In dignissim odio eros, nec sodales urna mattis et. Fusce sit amet purus a
-						velit iaculis ornare vel eget nisi. Nulla faucibus dignissim malesuada.</h5>
-				</tbody>
-			</table>
-		</div>
-		</nav>
+    <div class="row">
+      <div class="col-lg-4 col-md-offset-0">
+        <nav class="navbar navbar-default">
+          <h4><a href="#InfoContent" data-toggle="collapse">Info</a></h4>
+              <div id="InfoContent" class="row collapse">
+                <div class="row">
+                  <div class="col-xs-1" align="right">
+                    <i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-xs-10" align="left">
+                    Miriam Rita Gonçalves Torres Lira Barros
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-1" align="right">
+                    <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-xs-5 col-xs-offset-0" align="left">
+                    12-02-1996
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-1" align="right">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-xs-10" align="left">
+                    Portugal
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-1" align="right">
+                    <i class="fa fa-venus" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-xs-3" align="left">
+                    Female
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-1" align="right">
+                    <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-xs-10" align="left">
+                    miriamtorres69@sapo.pt
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-1" align="right">
+                    <i class="glyphicon glyphicon-phone" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-xs-3" align="left">
+                    969392919
+                  </div>
+                </div>
+            </div>
+        </nav>
+      </div>
+      <div class="col-md-8 col-md-offset-0">
+        <nav class="navbar navbar-default">
+          <h4><a href="#DescriptionContent" data-toggle="collapse">Description</a><h4>
+          <div id="DescriptionContent" class="row collapse">
+            <table class="table">
+              <tbody>
+                <h5 class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus aliquet magna, ut tristique tellus sollicitudin
+                  at. Sed non blandit neque. Nullam ac justo et augue faucibus aliquet id sit amet mauris. Aliquam tempor, felis quis
+                  molestie venenatis, nulla lacus aliquam magna, non vulputate sapien ex tempus mi. Vestibulum volutpat turpis nisl.
+                  Proin pretium mauris ut lacus ullamcorper, eget hendrerit urna tincidunt. Ut sit amet imperdiet dui. Sed malesuada
+                  vel nulla sed cursus. Curabitur ac massa metus. Integer ullamcorper ligula at neque tempus, id malesuada orci porta.
+                  Vestibulum ante neque, laoreet id ante in, accumsan pretium lectus. Cras pulvinar neque ac dui imperdiet, in fringilla
+                  justo porttitor.<br><br> Cras placerat ullamcorper ligula, sit amet egestas tortor pellentesque ac. Aenean commodo
+                  scelerisque dolor, non pulvinar mauris finibus vel. Nullam at mauris sed tellus scelerisque venenatis et ac nisl. Sed
+                  suscipit erat quis nisi cursus faucibus. In dignissim odio eros, nec sodales urna mattis et. Fusce sit amet purus a
+                  velit iaculis ornare vel eget nisi. Nulla faucibus dignissim malesuada.</h5>
+              </tbody>
+            </table>
+          </div>
+    		</nav>
+      </div>
+    </div>
 
 		<div class="row">
 			<div class="col-md-4 col-md-offset-1">
