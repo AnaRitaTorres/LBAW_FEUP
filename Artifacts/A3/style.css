@@ -17,9 +17,21 @@ header .navbar-brand{
 
 header .navbar-nav .dropdown{
    border-radius:5px;
-}
+   font-weight: bold;
+  }
 
 header .navbar-nav .dropdown:hover{
+  background-color: #5bc0de;
+  border-radius:5px;
+}
+
+header .navbar-nav .logout{
+   border-radius:5px;
+   font-weight: bold;
+   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+header .navbar-nav .logout:hover{
   background-color: #5bc0de;
   border-radius:5px;
 }
@@ -43,6 +55,49 @@ header .navbar-nav .row{
 
 #form_login{
   width: 300px;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  margin-top: 20px;
+}
+
+.navbar-wrapper .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar-wrapper .navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar-content{
+    width:320px;
+    padding: 15px;
+    padding-bottom:0px;
+}
+
+.navbar-content img{
+   position: absolute;
+   clip: rect(0px,60px,200px,0px);
+}
+
+.navbar-content:before, .navbar-content:after{
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.navbar-nav.navbar-right:last-child {
+  margin-right: 15px !important;
+}
+
+.dropdown-menu {
+padding: 0px;
+overflow: hidden;
 }
 
 /*main page*/
@@ -84,11 +139,6 @@ h5{
 .content .navbar-default a{
   color:#5bc0de;
   font-weight: bold;
-}
-
-.content .navbar-default #description h4{
-   color:#5bc0de;
-   font-weight: bold;
 }
 
 .row .panel{
@@ -159,6 +209,7 @@ h5{
 .content{
   padding-top: 120px;
   z-index:1;
+  position:relative;
   overflow:hidden;
 }
 

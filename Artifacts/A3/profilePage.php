@@ -69,14 +69,9 @@
 		</nav>
 
 		<nav class="navbar navbar-default">
-			<div id="description">
+			<h4><a href="#DescriptionContent" data-toggle="collapse">Description</a><h4>
+			<div id="DescriptionContent" class="row collapse">
 			<table class="table">
-				<thead>
-					<tr>
-						<h4>Description<h4>
-					</tr>
-					<hr>
-				</thead>
 				<tbody>
 					<h5 class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus aliquet magna, ut tristique tellus sollicitudin
 						at. Sed non blandit neque. Nullam ac justo et augue faucibus aliquet id sit amet mauris. Aliquam tempor, felis quis
@@ -90,7 +85,7 @@
 						velit iaculis ornare vel eget nisi. Nulla faucibus dignissim malesuada.</h5>
 				</tbody>
 			</table>
-			</div>
+		</div>
 		</nav>
 
 		<div class="row">
