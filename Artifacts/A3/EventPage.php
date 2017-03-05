@@ -10,7 +10,9 @@
 			<div class="info">
 				<h3>
 					<span>Event Information</span>
-					<button id="EditButton" type="submit" class="btn btn-info pull-right"><i class="glyphicon glyphicon-pencil"></i> Edit</button>
+					<!--edit button -->
+					<!--<button id="EditButton" type="submit" class="btn btn-info pull-right"><i class="glyphicon glyphicon-pencil"></i> Edit</button>-->
+					<!--attendace button-->
 				</h3>
 				<hr/>
 			</div>

@@ -95,7 +95,7 @@ header .navbar-nav .row{
   margin-right: 15px !important;
 }
 
-.dropdown-menu {
+header .dropdown-menu {
 padding: 0px;
 overflow: hidden;
 }
