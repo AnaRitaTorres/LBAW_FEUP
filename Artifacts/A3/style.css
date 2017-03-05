@@ -1,3 +1,4 @@
+/*header*/
 header{
   z-index:2;
 }
@@ -36,17 +37,95 @@ header .navbar-nav .row{
   padding-top:20px;
  }
 
+#form_register{
+  width: 300px;
+}
+
+#form_login{
+  width: 300px;
+}
+
+/*main page*/
 .carousel-caption h1 {
   font-size: 300px;
   font-family: 'Playfair Display', serif;
 }
 
-.container{
-  padding-right: 0px;
+/*profile page*/
+#back_picture{
+  z-index: -1;
 }
 
+#front_picture{
+  z-index: 8;
+  margin: -150px 0px 0px 200px;
+}
+
+h3,h4{
+  text-align: center;
+}
+
+h5{
+  padding-left: 8px;
+  padding-right: 5px;
+}
+
+.information{
+  padding-left: 20px;
+}
+
+#InfoContent{
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content .navbar-default a{
+  color:#5bc0de;
+}
+
+.content .navbar-default h4{
+   color:#5bc0de;
+}
+
+.row .panel{
+  background-color: #DCDCDC;
+}
+
+.panel-info{
+  border-color:#DCDCDC;
+}
+.media-heading{
+  color:#5bc0de;
+  font-weight: bold;
+}
+
+.panel-info>.panel-heading{
+  background-color:#5bc0de;
+  color:white;
+}
+.panel.date {
+    margin: 0px;
+    width: 60px;
+    text-align: center;
+}
+
+.panel.date .month {
+    padding: 2px 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.panel.date .day {
+    padding: 3px 0px;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+/*all of the pages*/
 .content{
-  padding-top: 60px;
+  padding-top: 120px;
   z-index:1;
   overflow:hidden;
 }
@@ -60,15 +139,10 @@ body{
   background-color:#f8f8f8;
 }
 
+/*footer*/
 footer{
  padding-top: 20px;
  padding-bottom: 5px;
 }
 
-#form_register{
-  width: 300px;
-}
 
-#form_login{
-  width: 400px;
-}
