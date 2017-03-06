@@ -4,8 +4,11 @@ header{
 }
 
 .navbar-default{
- background-color:#DCDCDC;
- border:none;
+   background-color:#DCDCDC;
+   border:none;
+}
+
+header .navbar-default{
  padding:10px;
  }
 
@@ -37,7 +40,7 @@ header .navbar-nav .logout:hover{
 }
 
 header .navbar-form{
-  padding-left:350px;
+  padding-left:400px;
   padding-top:10px;
 }
 
@@ -49,15 +52,15 @@ header .navbar-nav .row{
   padding-top:20px;
  }
 
-#form_register{
+header #form_register{
   width: 300px;
 }
 
-#form_login{
+header #form_login{
   width: 300px;
 }
 
-.navbar-wrapper {
+header .navbar-wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -66,38 +69,40 @@ header .navbar-nav .row{
   margin-top: 20px;
 }
 
-.navbar-wrapper .container {
+header .navbar-wrapper .container {
   padding-left: 0;
   padding-right: 0;
 }
-.navbar-wrapper .navbar {
+
+header .navbar-wrapper .navbar {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.navbar-content{
+header .navbar-content{
     width:320px;
     padding: 15px;
     padding-bottom:0px;
 }
 
-.navbar-content img{
+header .navbar-content img{
    position: absolute;
    clip: rect(0px,60px,200px,0px);
 }
 
-.navbar-content:before, .navbar-content:after{
+header .navbar-content:before, .navbar-content:after{
     display: table;
     content: "";
     line-height: 0;
 }
-.navbar-nav.navbar-right:last-child {
-  margin-right: 15px !important;
-}
 
-.dropdown-menu {
+header .dropdown-menu {
 padding: 0px;
 overflow: hidden;
+}
+
+header .navbar-right{
+  padding-right:20px;
 }
 
 /*main page*/

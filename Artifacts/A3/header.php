@@ -27,7 +27,7 @@
         <a class="navbar-brand" href="#">evO</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <div class="col-sm-4 col-md-8 col-sm-offset-3 col-md-offset-1">
+        <div class="col-sm-4 col-md-8">
           <form class="navbar-form" role="search">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search" name="Search">
@@ -37,9 +37,9 @@
             </div>
           </form>
         </div>
-        <nav class="nav navbar-nav navbar-right pull-left">
+        <nav class="nav navbar-nav navbar-right pull-right">
           <!-- before login-->
-         <!-- <li class="dropdown">
+         <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span <span class="glyphicon glyphicon-user"></span>&nbsp;Register</a>
               <ul id="register-dp" class="dropdown-menu">
                 <div class="row">
@@ -132,28 +132,24 @@
                   </div>
                 </div>
               </ul>
-            </li>-->
+            </li>
           <!-- after login -->
-          <li class="dropdown">
+         <!-- <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span <span class="glyphicon glyphicon-user"></span>&nbsp;Username</a>
              <ul class="dropdown-menu">
-              <li>
                 <div class="navbar-content">
                   <div class="row">
                     <div class="col-md-5">
                       <img src="images/person.jpg" alt="Alternate Text" class="img-responsive"/>
                     </div>
-                    <div class="col-md-6">
+                     <div class="col-md-6">
                       <span>Bhaumik Patel</span>
                       <p class="text-muted small">
                         mail@gmail.com</p>
                     </div>
                   </div>
                 </div>
-              </li>
-             
-                <li>
-                   <li class="divider"></li>
+                 <li class="divider"></li>
                   <div class="navbar-login navbar-login-session">
                         <div class="row">
                           <div class="col-lg-12">
@@ -173,14 +169,13 @@
                           </div>
                         </div>
                       </div>
-                    </li>
                     </ul>
                   </li>
                 <li class="logout">
                   <a href="#">
                     <span class="glyphicon glyphicon-log-out"></span>&nbsp;Logout
                   </a>
-              </li>
+              </li>-->
         </ul>
       </div>
     </nav>
