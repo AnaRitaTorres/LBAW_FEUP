@@ -2,47 +2,83 @@
 	include ('header.php');
 ?>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
 <div class="container">
 <div class="row">
 
+
   <div class=" col-sm-3">
+		<nav class="navbar navbar-default ES">
+
+			<form method="post">
     <h3>Filters:</h3>
-    <div class="checkbox">
-      <h4>Local:</h4>
-          <label>
-            <input type="checkbox" value="">
-            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-            Porto
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-            Lisboa
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-            Algarve
-          </label>
-        </div>
-        <h4>Price:</h4>
-        <input type="range" min="0" max="50" value="0" step="5" onchange="showValue(this.value)" />
-        <span id="range">0</span>
-        <script type="text/javascript">
-        function showValue(newValue)
-        {
-	         document.getElementById("range").innerHTML=newValue;
-        }
-        </script><br />
-				<h4>Date:</h4>
-				<input type="date" name="bday" max="1979-12-31">
+
+		<div class="well">
+			<div class="checkbox">
+	      <h4 class="filter">Location:</h4>
+	          <label>
+	            <input type="checkbox" value="">
+	            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+	            Porto
+	          </label>
+	        </div>
+	        <div class="checkbox">
+	          <label>
+	            <input type="checkbox" value="">
+	            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+	            Lisboa
+	          </label>
+	        </div>
+	        <div class="checkbox">
+	          <label>
+	            <input type="checkbox" value="">
+	            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+	            Algarve
+	          </label>
+	        </div>
+		</div>
+		<div class="well">
+			<h4 class="filter">Price:</h4>
+			<input type="range" min="0" max="50" value="0" step="5" onchange="showValue(this.value)">
+			<span id="range">0</span>
+			<script type="text/javascript">
+			function showValue(newValue)
+			{
+				 document.getElementById("range").innerHTML=newValue;
+			}
+			</script>
+		</div>
+		<div class="well">
+			<h4 class="filter">Date:</h4>
+		<div class="form-group"> <!-- Date input -->
+			<input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+		</div>
+	 <script>
+	$(document).ready(function(){
+		var date_input=$('input[name="date"]'); //our date input has the name "date"
+		var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+		var options={
+			format: 'mm/dd/yyyy',
+			container: container,
+			todayHighlight: true,
+			autoclose: true,
+		};
+		date_input.datepicker(options);
+	})
+</script>
+		</div>
+
+		<div class="form-group"> <!-- Submit button -->
+			<button class="btn btn-primary " name="submit" type="submit">Submit</button>
+		</div>
+</form>
+				</nav>
     </div>
 
   <div class="col-sm-offset-1 col-sm-8">
+		<nav class="navbar navbar-default ES">
     <ul class="event-list">
 
       <li>
@@ -111,6 +147,7 @@
         </div>
       </li>
     </ul>
+	</nav>
   </div>
 </div>
 </div>
