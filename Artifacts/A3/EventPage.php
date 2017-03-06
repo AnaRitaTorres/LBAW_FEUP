@@ -5,16 +5,26 @@
 	<div class="container">
 		<nav id="event-image" class="navbar navbar-default">
 			<img align="left" id="profile_picture" class="img-rounded" src="images/concert.jpg" style="width:100%; height: 350px">
+			<h1 id="titleEvent">Casa da Música Concert</h1>
 		</nav>
 		<nav id="event-info" class="navbar navbar-default">
 			<div class="info">
 				<h3>
 					<span>Event Information</span>
+					
 					<!--edit button -->
 					<!--<button id="EditButton" type="submit" class="btn btn-info pull-right"><i class="glyphicon glyphicon-pencil"></i> Edit</button>-->
+					
 					<!--attendace button-->
+  						<button class="btn btn-info btn-default dropdown-toggle pull-right" type="button" id="AttendanceButton" data-toggle="dropdown">Assign to<span class="glyphicon glyphicon-user"></span></button>
+  							<ul class="dropdown-menu pull-right" role="menu">
+   							 <li role="presentation"><a role="menuitem" tabindex="1" href="#">Going </a></li>
+    						 <li role="presentation"><a role="menuitem" tabindex="1" href="#">Maybe </a></li>
+    						 <li role="presentation"><a role="menuitem" tabindex="1" href="#">Not going</a></li>
+  							</ul>
 				</h3>
 				<hr/>
+				
 			</div>
 			<div class="row">
 				<p><i class="glyphicon glyphicon-map-marker">&nbsp;&nbsp;</i> <b class="Local">Location: &nbsp;</b> Casa da Música, Porto</p>
