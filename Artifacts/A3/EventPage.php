@@ -13,6 +13,12 @@
 					<!--edit button -->
 					<!--<button id="EditButton" type="submit" class="btn btn-info pull-right"><i class="glyphicon glyphicon-pencil"></i> Edit</button>-->
 					<!--attendace button-->
+					<button class="btn btn-info btn-default dropdown-toggle pull-right" type="button" id="AttendanceButton" data-toggle="dropdown">Assign to</button>
+					<ul class="dropdown-menu pull-right" role="menu">
+						<li role="presentation"><a role="menuitem" tabindex="1" href="#">Going </a></li>
+						<li role="presentation"><a role="menuitem" tabindex="1" href="#">Maybe </a></li>
+						<li role="presentation"><a role="menuitem" tabindex="1" href="#">Not going</a></li>
+					</ul>
 				</h3>
 				<hr/>
 			</div>
@@ -33,7 +39,8 @@
 			<table class="navbar-header">
 				<thead>
 					<tr>
-						<h3>Comments<h3>
+						<h3>Comments
+							<h3>
 					</tr>
 					<hr>
 				</thead>
@@ -59,8 +66,13 @@
 									</a>
 								</div>
 							</div>
-							<div class="panel-body">OMG can't wait!</div>
+							<div class="panel-body">OMG can't wait!
+
+								<button id="DeleteComment" type="submit" class="btn pull-right"><i class="fa fa-trash" aria-hidden="true"></i></button>								&nbsp;
+								<button id="EditComment" type="submit" class="btn pull-right"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+							</div>
 						</div>
+
 					</div>
 				</div>
 				<div class="row">
@@ -82,32 +94,37 @@
 									</a>
 								</div>
 							</div>
-							<div class="panel-body">Cool stuff</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-1 col-sm-offset-1">
-						<div class="thumbnail">
-							<img class="img-responsive user-photo" src="images/person.jpg">
-						</div>
-					</div>
-					<div class="col-sm-5 ">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<strong>Miriam Gonçalves</strong>
-							</div>
-							<input type="text" class="form-control input-lg" id="search-church" placeholder="Comment something here...">
-							<div class="panel-heading">
-								<button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-comment"></i> Comment</button>
-								<button type="button" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i>&nbsp;Cancel</button>
+
+							<div class="panel-body">Cool stuff
+								<button id="DeleteComment" type="submit" class="btn  pull-right"><i class="fa fa-trash" aria-hidden="true"></i></button>
+								<button id="EditComment" type="submit" class="btn  pull-right"><i class="fa fa-pencil" aria-hidden="true"></i></button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</nav>
+			<div class="row">
+				<div class="col-sm-1 col-sm-offset-1">
+					<div class="thumbnail">
+						<img class="img-responsive user-photo" src="images/person.jpg">
+					</div>
+				</div>
+				<div class="col-sm-5 ">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<strong>Miriam Gonçalves</strong>
+						</div>
+						<input type="text" class="form-control input-lg" id="search-church" placeholder="Comment something here...">
+						<div class="panel-heading">
+							<button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-comment"></i> Comment</button>
+							<button type="button" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i>&nbsp;Cancel</button>
+						</div>
+					</div>
+				</div>
+			</div>
 	</div>
-<?php
+	</nav>
+	</div>
+	<?php
 	include ('footer.php');
 ?>
