@@ -3,17 +3,17 @@
 ?>
 
 	<div class=container>
-		<nav class="navbar navbar-default">
+		<nav id="pictureNav" class="navbar navbar-default">
 			<img align="left" id="back_picture" class="img-rounded" src="images/image2.jpg" style="width: 100%; height: 350px">
 			<img align="left" id="front_picture" class="img-circle" src="images/person.jpg" style="width: 200px; height: 200px">
-			<h2 align="left" id="name" class="name">
+			<h2 align="left" class="name">
 				<u>Miriam Torres</u> (MiriNiri) </h2>
 		</nav>
 
     <div class="row">
       <div class="col-lg-4 col-md-offset-0">
         <nav class="navbar navbar-default">
-          <h4><a href="#InfoContent" data-toggle="collapse">Info</a></h4>
+          <h4 class="prof"><a href="#InfoContent" data-toggle="collapse">Info</a></h4>
               <div id="InfoContent" class="row collapse">
                 <div class="row">
                   <div class="col-xs-1" align="right">
@@ -72,10 +72,10 @@
       </div>
       <div class="col-md-8 col-md-offset-0">
         <nav class="navbar navbar-default">
-          <h4><a href="#DescriptionContent" data-toggle="collapse">Description</a><h4>
+          <h4 class="prof"><a href="#DescriptionContent" data-toggle="collapse">Description</a><h4>
           <div id="DescriptionContent" class="row collapse">
-            <div class="row">
-              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus aliquet magna, ut tristique tellus sollicitudin
+            <div id="rowDescription" class="row">
+              <h5 class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus aliquet magna, ut tristique tellus sollicitudin
                 at. Sed non blandit neque. Nullam ac justo et augue faucibus aliquet id sit amet mauris. Aliquam tempor, felis quis
                 molestie venenatis, nulla lacus aliquam magna, non vulputate sapien ex tempus mi. Vestibulum volutpat turpis nisl.
                 Proin pretium mauris ut lacus ullamcorper, eget hendrerit urna tincidunt. Ut sit amet imperdiet dui. Sed malesuada
@@ -83,17 +83,6 @@
                 Vestibulum ante neque, laoreet id ante in, accumsan pretium lectus. Cras pulvinar neque ac dui imperdiet, in fringilla
                 justo porttitor.</h5>
             </div>
-            <!-- <table class="table">
-              <tbody>
-                <h5 class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus aliquet magna, ut tristique tellus sollicitudin
-                  at. Sed non blandit neque. Nullam ac justo et augue faucibus aliquet id sit amet mauris. Aliquam tempor, felis quis
-                  molestie venenatis, nulla lacus aliquam magna, non vulputate sapien ex tempus mi. Vestibulum volutpat turpis nisl.
-                  Proin pretium mauris ut lacus ullamcorper, eget hendrerit urna tincidunt. Ut sit amet imperdiet dui. Sed malesuada
-                  vel nulla sed cursus. Curabitur ac massa metus. Integer ullamcorper ligula at neque tempus, id malesuada orci porta.
-                  Vestibulum ante neque, laoreet id ante in, accumsan pretium lectus. Cras pulvinar neque ac dui imperdiet, in fringilla
-                  justo porttitor.</h5>
-              </tbody>
-            </table> -->
           </div>
     		</nav>
       </div>
@@ -101,7 +90,7 @@
 
 		<div class="row">
 			<div class="col-md-4 col-md-offset-1">
-				<div id="col1" class="panel panel-info">
+				<div id="profilePage" class="panel panel-info">
 					<div class="panel-heading">
 						<h3 class="panel-title">
 							<span class="glyphicon glyphicon-calendar"></span> Organized Events
@@ -111,13 +100,13 @@
 						<ul class="media-list">
 							<li class="media">
 								<div class="media-left">
-									<div class="panel panel-info text-center date">
-										<div class="panel-heading month">
+									<div id="profilePage" class="panel panel-info text-center date">
+										<div class="panel-heading monthProfile">
 											<span class="panel-title strong">
 												Jun
 											</span>
 										</div>
-										<div class="panel-body day text-mute">
+										<div class="panel-body dayProfile text-mute">
 											2
 										</div>
 									</div>
@@ -133,13 +122,13 @@
 							</li>
 							<li class="media">
 								<div class="media-left">
-									<div class="panel panel-info text-center date">
-										<div class="panel-heading month">
+									<div id="profilePage" class="panel panel-info text-center date">
+										<div class="panel-heading monthProfile">
 											<span class="panel-title strong">
 												Feb
 											</span>
 										</div>
-										<div class="panel-body text-mute day">
+										<div class="panel-body text-mute dayProfile">
 											25
 										</div>
 									</div>
@@ -155,13 +144,13 @@
 							</li>
 							<li class="media">
 								<div class="media-left">
-									<div class="panel panel-info text-center date">
-										<div class="panel-heading month">
+									<div id="profilePage" class="panel panel-info text-center date">
+										<div class="panel-heading monthProfile">
 											<span class="panel-title strong all-caps">
 												Oct
 											</span>
 										</div>
-										<div class="panel-body text-mute day">
+										<div class="panel-body text-mute dayProfile">
 											9
 										</div>
 									</div>
@@ -182,7 +171,7 @@
 			</div>
 
 			<div id="col2" class="col-md-4 col-md-offset-2">
-				<div class="panel panel-info">
+				<div id="profilePage" class="panel panel-info">
 					<div class="panel-heading">
 						<h3 class="panel-title">
 							<span class="glyphicon glyphicon-calendar"></span> Events to Go
@@ -192,13 +181,13 @@
 						<ul class="media-list">
 							<li class="media">
 								<div class="media-left">
-									<div class="panel panel-info text-center date">
-										<div class="panel-heading month">
+									<div id="profilePage" class="panel panel-info text-center date">
+										<div class="panel-heading monthProfile">
 											<span class="panel-title strong">
 											Mar
 											</span>
 										</div>
-										<div class="panel-body day text-mute">
+										<div class="panel-body dayProfile text-mute">
 											23
 										</div>
 									</div>
@@ -214,13 +203,13 @@
 							</li>
 							<li class="media">
 								<div class="media-left">
-									<div class="panel panel-info text-center date">
-										<div class="panel-heading month">
+									<div id="profilePage" class="panel panel-info text-center date">
+										<div class="panel-heading monthProfile">
 											<span class="panel-title strong">
 												Jan
 											</span>
 										</div>
-										<div class="panel-body text-mute day">
+										<div class="panel-body text-mute dayProfile">
 											16
 										</div>
 									</div>
@@ -236,13 +225,13 @@
 							</li>
 							<li class="media">
 								<div class="media-left">
-									<div class="panel panel-info text-center date">
-										<div class="panel-heading month">
+									<div id="profilePage" class="panel panel-info text-center date">
+										<div class="panel-heading monthProfile">
 											<span class="panel-title strong all-caps">
 												Dec
 											</span>
 										</div>
-										<div class="panel-body text-mute day">
+										<div class="panel-body text-mute dayProfile">
 											8
 										</div>
 									</div>

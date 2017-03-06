@@ -7,8 +7,8 @@
 			<img align="left" id="profile_picture" class="img-rounded" src="images/concert.jpg" style="width:100%; height: 350px">
 		</nav>
 		<nav class="navbar navbar-default">
-			<h3><span href="#InfoContent" data-toggle="collapse">	
-				
+			<h3 class="eventPage"><span href="#InfoContent" data-toggle="collapse">	
+
 					<span>Event Information</span>
 				<!--edit button -->
 				<!--<button id="EditButton" type="submit" class="btn btn-info pull-right"><i class="glyphicon glyphicon-pencil"></i> Edit</button>-->
@@ -41,10 +41,10 @@
 
 
 		<nav id="event-comment" class="navbar navbar-default">
-				<h3><span href="#CommentContent" data-toggle="collapse">	
-				
+				<h3 class="eventPage"><span href="#CommentContent" data-toggle="collapse">
+
 					<span>Comments</span>
-				
+
 			</h3>
 		<div id="CommentContent">
 			<hr/>

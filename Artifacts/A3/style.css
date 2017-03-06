@@ -102,7 +102,13 @@ header .navbar-right{
   font-family: 'Playfair Display', serif;
 }
 
-/*profile page*/
+/* ******************************************** */
+/* ************ Profile Page ****************** */
+/* ******************************************** */
+#pictureNav{
+  background-color: #f8f8f8;
+}
+
 #back_picture{
   z-index: -1;
 }
@@ -112,17 +118,8 @@ img#front_picture{
   margin: -150px 0px 0px 200px;
 }
 
-h3,h4{
+h3.prof,h4.prof{
   text-align: center;
-}
-
-h5{
-  padding-left: 8px;
-  padding-right: 5px;
-}
-
-.information{
-  padding-left: 20px;
 }
 
 #InfoContent{
@@ -132,17 +129,28 @@ h5{
   padding-right: 5px;
 }
 
+/*3 seguintes são para description*/
+#rowDescription{
+  padding-left: 40px;
+}
+
+h5.discription{
+  padding-left: 8px;
+  padding-right: 5px;
+}
+
 #DescriptionContent{
   width: 710px;
   height: 120px;
   padding-top: 2px;
   padding-right: 20px;
   padding-bottom: 0px;
-  padding-left: 10px;
+  padding-left: 20px;
   margin-left: 0px;
   margin-right: 0px;
 }
 
+/* Daqui para a frente até ao fim do profile não sei ao certo ao que se refere nao entendi muito bem */
 .content .navbar-default a{
   color:#5bc0de;
   font-weight: bold;
@@ -155,6 +163,7 @@ h5{
 .panel-info{
   border-color:#777;
 }
+
 .media-heading{
   color:#5bc0de;
   font-weight: bold;
@@ -164,19 +173,20 @@ h5{
   background-color:#5bc0de;
   color:white;
 }
+
 .panel.date {
     margin: 0px;
     width: 60px;
     text-align: center;
 }
 
-.panel.date .month {
+.panel.date .monthProfile {
     padding: 2px 0px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.panel.date .day {
+.panel.date .dayProfile {
     padding: 3px 0px;
     font-weight: 700;
     font-size: 1.5em;
@@ -184,15 +194,12 @@ h5{
 
 /*event page*/
 
-h3 button{
+h3.eventPage button#AttendanceButton{
  text-align: right;
 }
 
-h3{
+h3.eventPage{
   text-align: center;
-}
-#event-info .row{
-  padding-left: 20px;
 }
 
 .thumbnail {
@@ -223,7 +230,7 @@ h3{
   border: 1px solid #777;
 }
 
-.stat-item{
+a.stat-item{
   border: 1px solid #777;
 }
 
@@ -248,11 +255,13 @@ list-style: none;
 margin: 0px;
 padding: 0px;
 }
+
 .event-list > li {
 background-color: rgb(255, 255, 255);
 padding: 0px;
 margin: 0px 0px 20px;
 }
+
 .event-list > li > time {
 display: inline-block;
 width: 100%;
@@ -266,6 +275,7 @@ text-transform: uppercase;
 .event-list > li > time > span {
 display: none;
 }
+
 .event-list > li > time > .day {
 display: block;
 font-size: 56pt;
@@ -273,6 +283,7 @@ font-weight: 100;
 line-height: 1;
 color: #777;
 }
+
 .event-list > li time > .month {
 display: block;
 font-size: 24pt;
@@ -280,23 +291,28 @@ font-weight: 900;
 line-height: 1;
 color: white;
 }
+
 .event-list > li > a > img {
 width: 100%;
 }
+
 .event-list > li > .info {
 padding-top: 5px;
 text-align: center;
 }
+
 .event-list > li > .info > .title {
 font-size: 17pt;
 font-weight: 700;
 margin: 0px;
 }
+
 .event-list > li > .info > .desc {
 font-size: 13pt;
 font-weight: 300;
 margin: 0px;
 }
+
 .event-list > li > .info > ul {
 display: table;
 list-style: none;
@@ -305,6 +321,7 @@ padding: 0px;
 width: 100%;
 text-align: center;
 }
+
 .event-list > li > .info > ul > li {
 display: table-cell;
 cursor: pointer;
@@ -313,12 +330,14 @@ font-size: 11pt;
 font-weight: 300;
     padding: 3px 0px;
 }
+
 .event-list > li > .info > ul > li > a {
 display: block;
 width: 100%;
 color: rgb(30, 30, 30);
 text-decoration: none;
 }
+
 .event-list > li > .info > ul > li:hover {
 color: rgb(30, 30, 30);
 background-color: rgb(200, 200, 200);
@@ -332,20 +351,24 @@ background-color: rgb(200, 200, 200);
   height: 120px;
   padding: 0px;
 }
+
 .event-list > li > time,
 .event-list > li > a > img  {
   display: inline-block;
 }
+
 .event-list > li > time,
 .event-list > li > a > img {
   width: 120px;
   float: left;
 }
+
 .event-list > li > .info {
   background-color: white;
   overflow: hidden;
   padding-left: 5px;
 }
+
 .event-list > li > time,
 .event-list > li > a > img {
   width: 120px;
@@ -353,21 +376,23 @@ background-color: rgb(200, 200, 200);
   padding: 0px;
   margin: 0px;
 }
+
 .event-list > li > .info {
   position: relative;
   height: 120px;
   text-align: left;
   padding-right: 40px;
 }
+
 .event-list > li > .info > .title,
 .event-list > li > .info > .desc {
   padding: 0px 10px;
 }
+
 .event-list > li > .info > ul {
   position: absolute;
   left: 0px;
   bottom: 0px;
-}
 }
 
 .checkbox label:after,
