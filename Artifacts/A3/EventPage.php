@@ -6,9 +6,9 @@
 		<nav id="event-image" class="navbar navbar-default">
 			<img align="left" id="profile_picture" class="img-rounded" src="images/concert.jpg" style="width:100%; height: 350px">
 		</nav>
-		<nav id="event-info" class="navbar navbar-default">
-			<div class="info">
-				<h3>
+		<nav class="navbar navbar-default">
+					 <h3><span href="#InfoContent" data-toggle="collapse">	
+				
 					<span>Event Information</span>
 					<!--edit button -->
 					<!--<button id="EditButton" type="submit" class="btn btn-info pull-right"><i class="glyphicon glyphicon-pencil"></i> Edit</button>-->
@@ -17,11 +17,13 @@
 					<ul class="dropdown-menu pull-right" role="menu">
 						<li role="presentation"><a role="menuitem" tabindex="1" href="#">Going </a></li>
 						<li role="presentation"><a role="menuitem" tabindex="1" href="#">Maybe </a></li>
-						<li role="presentation"><a role="menuitem" tabindex="1" href="#">Not going</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="1" href="#">Not Going</a></li>
 					</ul>
+			
 				</h3>
+	
+				<div id="InfoContent" class="navbar navbar-default collapse in">				
 				<hr/>
-			</div>
 			<div class="row">
 				<p><i class="glyphicon glyphicon-map-marker">&nbsp;&nbsp;</i> <b class="Local">Location: &nbsp;</b> Casa da Música, Porto</p>
 			</div>
@@ -34,8 +36,12 @@
 			<hr/>
 			<p>An event created to share different types of music and showing off some new musical groups!</p>
 		</nav>
+			
 
-		<nav id="event-comment" class="navbar navbar-default">
+		
+		</nav>
+
+		<nav id="event-comment" class="navbar navbar-default" >
 			<table class="navbar-header">
 				<thead>
 					<tr>
@@ -45,7 +51,7 @@
 					<hr>
 				</thead>
 			</table>
-			<div class="comment-section">
+			<div class="comment-section"  >
 				<div class="row">
 					<div class="col-sm-1 col-sm-offset-1">
 						<div class="thumbnail">
