@@ -16,7 +16,7 @@
 					<!--<button id="EditButton" type="submit" class="btn btn-info pull-right"><i class="glyphicon glyphicon-pencil"></i> Edit</button>-->
 					
 					<!--attendace button-->
-  						<button class="btn btn-info btn-default dropdown-toggle pull-right" type="button" id="AttendanceButton" data-toggle="dropdown">Assign to<span class="glyphicon glyphicon-user"></span></button>
+  						<button class="btn btn-info btn-default dropdown-toggle pull-right" type="button" id="AttendanceButton" data-toggle="dropdown">Assign to</button>
   							<ul class="dropdown-menu pull-right" role="menu">
    							 <li role="presentation"><a role="menuitem" tabindex="1" href="#">Going </a></li>
     						 <li role="presentation"><a role="menuitem" tabindex="1" href="#">Maybe </a></li>
@@ -69,7 +69,11 @@
 									</a>
 								</div>
 							</div>
-							<div class="panel-body">OMG can't wait!</div>
+							<div class="panel-body">OMG can't wait!
+								<button id="DeleteComment" type="submit" class="btn pull-right"><i class="fa fa-trash" aria-hidden="true"></i></button>
+								&nbsp;
+								<button id="EditComment" type="submit" class="btn pull-right"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -92,7 +96,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="panel-body">Cool stuff</div>
+							<div class="panel-body">Cool stuff<button id="DeleteComment" type="submit" class="btn  pull-right"><i class="fa fa-trash" aria-hidden="true"></i></button><button id="EditComment" type="submit" class="btn  pull-right"><i class="fa fa-pencil" aria-hidden="true"></i></button></div>
 						</div>
 					</div>
 				</div>
