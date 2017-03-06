@@ -7,51 +7,48 @@
 			<img align="left" id="profile_picture" class="img-rounded" src="images/concert.jpg" style="width:100%; height: 350px">
 		</nav>
 		<nav class="navbar navbar-default">
-					 <h3><span href="#InfoContent" data-toggle="collapse">	
+			<h3><span href="#InfoContent" data-toggle="collapse">	
 				
 					<span>Event Information</span>
-					<!--edit button -->
-					<!--<button id="EditButton" type="submit" class="btn btn-info pull-right"><i class="glyphicon glyphicon-pencil"></i> Edit</button>-->
-					<!--attendace button-->
-					<button class="btn btn-info btn-default dropdown-toggle pull-right" type="button" id="AttendanceButton" data-toggle="dropdown">Assign to</button>
-					<ul class="dropdown-menu pull-right" role="menu">
-						<li role="presentation"><a role="menuitem" tabindex="1" href="#">Going </a></li>
-						<li role="presentation"><a role="menuitem" tabindex="1" href="#">Maybe </a></li>
-						<li role="presentation"><a role="menuitem" tabindex="1" href="#">Not Going</a></li>
-					</ul>
-			
-				</h3>
-	
-				<div id="InfoContent" class="navbar navbar-default collapse in">				
+				<!--edit button -->
+				<!--<button id="EditButton" type="submit" class="btn btn-info pull-right"><i class="glyphicon glyphicon-pencil"></i> Edit</button>-->
+				<!--attendace button-->
+				<button class="btn btn-info btn-default dropdown-toggle pull-right" type="button" id="AttendanceButton" data-toggle="dropdown">Assign to</button>
+				<ul class="dropdown-menu pull-right" role="menu">
+					<li role="presentation"><a role="menuitem" tabindex="1" href="#">Going </a></li>
+					<li role="presentation"><a role="menuitem" tabindex="1" href="#">Maybe </a></li>
+					<li role="presentation"><a role="menuitem" tabindex="1" href="#">Not Going</a></li>
+				</ul>
+
+			</h3>
+
+			<div id="InfoContent" class="navbar navbar-default collapse in">
 				<hr/>
-			<div class="row">
-				<p><i class="glyphicon glyphicon-map-marker">&nbsp;&nbsp;</i> <b class="Local">Location: &nbsp;</b> Casa da Música, Porto</p>
+				<div class="row">
+					<p><i class="glyphicon glyphicon-map-marker">&nbsp;&nbsp;</i> <b class="Local">Location: &nbsp;</b> Casa da Música, Porto</p>
+				</div>
+				<div class="row">
+					<p><i class="glyphicon glyphicon-calendar">&nbsp;&nbsp;</i><b class="Data">Date: &nbsp;</b>12-02-2017</p>
+				</div>
+				<div class="row">
+					<p><i class="glyphicon glyphicon-time">&nbsp;&nbsp;</i><b class="Hora">Time: &nbsp;</b>12:35&nbsp;-&nbsp;19:00 </p>
+				</div>
+				<hr/>
+				<p>An event created to share different types of music and showing off some new musical groups!</p>
 			</div>
-			<div class="row">
-				<p><i class="glyphicon glyphicon-calendar">&nbsp;&nbsp;</i><b class="Data">Date: &nbsp;</b>12-02-2017</p>
-			</div>
-			<div class="row">
-				<p><i class="glyphicon glyphicon-time">&nbsp;&nbsp;</i><b class="Hora">Time: &nbsp;</b>12:35&nbsp;-&nbsp;19:00 </p>
-			</div>
+		</nav>
+
+
+
+		<nav id="event-comment" class="navbar navbar-default">
+				<h3><span href="#CommentContent" data-toggle="collapse">	
+				
+					<span>Comments</span>
+				
+			</h3>
+		<div id="CommentContent">
 			<hr/>
-			<p>An event created to share different types of music and showing off some new musical groups!</p>
-		</nav>
-			
-
-		
-		</nav>
-
-		<nav id="event-comment" class="navbar navbar-default" >
-			<table class="navbar-header">
-				<thead>
-					<tr>
-						<h3>Comments
-							<h3>
-					</tr>
-					<hr>
-				</thead>
-			</table>
-			<div class="comment-section"  >
+			<div class="navbar navbar-default collapse in">
 				<div class="row">
 					<div class="col-sm-1 col-sm-offset-1">
 						<div class="thumbnail">
@@ -128,8 +125,9 @@
 					</div>
 				</div>
 			</div>
-	</div>
-	</nav>
+			</div>
+
+		</nav>
 	</div>
 	<?php
 	include ('footer.php');
