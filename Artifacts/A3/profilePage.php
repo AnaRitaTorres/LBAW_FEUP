@@ -74,7 +74,16 @@
         <nav class="navbar navbar-default">
           <h4><a href="#DescriptionContent" data-toggle="collapse">Description</a><h4>
           <div id="DescriptionContent" class="row collapse">
-            <table class="table">
+            <div class="row">
+              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus aliquet magna, ut tristique tellus sollicitudin
+                at. Sed non blandit neque. Nullam ac justo et augue faucibus aliquet id sit amet mauris. Aliquam tempor, felis quis
+                molestie venenatis, nulla lacus aliquam magna, non vulputate sapien ex tempus mi. Vestibulum volutpat turpis nisl.
+                Proin pretium mauris ut lacus ullamcorper, eget hendrerit urna tincidunt. Ut sit amet imperdiet dui. Sed malesuada
+                vel nulla sed cursus. Curabitur ac massa metus. Integer ullamcorper ligula at neque tempus, id malesuada orci porta.
+                Vestibulum ante neque, laoreet id ante in, accumsan pretium lectus. Cras pulvinar neque ac dui imperdiet, in fringilla
+                justo porttitor.</h5>
+            </div>
+            <!-- <table class="table">
               <tbody>
                 <h5 class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus aliquet magna, ut tristique tellus sollicitudin
                   at. Sed non blandit neque. Nullam ac justo et augue faucibus aliquet id sit amet mauris. Aliquam tempor, felis quis
@@ -82,12 +91,9 @@
                   Proin pretium mauris ut lacus ullamcorper, eget hendrerit urna tincidunt. Ut sit amet imperdiet dui. Sed malesuada
                   vel nulla sed cursus. Curabitur ac massa metus. Integer ullamcorper ligula at neque tempus, id malesuada orci porta.
                   Vestibulum ante neque, laoreet id ante in, accumsan pretium lectus. Cras pulvinar neque ac dui imperdiet, in fringilla
-                  justo porttitor.<br><br> Cras placerat ullamcorper ligula, sit amet egestas tortor pellentesque ac. Aenean commodo
-                  scelerisque dolor, non pulvinar mauris finibus vel. Nullam at mauris sed tellus scelerisque venenatis et ac nisl. Sed
-                  suscipit erat quis nisi cursus faucibus. In dignissim odio eros, nec sodales urna mattis et. Fusce sit amet purus a
-                  velit iaculis ornare vel eget nisi. Nulla faucibus dignissim malesuada.</h5>
+                  justo porttitor.</h5>
               </tbody>
-            </table>
+            </table> -->
           </div>
     		</nav>
       </div>
