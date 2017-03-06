@@ -5,26 +5,16 @@
 	<div class="container">
 		<nav id="event-image" class="navbar navbar-default">
 			<img align="left" id="profile_picture" class="img-rounded" src="images/concert.jpg" style="width:100%; height: 350px">
-			<h1 id="titleEvent">Casa da Música Concert</h1>
 		</nav>
 		<nav id="event-info" class="navbar navbar-default">
 			<div class="info">
 				<h3>
 					<span>Event Information</span>
-					
 					<!--edit button -->
 					<!--<button id="EditButton" type="submit" class="btn btn-info pull-right"><i class="glyphicon glyphicon-pencil"></i> Edit</button>-->
-					
 					<!--attendace button-->
-  						<button class="btn btn-info btn-default dropdown-toggle pull-right" type="button" id="AttendanceButton" data-toggle="dropdown">Assign to</button>
-  							<ul class="dropdown-menu pull-right" role="menu">
-   							 <li role="presentation"><a role="menuitem" tabindex="1" href="#">Going </a></li>
-    						 <li role="presentation"><a role="menuitem" tabindex="1" href="#">Maybe </a></li>
-    						 <li role="presentation"><a role="menuitem" tabindex="1" href="#">Not going</a></li>
-  							</ul>
 				</h3>
 				<hr/>
-				
 			</div>
 			<div class="row">
 				<p><i class="glyphicon glyphicon-map-marker">&nbsp;&nbsp;</i> <b class="Local">Location: &nbsp;</b> Casa da Música, Porto</p>
@@ -69,11 +59,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="panel-body">OMG can't wait!
-								<button id="DeleteComment" type="submit" class="btn pull-right"><i class="fa fa-trash" aria-hidden="true"></i></button>
-								&nbsp;
-								<button id="EditComment" type="submit" class="btn pull-right"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-							</div>
+							<div class="panel-body">OMG can't wait!</div>
 						</div>
 					</div>
 				</div>
@@ -96,7 +82,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="panel-body">Cool stuff<button id="DeleteComment" type="submit" class="btn  pull-right"><i class="fa fa-trash" aria-hidden="true"></i></button><button id="EditComment" type="submit" class="btn  pull-right"><i class="fa fa-pencil" aria-hidden="true"></i></button></div>
+							<div class="panel-body">Cool stuff</div>
 						</div>
 					</div>
 				</div>

@@ -15,7 +15,7 @@ header .navbar-default{
 header .navbar-brand{
   font-family: 'Playfair Display', serif;
   font-size: 50px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 header .navbar-nav .dropdown{
@@ -37,11 +37,6 @@ header .navbar-nav .logout{
 header .navbar-nav .logout:hover{
   background-color: #5bc0de;
   border-radius:5px;
-}
-
-header .navbar-form{
-  padding-left:400px;
-  padding-top:10px;
 }
 
 header .navbar-nav .row{
