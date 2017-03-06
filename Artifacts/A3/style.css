@@ -118,7 +118,11 @@ img#front_picture{
   margin: -150px 0px 0px 200px;
 }
 
-h3.prof,h4.prof{
+h3.prof{
+  text-align: center;
+}
+
+h4.prof{
   text-align: center;
 }
 

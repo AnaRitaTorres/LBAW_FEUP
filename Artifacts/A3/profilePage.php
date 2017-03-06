@@ -92,8 +92,8 @@
 			<div class="col-md-4 col-md-offset-1">
 				<div id="profilePage" class="panel panel-info">
 					<div class="panel-heading">
-						<h3 class="panel-title">
-							<span class="glyphicon glyphicon-calendar"></span> Organized Events
+						<h3 class="panel-title prof">
+							<span id="profileEventsOrganized" class="glyphicon glyphicon-calendar"></span> Organized Events
 						</h3>
 					</div>
 					<div class="panel-body">
@@ -173,7 +173,7 @@
 			<div id="col2" class="col-md-4 col-md-offset-2">
 				<div id="profilePage" class="panel panel-info">
 					<div class="panel-heading">
-						<h3 class="panel-title">
+						<h3 class="panel-title prof">
 							<span class="glyphicon glyphicon-calendar"></span> Events to Go
 						</h3>
 					</div>
