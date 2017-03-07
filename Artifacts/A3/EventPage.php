@@ -8,26 +8,38 @@
 				<div class="carousel-inner">
 					<div class="item active">
 						<img src="images/concert.jpg" alt="" class="img-responsive" style="width:100%; height: 350px">
-						<div class="carousel-caption">
+						<div class="carousel-caption pull-right">
 							<h4>Concerto Casa da Música</h4>
+							<div>
+								<i class="glyphicon glyphicon-star" aria-hidden="true"></i>
+								<i class="glyphicon glyphicon-star" aria-hidden="true"></i>
+								<i class="glyphicon glyphicon-star" aria-hidden="true"></i>
+								<i class="glyphicon glyphicon-star-empty" aria-hidden="true"></i>
+								<i class="glyphicon glyphicon-star-empty" aria-hidden="true"></i>
+							</div>
+
 						</div>
 					</div>
 				</div>
 			</div>
 		</nav>
+
+
 		<nav class="navbar navbar-default">
 			<h3 class="eventPage"><span href="#InfoContent" data-toggle="collapse">	
-
+				
 					<span>Event Information</span>
 				<!--edit button -->
 				<!--<button id="EditButton" type="submit" class="btn btn-info pull-right"><i class="glyphicon glyphicon-pencil"></i> Edit</button>-->
 				<!--attendace button-->
+				
 				<button class="btn btn-info btn-default dropdown-toggle pull-right" type="button" id="AttendanceButton" data-toggle="dropdown">Assign to</button>
 				<ul class="dropdown-menu pull-right" role="menu">
 					<li role="presentation"><a role="menuitem" tabindex="1" href="#">Going </a></li>
 					<li role="presentation"><a role="menuitem" tabindex="1" href="#">Maybe </a></li>
 					<li role="presentation"><a role="menuitem" tabindex="1" href="#">Not Going</a></li>
 				</ul>
+				
 
 			</h3>
 
@@ -48,12 +60,12 @@
 						<div class="carousel-inner">
 							<div class="item active">
 								<img align="center" src="images/googlemaps.png" alt="" class="img-responsive" style="width:98%; height: 330px">
-								
+
 							</div>
 						</div>
 					</div>
 				</nav>
-				
+
 				<hr/>
 				<div class="row">
 					<p>An event created to share different types of music and showing off some new musical groups!</p>
@@ -153,6 +165,8 @@
 			</div>
 
 		</nav>
+	</div>
+
 	</div>
 	<?php
 	include ('footer.php');
