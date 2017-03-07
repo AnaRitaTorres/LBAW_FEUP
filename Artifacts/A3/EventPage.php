@@ -4,7 +4,16 @@
 
 	<div class="container">
 		<nav id="event-image" class="navbar navbar-default">
-			<img align="left" id="profile_picture" class="img-rounded" src="images/concert.jpg" style="width:100%; height: 350px">
+			<div id="mycarousel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="images/concert.jpg" alt="" class="img-responsive" style="width:100%; height: 350px">
+						<div class="carousel-caption">
+							<h4>Concerto Casa da Música</h4>
+						</div>
+					</div>
+				</div>
+			</div>
 		</nav>
 		<nav class="navbar navbar-default">
 			<h3 class="eventPage"><span href="#InfoContent" data-toggle="collapse">	
@@ -34,11 +43,21 @@
 					<p><i class="glyphicon glyphicon-time">&nbsp;&nbsp;</i><b class="Hora">Time: &nbsp;</b>12:35&nbsp;-&nbsp;19:00 </p>
 				</div>
 				<hr/>
-				<div class="row">
-					<img  id="google_maps" src="images/googlemaps.png" style="width:98%; height: 300px">
-				</div>
+				<nav id="event-image" class="navbar navbar-default">
+					<div id="mycarousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="item active">
+								<img align="center" src="images/googlemaps.png" alt="" class="img-responsive" style="width:98%; height: 330px">
+								
+							</div>
+						</div>
+					</div>
+				</nav>
+				
 				<hr/>
-				<p>An event created to share different types of music and showing off some new musical groups!</p>
+				<div class="row">
+					<p>An event created to share different types of music and showing off some new musical groups!</p>
+				</div>
 			</div>
 		</nav>
 
@@ -74,7 +93,7 @@
 									</div>
 								</div>
 								<div class="panel-body">OMG can't wait!
-									
+
 									<button id="DeleteComment" type="submit" class="btn pull-right"><i class="fa fa-trash" aria-hidden="true"></i></button>									&nbsp;
 									<button id="EditComment" type="submit" class="btn pull-right"><i class="fa fa-pencil" aria-hidden="true"></i></button>
 								</div>
