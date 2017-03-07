@@ -34,6 +34,10 @@
 					<p><i class="glyphicon glyphicon-time">&nbsp;&nbsp;</i><b class="Hora">Time: &nbsp;</b>12:35&nbsp;-&nbsp;19:00 </p>
 				</div>
 				<hr/>
+				<div class="row">
+					<img  id="google_maps" src="images/googlemaps.png" style="width:98%; height: 300px">
+				</div>
+				<hr/>
 				<p>An event created to share different types of music and showing off some new musical groups!</p>
 			</div>
 		</nav>
@@ -41,41 +45,69 @@
 
 
 		<nav id="event-comment" class="navbar navbar-default">
-				<h3 class="eventPage"><span href="#CommentContent" data-toggle="collapse">
+			<h3 class="eventPage"><span href="#CommentContent" data-toggle="collapse">
 
-					<span>Comments</span>
+					<span>Publications</span>
 
 			</h3>
-		<div id="CommentContent">
-			<hr/>
-			<div class="navbar navbar-default collapse in">
-				<div class="row">
-					<div class="col-sm-1 col-sm-offset-1">
-						<div class="thumbnail">
-							<img class="img user-photo" src="images/person.jpg">
+			<div id="CommentContent">
+				<hr/>
+				<div class="navbar navbar-default collapse in">
+					<div class="row">
+						<div class="col-sm-1 col-sm-offset-1">
+							<div class="thumbnail">
+								<img class="img user-photo" src="images/person.jpg">
+							</div>
 						</div>
-					</div>
 
-					<div class="col-sm-5 ">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<strong>Miriam Gonçalves</strong> <span class="text-muted-time">commented 5 days ago </span>
-								<div id="like-buttons" class="btn-group pull-right">
-									<a href="#" class="btn btn-default stat-item">
-										<i class="fa fa-thumbs-up icon"></i>&nbsp;10
-									</a>
-									<a href="#" class="btn btn-default stat-item ">
-										<i class="fa fa-thumbs-down icon"></i>&nbsp;24
-									</a>
+						<div class="col-sm-5 ">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<strong>Miriam Gonçalves</strong> <span class="text-muted-time">commented 5 days ago </span>
+									<div id="like-buttons" class="btn-group pull-right">
+										<a href="#" class="btn btn-default stat-item">
+											<i class="fa fa-thumbs-up icon"></i>&nbsp;10
+										</a>
+										<a href="#" class="btn btn-default stat-item ">
+											<i class="fa fa-thumbs-down icon"></i>&nbsp;24
+										</a>
+									</div>
+								</div>
+								<div class="panel-body">OMG can't wait!
+									
+									<button id="DeleteComment" type="submit" class="btn pull-right"><i class="fa fa-trash" aria-hidden="true"></i></button>									&nbsp;
+									<button id="EditComment" type="submit" class="btn pull-right"><i class="fa fa-pencil" aria-hidden="true"></i></button>
 								</div>
 							</div>
-							<div class="panel-body">OMG can't wait!
 
-								<button id="DeleteComment" type="submit" class="btn pull-right"><i class="fa fa-trash" aria-hidden="true"></i></button>								&nbsp;
-								<button id="EditComment" type="submit" class="btn pull-right"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-1 col-sm-offset-1">
+							<div class="thumbnail">
+								<img class="img-responsive user-photo" src="images/person.jpg">
 							</div>
 						</div>
+						<div class="col-sm-5 ">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<strong>Rita Torres</strong> <span class="text-muted-time">commented 5 days ago </span>
+									<div id="like-buttons" class="btn-group pull-right">
+										<a href="#" class="btn btn-default stat-item">
+											<i class="fa fa-thumbs-up icon"></i>&nbsp;10
+										</a>
+										<a href="#" class="btn btn-default stat-item ">
+											<i class="fa fa-thumbs-down icon"></i>&nbsp;24
+										</a>
+									</div>
+								</div>
 
+								<div class="panel-body">Cool stuff
+									<button id="DeleteComment" type="submit" class="btn  pull-right"><i class="fa fa-trash" aria-hidden="true"></i></button>
+									<button id="EditComment" type="submit" class="btn  pull-right"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="row">
@@ -87,44 +119,17 @@
 					<div class="col-sm-5 ">
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<strong>Rita Torres</strong> <span class="text-muted-time">commented 5 days ago </span>
-								<div id="like-buttons" class="btn-group pull-right">
-									<a href="#" class="btn btn-default stat-item">
-										<i class="fa fa-thumbs-up icon"></i>&nbsp;10
-									</a>
-									<a href="#" class="btn btn-default stat-item ">
-										<i class="fa fa-thumbs-down icon"></i>&nbsp;24
-									</a>
-								</div>
+								<strong>Miriam Gonçalves</strong>
 							</div>
-
-							<div class="panel-body">Cool stuff
-								<button id="DeleteComment" type="submit" class="btn  pull-right"><i class="fa fa-trash" aria-hidden="true"></i></button>
-								<button id="EditComment" type="submit" class="btn  pull-right"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+							<input type="text" class="form-control input-lg" id="search-church" placeholder="Comment something here...">
+							<div class="panel-heading">
+								<button id="CommentButton" type="submit" class="btn btn-info"><i class="glyphicon glyphicon-comment"></i> Comment</button>
+								<button id="CancelButton" type="button" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i>&nbsp;Cancel</button>
+								<button id="ImageButton" type="button" class="upvote btn pull-right" style="background-color: #f5f5f5"><i class="glyphicon glyphicon-camera"></i></button>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-1 col-sm-offset-1">
-					<div class="thumbnail">
-						<img class="img-responsive user-photo" src="images/person.jpg">
-					</div>
-				</div>
-				<div class="col-sm-5 ">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<strong>Miriam Gonçalves</strong>
-						</div>
-						<input type="text" class="form-control input-lg" id="search-church" placeholder="Comment something here...">
-						<div class="panel-heading">
-							<button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-comment"></i> Comment</button>
-							<button type="button" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i>&nbsp;Cancel</button>
-						</div>
-					</div>
-				</div>
-			</div>
 			</div>
 
 		</nav>
