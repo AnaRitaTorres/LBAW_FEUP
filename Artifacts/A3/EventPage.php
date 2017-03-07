@@ -144,6 +144,7 @@
 							<div class="panel-heading">
 								<button id="CommentButton" type="submit" class="btn btn-info"><i class="glyphicon glyphicon-comment"></i> Comment</button>
 								<button id="CancelButton" type="button" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i>&nbsp;Cancel</button>
+								<!-- este input vai ser do tipo file!! -->
 								<button id="ImageButton" type="button" class="upvote btn pull-right" style="background-color: #f5f5f5"><i class="glyphicon glyphicon-camera"></i></button>
 							</div>
 						</div>
