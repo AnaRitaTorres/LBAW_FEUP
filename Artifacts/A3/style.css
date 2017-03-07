@@ -26,7 +26,6 @@ header .navbar-nav .dropdown:hover{
 header .navbar-nav .logout{
    border-radius:5px;
    font-weight: bold;
-   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 header .navbar-nav .logout:hover{
@@ -75,11 +74,6 @@ header .navbar-content{
     padding-bottom:0px;
 }
 
-header .navbar-content img{
-   position: absolute;
-   clip: rect(0px,60px,200px,0px);
-}
-
 header .navbar-content:before,
 header .navbar-content:after{
     display: table;
@@ -102,11 +96,13 @@ header .navbar-right{
   font-family: 'Playfair Display', serif;
 }
 
-/* ******************************************** */
-/* ************ Profile Page ****************** */
-/* ******************************************** */
+/*profile page*/
 #pictureNav{
   background-color: #f8f8f8;
+}
+
+#pictureNav h2{
+  font-weight: bold;
 }
 
 #back_picture{
@@ -118,86 +114,47 @@ img#front_picture{
   margin: -150px 0px 0px 200px;
 }
 
-h3.prof{
-  text-align: center;
-}
 
-h4.prof{
-  text-align: center;
-}
-
-#InfoContent{
-  padding-top: 5px;
-  padding-bottom: 4px;
-  padding-left: 30px;
-  padding-right: 5px;
-}
-
-/*3 seguintes são para description*/
-#rowDescription{
-  padding-left: 40px;
-}
-
-h5.discription{
-  padding-left: 8px;
-  padding-right: 5px;
-}
-
-#DescriptionContent{
-  width: 710px;
-  height: 120px;
-  padding-top: 2px;
-  padding-right: 20px;
-  padding-bottom: 0px;
-  padding-left: 20px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-/* Daqui para a frente até ao fim do profile não sei ao certo ao que se refere nao entendi muito bem */
-.content .navbar-default a{
-  color:#5bc0de;
-  font-weight: bold;
-}
-
-.row .panel{
+.row #profilePage{
   background-color: #DCDCDC;
-}
-
-.panel-info{
   border-color:#777;
 }
 
-.media-heading{
+#profilePage .media-heading{
   color:#5bc0de;
   font-weight: bold;
 }
 
-.panel-info>.panel-heading{
+#calendar .panel-info>.panel-heading{
   background-color:#5bc0de;
   color:white;
 }
 
-.panel.date {
+#calendar .panel.date{
     margin: 0px;
     width: 60px;
     text-align: center;
 }
 
-.panel.date .monthProfile {
+#calendar .panel.date .monthProfile {
     padding: 2px 0px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.panel.date .dayProfile {
+#calendar .panel.date .dayProfile {
     padding: 3px 0px;
     font-weight: 700;
     font-size: 1.5em;
 }
 
-/*event page*/
+h3.profilePage, h4.profilePage{
+  color:#777;
+  font-weight: bold;
+}
 
+/* Daqui para a frente até ao fim do profile não sei ao certo ao que se refere nao entendi muito bem */
+/*event page*/
 h3.eventPage button#AttendanceButton{
  text-align: right;
 }
@@ -212,7 +169,8 @@ h3.eventPage{
 
 .panel>.panel-heading:after,.panel>.panel-heading:before{
 	position:absolute;
-	top:11px;left:-16px;
+	top:11px;
+  left:-16px;
 	right:100%;
 	width:0;
 	height:0;
@@ -270,7 +228,7 @@ margin: 0px 0px 20px;
 display: inline-block;
 width: 100%;
 color: white;
-background-color: #5bc0de; //cor de um dos quadrados
+background-color: #5bc0de; /*cor de um dos quadrados*/
 padding: 5px;
 text-align: center;
 text-transform: uppercase;
@@ -572,7 +530,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 /*all of the pages*/
 .content{
-  padding-top: 120px;
+  padding-top: 80px;
   z-index:1;
   overflow:hidden;
 }
@@ -581,10 +539,16 @@ input[type=range]:focus::-ms-fill-upper {
   padding:50px;
   padding-left:100px;
 }
-
+.container{
+  overflow: hidden;
+}
 .navbar-default{
    background-color:#DCDCDC;
    border:none;
+}
+.row{
+  margin-right:0px;
+  margin-left: 0px;
 }
 
 body{
