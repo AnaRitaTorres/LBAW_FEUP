@@ -3,13 +3,9 @@ header{
   z-index:2;
 }
 
-header .navbar-default{
- padding:10px;
- }
-
 header .navbar-brand{
   font-family: 'Playfair Display', serif;
-  font-size: 50px;
+  font-size: 40px;
   padding-top: 10px;
 }
 
@@ -97,64 +93,19 @@ header .navbar-right{
 }
 
 /*profile page*/
-#pictureNav{
-  background-color: #f8f8f8;
+#profile .navbar-default{
+  padding-top: 20px;
 }
 
-#pictureNav h2{
-  font-weight: bold;
-}
-
-#back_picture{
-  z-index: -1;
-}
-
-img#front_picture{
-  z-index: 8;
-  margin: -150px 0px 0px 200px;
-}
-
-
-.row #profilePage{
-  background-color: #DCDCDC;
-  border-color:#777;
-}
-
-#profilePage .media-heading{
-  color:#5bc0de;
-  font-weight: bold;
-}
-
-#calendar .panel-info>.panel-heading{
-  background-color:#5bc0de;
-  color:white;
-}
-
-#calendar .panel.date{
-    margin: 0px;
-    width: 60px;
-    text-align: center;
-}
-
-#calendar .panel.date .monthProfile {
-    padding: 2px 0px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-#calendar .panel.date .dayProfile {
-    padding: 3px 0px;
-    font-weight: 700;
-    font-size: 1.5em;
-}
-
-h3.profilePage, h4.profilePage{
-  color:#777;
-  font-weight: bold;
-}
-
-/* Daqui para a frente até ao fim do profile não sei ao certo ao que se refere nao entendi muito bem */
 /*event page*/
+#event-image img{
+  opacity:0.6;
+}
+
+#event-image h4{
+  font-weight: bold;
+  font-size:50px;
+}
 h3.eventPage button#AttendanceButton{
  text-align: right;
 }
@@ -530,7 +481,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 /*all of the pages*/
 .content{
-  padding-top: 80px;
+  padding-top: 60px;
   z-index:1;
   overflow:hidden;
 }
@@ -539,9 +490,7 @@ input[type=range]:focus::-ms-fill-upper {
   padding:50px;
   padding-left:100px;
 }
-.container{
-  overflow: hidden;
-}
+
 .navbar-default{
    background-color:#DCDCDC;
    border:none;

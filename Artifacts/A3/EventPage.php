@@ -1,92 +1,75 @@
 <?php
-    include ('header.php');
+	include ('header.php');
 ?>
 
-    <div class="container">
-        <nav id="event-image" class="navbar navbar-default">
-            <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="images/concert.jpg" alt="" class="img-responsive" style="width:100%; height: 350px">
-                        <div class="carousel-caption pull-right">
-                            <h4>Concerto Casa da Música</h4>
-                            <div>
+	<div class="container">
+		<div class="row">
+			<div id="profile" class="col-md-3">
+				<nav class="navbar navbar-default">
+					<img src="images/concert.jpg" alt="Alternate Text" class="img-responsive center-block" />
+					<h4 class="profilePage text-center">Casa da Música</h4>
+					<h5 class="text-center">
+                         <div>
                                 <i class="glyphicon glyphicon-star" aria-hidden="true"></i>
                                 <i class="glyphicon glyphicon-star" aria-hidden="true"></i>
                                 <i class="glyphicon glyphicon-star" aria-hidden="true"></i>
                                 <i class="glyphicon glyphicon-star-empty" aria-hidden="true"></i>
                                 <i class="glyphicon glyphicon-star-empty" aria-hidden="true"></i>
                             </div>
+                    </h5>
+					  <div id="InfoContent" class="navbar navbar-default collapse in">
+                <hr/>
+                <div class="row">
+                    <div class="col-md-10">
+                    <p><i class="glyphicon glyphicon-map-marker">&nbsp;</i> <b class="Local">Location:</b> Casa da Música, Porto</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10">
+                    <p><i class="glyphicon glyphicon-calendar">&nbsp;</i><b class="Data">Date:</b>12-02-2017</p>
+                </div>
+                </div>
+                <div class="row">
+                     <div class="col-md-10">
+                    <p><i class="glyphicon glyphicon-time">&nbsp;</i><b class="Hora">Time:</b>12:35&nbsp;-&nbsp;19:00 </p>
+                </div>
+                </div>
+                                 
 
-                        </div>
+                
+                <div class="row">
+                    <div class="col-md-10 text-center">
+                    <p>An event created to share different types of music and showing off some new musical groups!</p>
                     </div>
                 </div>
             </div>
-        </nav>
-
-
-        <nav class="navbar navbar-default">
-            <h3 class="eventPage"><span href="#InfoContent" data-toggle="collapse">
-
-					<span>Event Information</span>
-				<!--edit button -->
-				<!--<button id="EditButton" type="submit" class="btn btn-info pull-right"><i class="glyphicon glyphicon-pencil"></i> Edit</button>-->
-				<!--attendace button-->
-
-				<button class="btn btn-info btn-default dropdown-toggle pull-right" type="button" id="AttendanceButton" data-toggle="dropdown">Assign to</button>
-				<ul class="dropdown-menu pull-right" role="menu">
-					<li role="presentation"><a role="menuitem" tabindex="1" href="#">Going </a></li>
-					<li role="presentation"><a role="menuitem" tabindex="1" href="#">Maybe </a></li>
-					<li role="presentation"><a role="menuitem" tabindex="1" href="#">Not Going</a></li>
+				</nav>
+				</div>
+				<div class="col-sm-offset-1 col-sm-8">
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#home">Google Maps</a></li>
+					<li><a data-toggle="tab" href="#menu1">Publications</a></li>
 				</ul>
 
-
-			</h3>
-
-            <div id="InfoContent" class="navbar navbar-default collapse in">
-                <hr/>
-                <div class="row">
-                    <p><i class="glyphicon glyphicon-map-marker">&nbsp;&nbsp;</i> <b class="Local">Location: &nbsp;</b> Casa da Música, Porto</p>
-                </div>
-                <div class="row">
-                    <p><i class="glyphicon glyphicon-calendar">&nbsp;&nbsp;</i><b class="Data">Date: &nbsp;</b>12-02-2017</p>
-                </div>
-                <div class="row">
-                    <p><i class="glyphicon glyphicon-time">&nbsp;&nbsp;</i><b class="Hora">Time: &nbsp;</b>12:35&nbsp;-&nbsp;19:00 </p>
-                </div>
-                <hr/>
-                <nav id="event-image" class="navbar navbar-default">
-                    <div style="width=100%" class="text-center">
-                        <iframe id="map" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Casa da Musica&key=AIzaSyCdqMmRf8c1f_yTgtjt7zT_5tdO5UOPka4" allowfullscreen align="middle"></iframe>
+				<div class="tab-content">
+					<div id="home" class="tab-pane fade in active">
+                        <nav id="event-image" class="navbar navbar-default">
+                    <div  class="text-center">
+                        <iframe  id="map" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Casa da Musica&key=AIzaSyCdqMmRf8c1f_yTgtjt7zT_5tdO5UOPka4" allowfullscreen></iframe>
                     </div>
                 </nav>
-
-                <hr/>
-                <div class="row">
-                    <p>An event created to share different types of music and showing off some new musical groups!</p>
-                </div>
-            </div>
-        </nav>
-
-
-
-        <nav id="event-comment" class="navbar navbar-default">
-            <h3 class="eventPage"><span href="#CommentContent" data-toggle="collapse">
-
-					<span>Publications</span>
-
-			</h3>
-            <div id="CommentContent">
-                <hr/>
-                <div class="navbar navbar-default collapse in">
-                    <div class="row">
+			</div>
+					
+			<div id="menu1" class="tab-pane fade">
+				<div id="CommentContent">
+                   <div class="row">
                         <div class="col-sm-1 col-sm-offset-1">
                             <div class="thumbnail">
                                 <img class="img user-photo" src="images/person.jpg">
                             </div>
                         </div>
 
-                        <div class="col-sm-5 ">
+                        <div class="col-sm-8">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <strong>Miriam Gonçalves</strong> <span class="text-muted-time">commented 5 days ago </span>
@@ -114,7 +97,7 @@
                                 <img class="img-responsive user-photo" src="images/person.jpg">
                             </div>
                         </div>
-                        <div class="col-sm-5 ">
+                        <div class="col-sm-8 ">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <strong>Rita Torres</strong> <span class="text-muted-time">commented 5 days ago </span>
@@ -142,7 +125,7 @@
                             <img class="img-responsive user-photo" src="images/person.jpg">
                         </div>
                     </div>
-                    <div class="col-sm-5 ">
+                    <div class="col-sm-8 ">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <strong>Miriam Gonçalves</strong>
@@ -157,12 +140,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
+					</div>
+				</div>
+			</div>
 
-        </nav>
-    </div>
-
-    </div>
-    <?php
+			<?php
 	include ('footer.php');
 ?>

@@ -11,8 +11,11 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 </head>
 
 <body>
@@ -39,7 +42,7 @@
           </form>
         </div>
         <nav class="nav navbar-nav navbar-right pull-right">
-           <!--before login-->
+        <!--before login-->
          <!--<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span <span class="glyphicon glyphicon-user"></span>&nbsp;Register</a>
               <ul id="register-dp" class="dropdown-menu">
@@ -135,7 +138,7 @@
               </ul>
             </li>-->
           <!--after login-->
-         <li class="dropdown">
+        <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span <span class="glyphicon glyphicon-user"></span>&nbsp;Username</a>
              <ul class="dropdown-menu">
                 <div class="navbar-content">

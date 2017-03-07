@@ -61,8 +61,8 @@
 
         </div>
     </div>
-  </div>
+  
 <?php
-    $cssPath="style.css";
-    include ('footer.php');
+   include ('footer.php');
 ?>
+</div>
