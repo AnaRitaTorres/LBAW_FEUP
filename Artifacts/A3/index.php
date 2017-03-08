@@ -2,10 +2,10 @@
     include ('header.php');
 ?>
 
-
    <div class="row">
-       <div class="col-md-12 hidden-xs hidden-sm">
+       <div class="col-md-12 ">
            <nav id="event-image" class="navbar navbar-default">
+
              <div class="row">
                     <div class="col-md-6">
                     <img src="images/events.png" alt="" class="img-responsive">
@@ -26,9 +26,7 @@
       <br/>
       <br/>
       <ul class="event-list">
-            <div class="navbar navbar-default slogan hidden-md hidden-lg hidden-xl">
-                <h2>&nbsp;&nbsp;The Best Event Manager</h2>
-            </div>
+
             <div class="topic">
               <h4>Top 5</h4>
             </div>
@@ -74,7 +72,7 @@
                   </p>
                 </div>
               </li>
-            
+
             <li>
                 <a href="#"><img alt="Logan" src="images/mi.jpg"/></a>
                 <div class="info">
