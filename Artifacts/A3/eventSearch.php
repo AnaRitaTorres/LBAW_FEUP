@@ -165,7 +165,7 @@
 									<li>
 										<time>
 											<span class="day">19</span>
-											<span class="month">Nov</span>
+											<span class="month">Set</span>
 											<span class="year">2017</span>
 										</time>
 										<a href="#"><img alt="Ballet" src="images/ballet.jpg"/></a>
@@ -180,6 +180,47 @@
 											</p>
 										</div>
 									</li>
+
+									<li>
+
+											<time>
+												<span class="day">20</span>
+												<span class="month">Nov</span>
+												<span class="year">2017</span>
+											</time>
+			                <a href="#"><img alt="Logan" src="images/mi.jpg"/></a>
+			                <div class="info">
+			                  <h2 class="title"><a href="#">Les Miserables</a></h2>
+			                  <p class="desc">Musical Theatre</p>
+			                  <p class="desc">
+			                   London,England
+			                  </p>
+			                  <p class="desc">
+			                    9pm
+			                  </p>
+
+			                </div>
+			              </li>
+
+			              <li>
+												<time>
+													<span class="day">12</span>
+													<span class="month">Dez</span>
+													<span class="year">2017</span>
+												</time>
+			                <a href="#"><img alt="Art" src="images/art.jpg"/></a>
+			                <div class="info">
+			                  <h2 class="title"><a href="#">Faces</a></h2>
+			                  <p class="desc">Art Exhibitions</p>
+			                  <p class="desc">
+			                    Paris, France
+			                  </p>
+			                  <p class="desc">
+			                    9pm
+			                  </p>
+
+			                </div>
+			              </li>
 								</ul>
 				</nav>
 			</div>
