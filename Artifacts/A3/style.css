@@ -87,6 +87,26 @@ header .navbar-right{
 }
 
 /*main page*/
+.slogan{
+  font-family: 'Playfair Display', serif;
+  color: #777;
+  text-align: center;
+}
+
+.slogan > h2{
+  font-weight: bold;
+}
+
+.topic{
+  text-align: center;
+  color: #337ab7;
+}
+
+.topic > h4{
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
 .carousel-caption h1 {
   font-size: 300px;
   font-family: 'Playfair Display', serif;
@@ -118,7 +138,7 @@ h3.eventPage{
     padding:0px;
 }
 
-.panel-body #DeleteComment, 
+.panel-body #DeleteComment,
 .panel-body #EditComment{
   background-color: transparent;
 }

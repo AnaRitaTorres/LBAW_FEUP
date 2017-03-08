@@ -4,7 +4,7 @@
 
 
    <div class="row">
-       <div class="col-md-26 hidden-xs hidden-sm">
+       <div class="col-md-12 hidden-xs hidden-sm">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -18,33 +18,10 @@
                 <div class="item active">
                     <img src="images/internet-troll.jpg" alt="Chania" class="center-block img-responsive" >
                     <div class="carousel-caption">
-                        <h1>evO</h1>
+                        <h1 style="font-size:20em;">evO</h1>
                         <h2>
                             The best event manager!
                         </h2>
-                        <p>
-                            Check all the events
-                        </p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="images/troll-8.jpg" alt="Chania" class="center-block img-responsive" >
-                    <div class="carousel-caption">
-                        <h2>Festas Universitárias</h2>
-                        <p>
-                        Organizamos as melhores festas universitárias!
-                        </p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="images/palestras.jpg" alt="Chania" class="center-block img-responsive" >
-                    <div class="carousel-caption">
-                        <h2>Palestras</h2>
-                        <p>
-                        Patrocinamos palestras!
-                        </p>
                     </div>
                 </div>
             </div>
@@ -61,8 +38,61 @@
 
         </div>
     </div>
-  
+    <div class="hidden-md hidden-lg hidden-xl gira">
+      <br/>
+      <br/>
+      <ul class="event-list">
+            <div class="navbar navbar-default slogan">
+                <h2>&nbsp;&nbsp;The Best Event Manager</h2>
+            </div>
+            <div class="topic">
+              <h4>Top 5</h4>
+            </div>
+              <li>
+                <a href="#"><img alt="Logan" src="images/logan1.jpg"/></a>
+                <div class="info">
+                  <h2 class="title"><a href="#">Logan</a></h2>
+                  <p class="desc">Cinema</p>
+                  <p class="desc">
+                    Porto, Portugal
+                  </p>
+                  <p class="desc">
+                    9pm
+                  </p>
+
+                </div>
+              </li>
+
+              <li>
+                <a href="#"><img alt="Bastille" src="images/bastille1.jpg" /></a>
+                <div class="info">
+                  <h2 class="title"><a href="#">Bastille</a></h2>
+                  <p class="desc">Meo Marés Vivas</p>
+                  <p class="desc">
+                    Gaia, Portugal
+                  </p>
+                  <p class="desc">
+                    10pm
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a href="#"><img alt="Ballet" src="images/ballet.jpg"/></a>
+                <div class="info">
+                  <h2 class="title"><a href="#">The Nutcraker</a></h2>
+                  <p class="desc"></p>
+                  <p class="desc">
+                    Lisboa, Portugal
+                  </p>
+                  <p class="desc">
+                    10pm30
+                  </p>
+                </div>
+              </li>
+            </ul>
+    </div>
+  </div>
 <?php
    include ('footer.php');
 ?>
-</div>
