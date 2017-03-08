@@ -123,72 +123,64 @@
 				<nav class="navbar navbar-default ES">
 					<ul class="event-list">
 
-						<li>
-							<time>
-								<span class="day">3</span>
-								<span class="month">Out</span>
-								<span class="year">2016</span>
-							</time>
-							<a href="#"><img alt="FEUP Career Fair" src="http://www.empregoestagios.com/wp-content/uploads/2016/10/feup-carrerfair.jpg" /></a>
-							<div class="info">
-								<h2 class="title"><a href="#">FEUP Career Fair</a></h2>
-								<p class="desc">FEUP Fair</p>
-								<p class="desc">
-									Porto, Portugal
-								</p>
-								<p class="desc">
-									8am
-								</p>
-								<!-- <ul>
-            <li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span> Website</a></li>
-            <li style="width:50%;"><span class="fa fa-money"></span> $39.99</li>
-          </ul> -->
-							</div>
-						</li>
+									<li>
+										<time>
+											<span class="day">3</span>
+											<span class="month">Mar</span>
+											<span class="year">2017</span>
+										</time>
+										<a href="#"><img alt="Logan" src="images/logan1.jpg"/></a>
+										<div class="info">
+											<h2 class="title"><a href="#">Logan</a></h2>
+											<p class="desc">Cinema</p>
+											<p class="desc">
+												Porto, Portugal
+											</p>
+											<p class="desc">
+												9pm
+											</p>
 
-						<li>
-							<time>
-								<span class="day">4</span>
-								<span class="month">Feb</span>
-								<span class="year">2017</span>
-							</time>
-							<a href="#"><img alt="TalkABit" src="http://www.porto.pt/assets/users/1/o_HEQ7RVLHWQ.png" /></a>
-							<div class="info">
-								<h2 class="title"><a href="#">TalkABit</a></h2>
-								<p class="desc">FEUP Conference</p>
-								<p class="desc">
-									Porto, Portugal
-								</p>
-								<p class="desc">
-									2pm
-								</p>
-							</div>
-						</li>
+										</div>
+									</li>
 
-						<li>
-							<time>
-								<span class="day">19</span>
-								<span class="month">Nov</span>
-								<span class="year">2017</span>
-							</time>
-							<a href="#"><img alt="TedX" src="https://pbs.twimg.com/profile_images/560921211983523844/MXSDRnjW.png" /></a>
-							<div class="info">
-								<h2 class="title"><a href="#">TedX</a></h2>
-								<p class="desc">Conference</p>
-								<p class="desc">
-									Lisboa, Portugal
-								</p>
-								<p class="desc">
-									10am30
-								</p>
-								<!-- <ul>
-            <li style="width:33%;">1 <span class="glyphicon glyphicon-ok"></span></li>
-            <li style="width:34%;">3 <span class="fa fa-question"></span></li>
-            <li style="width:33%;">103 <span class="fa fa-envelope"></span></li>
-          </ul> -->
-							</div>
-						</li>
-					</ul>
+									<li>
+										<time>
+											<span class="day">14</span>
+											<span class="month">Jul</span>
+											<span class="year">2017</span>
+										</time>
+										<a href="#"><img alt="Bastille" src="images/bastille1.jpg" /></a>
+										<div class="info">
+											<h2 class="title"><a href="#">Bastille</a></h2>
+											<p class="desc">Meo Marés Vivas</p>
+											<p class="desc">
+												Gaia, Portugal
+											</p>
+											<p class="desc">
+												10pm
+											</p>
+										</div>
+									</li>
+
+									<li>
+										<time>
+											<span class="day">19</span>
+											<span class="month">Nov</span>
+											<span class="year">2017</span>
+										</time>
+										<a href="#"><img alt="Ballet" src="images/ballet.jpg"/></a>
+										<div class="info">
+											<h2 class="title"><a href="#">The Nutcraker</a></h2>
+											<p class="desc"></p>
+											<p class="desc">
+												Lisboa, Portugal
+											</p>
+											<p class="desc">
+												10pm30
+											</p>
+										</div>
+									</li>
+								</ul>
 				</nav>
 			</div>
 		</div>

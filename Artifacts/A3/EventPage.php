@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-12">
                 <nav id="event-image" class="navbar navbar-default">
-                    <img src="images/concert.jpg" alt="" class="img-responsive" style="width:100%; height: 350px">
+                    <img src="images/concert.jpg" alt="" class="img-responsive" style="width:100%">
                 </nav>
                 <div id="profile" class="col-md-3">
                     <nav class="navbar navbar-default">
@@ -83,23 +83,20 @@
                                                 <article class="row">
                                                     <div class="col-md-2 col-sm-2 hidden-xs">
                                                         <figure class="thumbnail">
-                                                            <img class="img-responsive" src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg"
-                                                            />
-                                                            <figcaption class="text-center">username</figcaption>
+                                                            <img class="img-responsive" src="images/tom1.jpg"/>
+                                                            <figcaption class="text-center">@Tope</figcaption>
                                                         </figure>
                                                     </div>
                                                     <div class="col-md-10 col-sm-10">
                                                         <div class="panel panel-default arrow left">
                                                             <div class="panel-body">
                                                                 <header class="text-left">
-                                                                    <div class="comment-user"><i class="fa fa-user"></i> That Guy</div>
-                                                                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+                                                                    <div class="comment-user"><i class="fa fa-user"></i> Pedro Torres</div>
+                                                                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Mar 16, 2017</time>
                                                                 </header>
                                                                 <div class="comment-post">
                                                                     <p>
-                                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                                        Ut enim ad minim veniam, quis nostrud exercitation
-                                                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                                       This seems like an amazing event!
                                                                     </p>
                                                                 </div>
                                                                 <p class="text-right"><a href="#" class="btn btn-info btn-sm"><i class="fa fa-reply"></i> Reply</a></p>
@@ -111,9 +108,8 @@
                                                 <article class="row">
                                                     <div class="col-md-2 col-sm-2 col-md-offset-1 col-sm-offset-0 hidden-xs">
                                                         <figure class="thumbnail">
-                                                            <img class="img-responsive" src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg"
-                                                            />
-                                                            <figcaption class="text-center">username</figcaption>
+                                                            <img class="img-responsive" src="images/t.jpg"/>
+                                                            <figcaption class="text-center">@Taj</figcaption>
                                                         </figure>
                                                     </div>
                                                     <div class="col-md-9 col-sm-9">
@@ -121,14 +117,12 @@
                                                             <div class="panel-heading right">Reply</div>
                                                             <div class="panel-body">
                                                                 <header class="text-left">
-                                                                    <div class="comment-user"><i class="fa fa-user"></i> That Guy</div>
-                                                                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+                                                                    <div class="comment-user"><i class="fa fa-user"></i>Tajari Henson</div>
+                                                                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Mar 16, 2016</time>
                                                                 </header>
                                                                 <div class="comment-post">
                                                                     <p>
-                                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                                        Ut enim ad minim veniam, quis nostrud exercitation
-                                                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                                     I can't wait!
                                                                     </p>
                                                                 </div>
                                                                 <p class="text-right"><a href="#" class="btn btn-info btn-sm"><i class="fa fa-reply"></i> Reply</a></p>

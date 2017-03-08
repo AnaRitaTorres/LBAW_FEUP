@@ -97,6 +97,10 @@ header .navbar-right{
   padding-top: 20px;
 }
 
+#profile img{
+  padding:10px;
+}
+
 /*event page*/
 #event-image h4{
   font-weight: bold;

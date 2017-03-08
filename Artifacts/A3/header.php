@@ -144,12 +144,12 @@
                 <div class="navbar-content">
                   <div class="row">
                     <div class="col-md-5">
-                      <img src="images/person.jpg" alt="Alternate Text" class="img-responsive"/>
+                      <img src="images/tom1.jpg" alt="Alternate Text" class="img-responsive"/>
                     </div>
                      <div class="col-md-6">
-                      <span>Bhaumik Patel</span>
+                      <span>Pedro Torres</span>
                       <p class="text-muted small">
-                        mail@gmail.com</p>
+                       pedrocas35@sapo.pt</p>
                     </div>
                   </div>
                 </div>

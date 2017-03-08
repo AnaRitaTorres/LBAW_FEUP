@@ -6,14 +6,14 @@
 		<div class="row">
 			<div id="profile" class="col-md-3">
 				<nav class="navbar navbar-default">
-					<img src="images/person.jpg" alt="Alternate Text" class="img-responsive center-block" />
-					<h3 class="profilePage text-center">Miriam Torres</h3>
-					<h5 class="text-center">@mimiTo</h5>
+					<img src="images/tom1.jpg" alt="Alternate Text" class="img-responsive center-block" />
+					<h3 class="profilePage text-center">Pedro Torres</h3>
+					<h5 class="text-center">@Tope</h5>
 					<div id="Content" class="navbar navbar-default">
 						<hr/>
 						<div class="row">
 							<div class="col-md-10">
-								<p><i class="glyphicon glyphicon-user"></i> Miriam Catrina Costa Torres</p>
+								<p><i class="glyphicon glyphicon-user"></i> Pedro Miguel Torres</p>
 								</p>
 							</div>
 						</div>
@@ -29,12 +29,12 @@
 						</div>
 						<div class="row">
 							<div class="col-md-10">
-								<p><i class="fa fa-venus">&nbsp;</i>Female</p>
+								<p><i class="fa fa-mars">&nbsp;</i>Male</p>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-10">
-								<p><i class="glyphicon glyphicon-envelope"></i> miriamtorres69@sapo.pt</p>
+								<p><i class="glyphicon glyphicon-envelope"></i> pedrocas35@sapo.pt</p>
 							</div>
 						</div>
 						<div class="row">
@@ -58,19 +58,18 @@
 									<li>
 										<time>
 											<span class="day">3</span>
-											<span class="month">Out</span>
-											<span class="year">2016</span>
+											<span class="month">Mar</span>
+											<span class="year">2017</span>
 										</time>
-										<a href="#"><img alt="FEUP Career Fair" src="http://www.empregoestagios.com/wp-content/uploads/2016/10/feup-carrerfair.jpg"
-											/></a>
+										<a href="#"><img alt="Logan" src="images/logan1.jpg"/></a>
 										<div class="info">
-											<h2 class="title"><a href="#">FEUP Career Fair</a></h2>
-											<p class="desc">FEUP Fair</p>
+											<h2 class="title"><a href="#">Logan</a></h2>
+											<p class="desc">Cinema</p>
 											<p class="desc">
 												Porto, Portugal
 											</p>
 											<p class="desc">
-												8am
+												9pm
 											</p>
 
 										</div>
@@ -78,19 +77,19 @@
 
 									<li>
 										<time>
-											<span class="day">4</span>
-											<span class="month">Feb</span>
+											<span class="day">14</span>
+											<span class="month">Jul</span>
 											<span class="year">2017</span>
 										</time>
-										<a href="#"><img alt="TalkABit" src="http://www.porto.pt/assets/users/1/o_HEQ7RVLHWQ.png" /></a>
+										<a href="#"><img alt="Bastille" src="images/bastille1.jpg" /></a>
 										<div class="info">
-											<h2 class="title"><a href="#">TalkABit</a></h2>
-											<p class="desc">FEUP Conference</p>
+											<h2 class="title"><a href="#">Bastille</a></h2>
+											<p class="desc">Meo Marés Vivas</p>
 											<p class="desc">
-												Porto, Portugal
+												Gaia, Portugal
 											</p>
 											<p class="desc">
-												2pm
+												10pm
 											</p>
 										</div>
 									</li>
@@ -101,15 +100,15 @@
 											<span class="month">Nov</span>
 											<span class="year">2017</span>
 										</time>
-										<a href="#"><img alt="TedX" src="https://pbs.twimg.com/profile_images/560921211983523844/MXSDRnjW.png" /></a>
+										<a href="#"><img alt="Ballet" src="images/ballet.jpg"/></a>
 										<div class="info">
-											<h2 class="title"><a href="#">TedX</a></h2>
-											<p class="desc">Conference</p>
+											<h2 class="title"><a href="#">The Nutcraker</a></h2>
+											<p class="desc"></p>
 											<p class="desc">
 												Lisboa, Portugal
 											</p>
 											<p class="desc">
-												10am30
+												10pm30
 											</p>
 										</div>
 									</li>
@@ -129,11 +128,11 @@
 								labels: ["Cinema", "Concerts", "Theatre", "Exhibitions", "Dance"],
 								datasets: [{
 									backgroundColor: [
-										"#2ecc71",
+										"#008B8B",
 										"#3498db",
 										"#95a5a6",
-										"#9b59b6",
-										"#f1c40f"
+										"#000080",
+										"#B0E0E6"
 									],
 									data: [12, 19, 3, 17, 28]
 								}]
