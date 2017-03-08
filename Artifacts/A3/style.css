@@ -98,10 +98,6 @@ header .navbar-right{
 }
 
 /*event page*/
-#event-image img{
-  opacity:0.6;
-}
-
 #event-image h4{
   font-weight: bold;
   font-size:50px;
@@ -118,6 +114,13 @@ h3.eventPage{
     padding:0px;
 }
 
+.panel-body #DeleteComment, 
+.panel-body #EditComment{
+  background-color: transparent;
+}
+.panel-heading #ImageButton{
+  background-color: transparent;
+}
 .panel>.panel-heading:after,.panel>.panel-heading:before{
 	position:absolute;
 	top:11px;
@@ -143,16 +146,13 @@ h3.eventPage{
   border: 1px solid #777;
 }
 
-a.stat-item{
-  border: 1px solid #777;
+#menu1{
+  padding-top:25px;
 }
 
-
-
 /*search page*/
-body {
-padding: 60px 0px;
-background-color: white;
+.navbar #filters{
+  text-align: center;
 }
 
 .well{
@@ -502,6 +502,10 @@ input[type=range]:focus::-ms-fill-upper {
 
 body{
   background-color:#f8f8f8;
+}
+
+.specific{
+  padding-top: 5em;
 }
 
 /*footer*/

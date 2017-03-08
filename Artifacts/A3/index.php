@@ -4,7 +4,7 @@
 
 
    <div class="row">
-       <div class="col-md-26">
+       <div class="col-md-26 hidden-xs hidden-sm">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -16,7 +16,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="images/internet-troll.jpg" alt="Chania" class="center-block" style="width: 1200px; height: 550px;">
+                    <img src="images/internet-troll.jpg" alt="Chania" class="center-block img-responsive" >
                     <div class="carousel-caption">
                         <h1>evO</h1>
                         <h2>
@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="images/troll-8.jpg" alt="Chania" class="center-block" style="width: 1200px; height: 550px;">
+                    <img src="images/troll-8.jpg" alt="Chania" class="center-block img-responsive" >
                     <div class="carousel-caption">
                         <h2>Festas Universitárias</h2>
                         <p>
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="images/palestras.jpg" alt="Chania" class="center-block" style="width: 1200px; height: 550px;">
+                    <img src="images/palestras.jpg" alt="Chania" class="center-block img-responsive" >
                     <div class="carousel-caption">
                         <h2>Palestras</h2>
                         <p>

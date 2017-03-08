@@ -66,37 +66,6 @@
              </label>
           </div>
         </div>
-        <!-- Adress inputs -->
-        <div class="form-group">
-          <label class="col-md-4 control-label col-xs-12" for="Address">Address</label>
-          <div class="col-md-2  col-xs-4">
-            <input id="Address" name="Address" type="text" placeholder="District" class="form-control input-md ">
-        </div>
-        <div class="col-md-2 col-xs-4">
-          <input id="Address" name="Address" type="text" placeholder="Area" class="form-control input-md ">
-       </div>
-      </div>
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="Address"></label>
-        <div class="col-md-2  col-xs-4">
-          <input id="Address" name="Address" type="text" placeholder="Street" class="form-control input-md ">
-        </div>
-        <div class="col-md-2 col-xs-4">
-          <input id="Address" name="Address" type="text" placeholder="Zip-Code" class="form-control input-md ">
-        </div>
-      </div>
-      <!-- Job input-->
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="Job">Job</label>
-        <div class="col-md-4">
-          <div class="input-group">
-            <div class="input-group-addon">
-              <i class="fa fa-briefcase"></i>
-            </div>
-             <input id="Job" name="Job" type="text" placeholder="Job" class="form-control input-md">
-            </div>
-          </div>
-        </div>
         <!-- Phone Number input-->
         <div class="form-group">
           <label class="col-md-4 control-label" for="Phone number ">Phone Number </label>
@@ -121,13 +90,7 @@
           </div>
           </div>
         </div>
-        <!-- Overview textarea -->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="Overview (max 200 words)">Overview (max 200 words)</label>
-          <div class="col-md-4">
-            <textarea class="form-control" rows="10"  id="Overview (max 200 words)" name="Overview (max 200 words)">Overview</textarea>
-          </div>
-          </div>
+       
           <!-- Submit and Cancel Button -->
           <div class="form-group">
           <label class="col-md-4 control-label" ></label>

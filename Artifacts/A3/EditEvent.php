@@ -7,7 +7,8 @@
         <form class="form-horizontal">
           <fieldset>
             <!-- Form Name -->
-            <legend>Edit Event Page</legend>
+            <legend>Create Event</legend>
+            <!--<legend>Edit Event</legend>-->
             <!-- Event Title input-->
            <div class="form-group">
             <label class="col-md-4 control-label" for="EventTitle">Event Title</label>
@@ -64,7 +65,7 @@
 
             <!-- Time Of Event Input-->
           <div class="form-group">
-            <label class="col-md-4 control-label" for="EventDate">Date</label>
+            <label class="col-md-4 control-label" for="EventDate">Time</label>
               <div class="col-md-4">
                 <div class="input-group">
                   <div class="input-group-addon">
@@ -77,9 +78,9 @@
         
         <!-- Overview textarea -->
         <div class="form-group">
-          <label class="col-md-4 control-label" for="Overview (max 200 words)">Overview (max 200 words)</label>
+          <label class="col-md-4 control-label" for="Overview (max 200 words)">Overview</label>
           <div class="col-md-4">
-            <textarea class="form-control" rows="10"  id="Overview (max 200 words)" name="Overview (max 200 words)">Overview</textarea>
+            <textarea class="form-control" rows="10"  id="Overview (max 200 words)" placeholder="max 200 words"></textarea>
           </div>
           </div>
           <!-- Submit and Cancel Button -->

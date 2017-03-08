@@ -2,13 +2,13 @@
 	include ('header.php');
 ?>
 
-	<div class="container">
+	<div class="container specific">
 		<div class="row">
 			<div id="profile" class="col-md-3">
 				<nav class="navbar navbar-default">
 					<img src="images/person.jpg" alt="Alternate Text" class="img-responsive center-block" />
-					<h4 class="profilePage text-center">Miriam Torres</h4>
-					<h5 class="text-center">mimiTo</h5>
+					<h3 class="profilePage text-center">Miriam Torres</h3>
+					<h5 class="text-center">@mimiTo</h5>
 					<div id="Content" class="navbar navbar-default">
 						<hr/>
 						<div class="row">
@@ -52,9 +52,7 @@
 
 				<div class="tab-content">
 					<div id="home" class="tab-pane fade in active">
-
-						
-							<nav class="navbar navbar-default ES">
+						<nav class="ES">
 								<ul class="event-list">
 
 									<li>
@@ -120,8 +118,28 @@
 						</div>
 					
 					<div id="menu1" class="tab-pane fade">
-						<h3>Menu 1</h3>
-						<p>Some content in menu 1.</p>
+						<div>
+						<canvas id="myEvents"></canvas>
+					</div>
+					<script>
+						var ctx = document.getElementById("myEvents").getContext('2d');
+						var myChart = new Chart(ctx, {
+							type: 'pie',
+							data: {
+								labels: ["Cinema", "Concerts", "Theatre", "Exhibitions", "Dance"],
+								datasets: [{
+									backgroundColor: [
+										"#2ecc71",
+										"#3498db",
+										"#95a5a6",
+										"#9b59b6",
+										"#f1c40f"
+									],
+									data: [12, 19, 3, 17, 28]
+								}]
+							}
+						});
+					</script>
 					</div>
 				</div>
 			</div>
