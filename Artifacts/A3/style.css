@@ -86,7 +86,19 @@ header .navbar-right{
   padding-right:20px;
 }
 
+
+
 /*main page*/
+
+.title h1{
+ font-size: 8em;
+ font-family: 'Playfair Display', serif;
+}
+
+.title h3{
+   font-family: 'Playfair Display', serif;
+}
+
 .slogan{
   font-family: 'Playfair Display', serif;
   color: #777;

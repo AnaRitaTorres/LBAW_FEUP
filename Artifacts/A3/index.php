@@ -5,44 +5,28 @@
 
    <div class="row">
        <div class="col-md-12 hidden-xs hidden-sm">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="images/internet-troll.jpg" alt="Chania" class="center-block img-responsive" >
-                    <div class="carousel-caption">
-                        <h1 style="font-size:20em;">evO</h1>
-                        <h2>
-                            The best event manager!
-                        </h2>
+           <nav id="event-image" class="navbar navbar-default">
+             <div class="row">
+                    <div class="col-md-6">
+                    <img src="images/events.png" alt="" class="img-responsive">
                     </div>
-                </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-
-        </div>
-    </div>
-    <div class="hidden-md hidden-lg hidden-xl gira">
+                     <div class="col-md-6 text-center">
+                    <div class="title">
+                      <h1>evO</h1>
+                      <h3>The Best Event Manager!</h3>
+                    </div>
+                     </div>
+             </div>
+            </nav>
+       </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+    <div class="gira">
       <br/>
       <br/>
       <ul class="event-list">
-            <div class="navbar navbar-default slogan">
+            <div class="navbar navbar-default slogan hidden-md hidden-lg hidden-xl">
                 <h2>&nbsp;&nbsp;The Best Event Manager</h2>
             </div>
             <div class="topic">
@@ -90,7 +74,37 @@
                   </p>
                 </div>
               </li>
-            </ul>
+            
+            <li>
+                <a href="#"><img alt="Logan" src="images/mi.jpg"/></a>
+                <div class="info">
+                  <h2 class="title"><a href="#">Les Miserables</a></h2>
+                  <p class="desc">Musical Theatre</p>
+                  <p class="desc">
+                   London,England
+                  </p>
+                  <p class="desc">
+                    9pm
+                  </p>
+
+                </div>
+              </li>
+              <li>
+                <a href="#"><img alt="Art" src="images/art.jpg"/></a>
+                <div class="info">
+                  <h2 class="title"><a href="#">Faces</a></h2>
+                  <p class="desc">Art Exhibitions</p>
+                  <p class="desc">
+                    Paris, France
+                  </p>
+                  <p class="desc">
+                    9pm
+                  </p>
+
+                </div>
+              </li>
+              </ul>
+    </div>
     </div>
   </div>
 <?php
