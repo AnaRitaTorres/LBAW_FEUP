@@ -4,7 +4,7 @@
                 <div class="navbar-content">
                   <div class="row">
                     <div class="col-md-5">
-                      <img src=<?php $_SESSION['picture']?> alt="Alternate Text" class="img-responsive"/>
+                      <img src=<?php echo $_SESSION['picture']; ?> alt="Alternate Text" class="img-responsive"/>
                     </div>
                      <div class="col-md-6">
                       <span><?php echo $_SESSION['name']; ?></span>
@@ -28,7 +28,12 @@
                           </div>
                            <div class="col-lg-12">
                             <p>
-                              <a href="editEvent.php" class="btn btn-info btn-md btn-block">Create Event</a>
+                              <a href="editEvent.php?create=1" class="btn btn-info btn-md btn-block">Create Event</a>
+                            </p>
+                          </div>
+			  <div class="col-lg-12">
+                            <p>
+                              <a href="changePassword.php" class="btn btn-info btn-md btn-block">Change Password</a>
                             </p>
                           </div>
                         </div>

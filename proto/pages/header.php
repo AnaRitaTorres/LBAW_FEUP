@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php 
+  include_once("../config/init.php")
+?>
 
 <head>
   <title>evO</title>
@@ -43,7 +46,7 @@
         </div>
         <nav class="nav navbar-nav navbar-right pull-right">
           <?php
-            session_start();
+            //session_start();
             if(isset($_SESSION["username"])){
               include_once('afterLogin.php');
             }

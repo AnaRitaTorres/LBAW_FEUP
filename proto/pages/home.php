@@ -25,82 +25,14 @@ include_once('header.php');
       <br/>
       <br/>
       <ul class="event-list">
-
-            <div class="topic">
+          <div class="topic">
               <h4>Top 5</h4>
             </div>
-              <li>
-                <a href="#"><img alt="Logan" src="../images/logan1.jpg"/></a>
-                <div class="info">
-                  <h2 class="title"><a href="#">Logan</a></h2>
-                  <p class="desc">Cinema</p>
-                  <p class="desc">
-                    Porto, Portugal
-                  </p>
-                  <p class="desc">
-                    9pm
-                  </p>
 
-                </div>
-              </li>
-
-              <li>
-                <a href="#"><img alt="Bastille" src="../images/bastille1.jpg" /></a>
-                <div class="info">
-                  <h2 class="title"><a href="#">Bastille</a></h2>
-                  <p class="desc">Meo Marés Vivas</p>
-                  <p class="desc">
-                    Gaia, Portugal
-                  </p>
-                  <p class="desc">
-                    10pm
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <a href="#"><img alt="Ballet" src="../images/ballet.jpg"/></a>
-                <div class="info">
-                  <h2 class="title"><a href="#">The Nutcraker</a></h2>
-                  <p class="desc"></p>
-                  <p class="desc">
-                    Lisboa, Portugal
-                  </p>
-                  <p class="desc">
-                    10pm30
-                  </p>
-                </div>
-              </li>
-
-            <li>
-                <a href="#"><img alt="Logan" src="../images/mi.jpg"/></a>
-                <div class="info">
-                  <h2 class="title"><a href="#">Les Miserables</a></h2>
-                  <p class="desc">Musical Theatre</p>
-                  <p class="desc">
-                   London,England
-                  </p>
-                  <p class="desc">
-                    9pm
-                  </p>
-
-                </div>
-              </li>
-              <li>
-                <a href="#"><img alt="Art" src="../images/art.jpg"/></a>
-                <div class="info">
-                  <h2 class="title"><a href="#">Faces</a></h2>
-                  <p class="desc">Art Exhibitions</p>
-                  <p class="desc">
-                    Paris, France
-                  </p>
-                  <p class="desc">
-                    9pm
-                  </p>
-
-                </div>
-              </li>
-              </ul>
+             <?php
+             include_once('bestEvents.php');
+             ?>
+         </ul>
     </div>
     </div>
   </div>

@@ -1,10 +1,16 @@
 <?php
     include_once('../pages/header.php');
+    include_once('../database/users.php');
+
+    $info = getUserInfo($_SESSION['username']);
 ?>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
+/>
 
     <div class="row">
       <div class="col-md-10 ">
-        <form class="form-horizontal">
+        <form class="form-horizontal" action="../actions/editProfile.php" method="post">
           <fieldset>
             <!-- Form Name -->
             <legend>Edit Profile</legend>
@@ -16,7 +22,7 @@
               <div class="input-group-addon">
                 <i class="glyphicon glyphicon-user"></i>
               </div>
-                <input id="Name" name="Name" type="text" placeholder="Name" class="form-control input-md">
+                <input id="Name" name="Name" type="text" placeholder="Name" class="form-control input-md" value=<?php echo $info['name'] ?>>
               </div>
             </div>
           </div>
@@ -28,15 +34,15 @@
               <div class="input-group-addon">
                 <i class="glyphicon glyphicon-user"></i>
               </div>
-                <input id="Surname" name="Surname" type="text" placeholder="Surname" class="form-control input-md">
+                <input id="Surname" name="Surname" type="text" placeholder="Surname" class="form-control input-md" value=<?php echo $info['surname'] ?>>
               </div>
             </div>
           </div>
             <!-- Upload Photo Button -->
           <div class="form-group">
-            <label class="col-md-4 control-label" for="Upload photo">Upload photo</label>
+            <label class="col-md-4 control-label" for="Upload_photo">Upload photo</label>
             <div class="col-md-4">
-              <input id="Upload photo" name="Upload photo" class="input-file" type="file">
+              <input id="Upload_photo" name="Upload_photo" class="input-file" type="file">			  
             </div>
           </div>
           <!-- Date Of Birth Input-->
@@ -46,8 +52,21 @@
                 <div class="input-group">
                   <div class="input-group-addon">
                     <i class="fa fa-birthday-cake"></i>
-                </div>
-                <input id="Date Of Birth" name="Date Of Birth" type="date" placeholder="Date Of Birth" class="form-control input-md">
+                  </div>
+    								<input class="form-control" id="date" name="DateOfBirth" placeholder="MM/DD/YYYY" type="text" id="DateOfBirth" value=<?php echo $info['birthday'] ?> />
+    							<script>
+    								$(document).ready(function () {
+    									var date_input = $('input[name="DateOfBirth"]'); //our date input has the name "date"
+    									var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+    									var options = {
+    										format: 'mm/dd/yyyy',
+    										container: container,
+    										todayHighlight: true,
+    										autoclose: true,
+    									};
+    									date_input.datepicker(options);
+    								})
+    							</script>
               </div>
             </div>
           </div>
@@ -56,25 +75,25 @@
             <label class="col-md-4 control-label" for="Gender">Gender</label>
             <div class="col-md-4">
               <label class="radio-inline" for="Gender-0">
-                <input type="radio" name="Gender" id="Gender-0" value="1" checked="checked">Male
+                <input type="radio" name="Gender" id="Gender-0" value="male" checked="checked">Male
               </label>
               <label class="radio-inline" for="Gender-1">
-                <input type="radio" name="Gender" id="Gender-1" value="2">Female
+                <input type="radio" name="Gender" id="Gender-1" value="female">Female
              </label>
              <label class="radio-inline" for="Gender-2">
-               <input type="radio" name="Gender" id="Gender-2" value="3">Other
+               <input type="radio" name="Gender" id="Gender-2" value="other">Other
              </label>
           </div>
         </div>
         <!-- Phone Number input-->
         <div class="form-group">
-          <label class="col-md-4 control-label" for="Phone number ">Phone Number </label>
+          <label class="col-md-4 control-label" for="Phone Number ">Phone Number </label>
           <div class="col-md-4">
               <div class="input-group">
                 <div class="input-group-addon">
                   <i class="glyphicon glyphicon-phone"></i>
               </div>
-                <input id="Phone Number " name="Phone Number " type="tel" placeholder="Primary Phone Number " class="form-control input-md">
+                <input id="Phone Number " name="PhoneNumber" type="text" placeholder="Primary Phone Number " class="form-control input-md" value=<?php echo $info['phonenumber'] ?>>
               </div>
             </div>
         </div>
@@ -86,17 +105,17 @@
             <div class="input-group-addon">
             <i class="glyphicon glyphicon-envelope"></i>
             </div>
-            <input id="Email Address" name="Email Address" type="text" placeholder="Email Address" class="form-control input-md">
+            <input id="Email Address" name="EmailAddress" type="text" placeholder="Email Address" class="form-control input-md" value=<?php echo $info['email'] ?>>
           </div>
           </div>
         </div>
-       
+
           <!-- Submit and Cancel Button -->
           <div class="form-group">
           <label class="col-md-4 control-label" ></label>
             <div class="col-md-4">
             <button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-ok"></i> Submit</button>
-            <button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+            <button type="cancel" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
           </div>
         </div>
       </fieldset>

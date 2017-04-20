@@ -1,60 +1,88 @@
 <?php
-	include ('../pages/header.php');
+	include_once ('../pages/header.php');
+	include_once ('../database/events.php');
+
+	$info = getEventInfo($_GET['id']);
 ?>
 
     <div class="container specific">
         <div class="row">
             <div class="col-md-12">
                 <nav id="event-image" class="navbar navbar-default">
-                    <img src="../images/concert.jpg" alt="" class="img-responsive" style="width:100%">
+                    <img src=<?php echo $info['picture'] ?> alt="" class="img-responsive" style="width:100%">
                 </nav>
                 <div id="profile" class="col-md-3">
                     <nav class="navbar navbar-default">
-                        <h4 class="profilePage text-center">Casa da Música</h4>
+                        <h4 class="profilePage text-center"><?php echo $info['title']; ?></h4>
                         <h5 class="text-center">
                             <div>
-                                <i class="glyphicon glyphicon-star" aria-hidden="true"></i>
-                                <i class="glyphicon glyphicon-star" aria-hidden="true"></i>
-                                <i class="glyphicon glyphicon-star" aria-hidden="true"></i>
-                                <i class="glyphicon glyphicon-star-empty" aria-hidden="true"></i>
-                                <i class="glyphicon glyphicon-star-empty" aria-hidden="true"></i>
+															<?php
+																	$i=0;
+																	for (; $i < $info['average_rate']; $i++) {
+																		echo '<i class="glyphicon glyphicon-star" aria-hidden="true"></i>';
+																	}
+																	for(;$i < 5; $i++){
+																		echo '<i class="glyphicon glyphicon-star-empty" aria-hidden="true"></i>';
+																	}
+															?>
                             </div>
                         </h5>
                         <div class="text-center">
-                            
-                             <!--<button id="Edit" class="btn btn-info "><i class="glyphicon glyphicon-pencil"></i>&nbsp;Edit</button>
-                             <button id="Add" class="btn btn-info "><i class="glyphicon glyphicon-plus"></i>&nbsp;Add Friends</button>-->
-                             <div class="dropdown">
-                             <button class="btn btn-info  dropdown-toggle" type="button" id="AttendanceButton" data-toggle="dropdown">Attendance</button>
-                                <ul class="dropdown-menu " role="menu">
-                                    <li role="presentation"><a role="menuitem" tabindex="1" href="#">Going </a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="1" href="#">Interested </a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="1" href="#">Not Going</a></li>
-                                </ul>
-                            </div>
+
+														<?php
+															if(isEventFromUser($_SESSION['id'], $_GET['id'])){
+																echo '<div class ="row" >';
+																echo '<div class ="col-md-6">';
+																echo '<form method="get" action="editEvent.php">';
+																echo '<input type="hidden" name="create" value=0 />';
+																echo '<input type="hidden" name="id" value='. $_GET['id'] .' />';
+																echo '<button id="Edit" class="btn btn-info" type="submit"><i class="glyphicon glyphicon-pencil"></i>&nbsp;Edit</button>';
+																echo '</form>';
+																echo '</div>';
+																echo '<div class="col-md-4">';
+																echo '<form method="get" action="../actions/deleteEvent.php">';
+																echo '<input type="hidden" name="id" value='. $_GET['id'] .' />';
+																echo '<button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-remove-circle"></i> Delete</Button>';
+																echo '</form>';
+																echo '</div>';
+																echo '</div>';
+
+	                             	//echo '<button id="Add" class="btn btn-info "><i class="glyphicon glyphicon-plus"></i>&nbsp;Add Friends</button>';
+															}
+															else{
+																echo '<div class="dropdown">';
+	                              echo '<button class="btn btn-info  dropdown-toggle" type="button" id="AttendanceButton" data-toggle="dropdown">Attendance</button>';
+	                                 echo '<ul class="dropdown-menu " role="menu">';
+	                                     echo '<li role="presentation"><a role="menuitem" tabindex="1" href="#">Going </a></li>';
+	                                     echo '<li role="presentation"><a role="menuitem" tabindex="1" href="#">Interested </a></li>';
+	                                     echo '<li role="presentation"><a role="menuitem" tabindex="1" href="#">Not Going</a></li>';
+	                                 echo '</ul>';
+	                             echo '</div>';
+															}
+														 ?>
+
                         </div>
                         <div id="InfoContent" >
                             <hr/>
                             <div class="row">
                                 <div class=" col-offset-1 col-md-10">
-                                    <p>&nbsp;<i class="glyphicon glyphicon-map-marker"></i> <b class="Local">Location:</b> Casa
-                                        da Música, Porto</p>
+                                    <p>&nbsp;<i class="glyphicon glyphicon-map-marker"></i> <b class="Local">Location:</b> <?php echo $info['address'] ?></p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-offset-1 col-md-10">
-                                    <p>&nbsp;<i class="glyphicon glyphicon-calendar"></i><b class="Data">Date:</b>12-02-2017</p>
+                                    <p>&nbsp;<i class="glyphicon glyphicon-calendar"></i><b class="Data">Date:</b><?php echo $info['date'] ?></p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-offset-1 col-md-10">
-                                    <p>&nbsp;<i class="glyphicon glyphicon-time"></i><b class="Hora">Time:</b>12:35&nbsp;-&nbsp;19:00
+                                    <p>&nbsp;<i class="glyphicon glyphicon-time"></i><b class="Hora">Time:</b><?php echo $info['time'] ?>
                                     </p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-offset-1 col-md-10">
-                                    <p>An event created to share different types of music and showing off some new musical groups!</p>
+                                    <p><?php echo $info['overview'] ?></p>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +96,7 @@
 
                     <div class="tab-content">
                         <div id="home" class="tab-pane fade in active" style="height: 25em">
-                        <iframe id="map" style="width:100%; height:100%;" class="img-responsive center-block" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Casa da Musica&key=AIzaSyCdqMmRf8c1f_yTgtjt7zT_5tdO5UOPka4"
+                        <iframe id="map" style="width:100%; height:100%;" class="img-responsive center-block" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=<?php echo $info['address'] ?>&key=AIzaSyCdqMmRf8c1f_yTgtjt7zT_5tdO5UOPka4"
                             allowfullscreen></iframe>
                     </div>
 

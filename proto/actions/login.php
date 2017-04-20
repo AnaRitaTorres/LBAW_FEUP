@@ -17,12 +17,15 @@
 
         $userInfo = getUserInfo($username);
 
-        $_SESSION['id'] = $userInfo['idCustomer'];
+        $_SESSION['id'] = $userInfo['idcustomer'];
         $_SESSION['email'] = $userInfo['email'];
         $_SESSION['name'] = $userInfo['name'];
         $_SESSION['name'] .= " ";
         $_SESSION['name'] .= $userInfo['surname'];
         $_SESSION['picture'] = $userInfo['picture'];
+	    $_SESSION['gender'] = $userInfo['gender'];
+	    $_SESSION['date'] = $userInfo['birthday'];
+	    $_SESSION['phone'] = $userInfo['phonenumber'];
     }
     header('Location: ../index.php');
 }
