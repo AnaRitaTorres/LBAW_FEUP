@@ -129,11 +129,6 @@ header .navbar-right{
   font-weight: bold;
 }
 
-.carousel-caption h1 {
-  font-size: 300px;
-  font-family: 'Playfair Display', serif;
-}
-
 /*profile page*/
 #profile .navbar-default{
   padding-top: 20px;
@@ -209,11 +204,13 @@ h3.eventPage{
   text-align: left;
 }
 
+
 .event-list {
 list-style: none;
 margin: 0px;
 padding: 0px;
 }
+
 
 .event-list > li {
 background-color: rgb(255, 255, 255);
@@ -221,23 +218,28 @@ padding: 0px;
 margin: 0px 0px 20px;
 }
 
+
 .event-list > li > time {
 display: inline-block;
 width: 100%;
 color: white;
-background-color: #5bc0de; /*cor de um dos quadrados*/
+background-color: #5bc0de;
 padding: 5px;
 text-align: center;
 text-transform: uppercase;
 }
 
+
+
 .event-list > li > time > span {
 display: none;
 }
 
+
 .event-list > li > time > .day {
+padding-top: 20px;
 display: block;
-font-size: 56pt;
+font-size: 50pt;
 font-weight: 100;
 line-height: 1;
 color: #777;
@@ -245,7 +247,7 @@ color: #777;
 
 .event-list > li time > .month {
 display: block;
-font-size: 18pt;
+font-size: 15pt;
 font-weight: 900;
 line-height: 1;
 color: white;

@@ -1,5 +1,5 @@
 <?php
-  include_once('../config/init.php');
+  include_once('../../config/init.php');
 
   function createUser($birthday, $email, $gender, $name, $surname, $username, $password, $phoneNumber) {
     global $conn;
@@ -34,6 +34,13 @@
 	  return $stmt->fetch();
   }
 
+  function getUserInformation($id) {
+	  global $conn;
+	  $stmt = $conn->prepare("SELECT * FROM customer WHERE idcustomer = ?");
+	  $stmt->execute(array($id));
+	  return $stmt->fetch();
+  }
+
   function updateUserPassword($id, $password) {
 	  global $conn;
     $stmt = $conn->prepare("UPDATE customer SET password=? WHERE idcustomer=?");
@@ -54,9 +61,16 @@
 
   function getUserStatistics($id, $stattype){
     global $conn;
-    $stmt = $conn->prepare("SELECT cinemacount, concertcount, dancecount, exhbitioncount, theatrecount FROM statistics WHERE stattype=? AND idcustomer=?");
+    $stmt = $conn->prepare("SELECT cinemacount, concertcount, dancecount, exhibitioncount, theatrecount FROM statistics WHERE stattype=? AND idcustomer=?");
     $stmt->execute(array($stattype, $id));
     return $stmt->fetch();
+  }
+  
+  function getUserEvents($id) {
+     global $conn;
+     $stmt = $conn->prepare("SELECT * FROM event JOIN host USING(idevent) WHERE idcustomer = ? ORDER BY time DESC"); 
+     $stmt->execute(array($id));
+     return $stmt->fetchAll();
   }
 
 ?>

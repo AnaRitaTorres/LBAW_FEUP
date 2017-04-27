@@ -1,0 +1,11 @@
+<?php
+ include_once('../../config/init.php');
+ $smarty->display('common/header1.tpl');
+ if(isset($_SESSION["username"])){
+   include_once('../users/afterLogin.php');
+  }
+  else{
+     include_once('../users/beforeLogin.php');
+ }
+ $smarty->display('common/header2.tpl');
+?>
