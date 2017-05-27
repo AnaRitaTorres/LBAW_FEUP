@@ -60,10 +60,11 @@
       $smarty->display('events/publication.tpl');
 
       $replys = getPublicationReplys($pub['idpub']);
+      $smarty->assign('idpub', $pub['idpub']);
 
       if ($_SESSION['username'] != NULL)
         //só dar display quando se clica no botão de reply
-        //$smarty->display('events/createReply.tpl');
+        $smarty->display('events/createReply.tpl');
 
       foreach($replys as $rep){
         $userR = getUserInformation($rep['idcustomer']);

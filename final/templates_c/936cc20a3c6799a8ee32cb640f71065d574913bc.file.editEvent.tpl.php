@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-05-25 10:13:17
+<?php /* Smarty version Smarty-3.1.15, created on 2017-05-26 18:36:15
          compiled from "/opt/lbaw/lbaw1661/public_html/final/templates/events/editEvent.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2028092910590ad748bc2061-14048315%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '936cc20a3c6799a8ee32cb640f71065d574913bc' => 
     array (
       0 => '/opt/lbaw/lbaw1661/public_html/final/templates/events/editEvent.tpl',
-      1 => 1495703661,
+      1 => 1495820171,
       2 => 'file',
     ),
   ),
@@ -173,14 +173,17 @@ $_smarty_tpl->tpl_vars['success']->_loop = true;
 		  </div>
           <div class="form-group">
             <label class="col-md-4 control-label"></label>
-            <div class="col-md-4">
+            <div class="col-md-1">
               <button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-ok"></i> Submit</button>
-              <button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
             </div>
+            <div class="col-md-1">
+               <button type="button" onclick="window.location.href='eventPage.php?id=<?php echo $_smarty_tpl->tpl_vars['info']->value['idevent'];?>
+'" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+           </div>
           </div>
       </fieldset>
     </form>
-    </div>
+   </div>
   </div>
 </div>
 <?php }} ?>

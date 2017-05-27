@@ -144,6 +144,10 @@ header .navbar-right{
   background-color:#DCDCDC;
 }
 
+.comments-container #reply{
+  background-color:#DCDCDC;
+}
+
 .comments-container #pub .form-horizontal{
   margin-left:0px;
 }
@@ -163,6 +167,7 @@ h3.eventPage{
 .thumbnail {
     padding:0px;
 }
+
 
 #menu1{
   padding-top:25px;
@@ -193,14 +198,16 @@ h3.eventPage{
 }
 
 
-.event-list {
+.event-list,
+.user-list {
 list-style: none;
 margin: 0px;
 padding: 0px;
 }
 
 
-.event-list > li {
+.event-list > li,
+.user-list > li {
 background-color: rgb(255, 255, 255);
 padding: 0px;
 margin: 0px 0px 20px;
@@ -239,28 +246,33 @@ line-height: 1;
 color: white;
 }
 
-.event-list > li > a > img {
+.event-list > li > a > img ,
+.user-list > li > a > img{
 width: 100%;
 }
 
-.event-list > li > .info {
+.event-list > li > .info,
+.user-list > li > .info {
 padding-top: 5px;
 text-align: center;
 }
 
-.event-list > li > .info > .title {
+.event-list > li > .info > .title,
+.user-list > li > .info > .name {
 font-size: 17pt;
 font-weight: 700;
 margin: 0px;
 }
 
-.event-list > li > .info > .desc {
+.event-list > li > .info > .desc , 
+.user-list > li > .info > .desc {
 font-size: 13pt;
 font-weight: 300;
 margin: 0px;
 }
 
-.event-list > li > .info > ul {
+.event-list > li > .info > ul ,
+.user-list > li > .info > ul {
 display: table;
 list-style: none;
 margin: 10px 0px 0px;
@@ -269,7 +281,8 @@ width: 100%;
 text-align: center;
 }
 
-.event-list > li > .info > ul > li {
+.event-list > li > .info > ul > li ,
+.user-list > li > .info > ul > li{
 display: table-cell;
 cursor: pointer;
 color: rgb(30, 30, 30);
@@ -278,20 +291,23 @@ font-weight: 300;
 padding: 3px 0px;
 }
 
-.event-list > li > .info > ul > li > a {
+.event-list > li > .info > ul > li > a ,
+.user-list > li > .info > ul > li > a{
 display: block;
 width: 100%;
 color: rgb(30, 30, 30);
 text-decoration: none;
 }
 
-.event-list > li > .info > ul > li:hover {
+.event-list > li > .info > ul > li:hover,
+.user-list > li > .info > ul > li:hover {
 color: rgb(30, 30, 30);
 background-color: rgb(200, 200, 200);
 }
 
 @media (min-width: 768px) {
-.event-list > li {
+.event-list > li,
+.user-list > li {
   position: relative;
   display: block;
   width: 100%;
@@ -300,31 +316,36 @@ background-color: rgb(200, 200, 200);
 }
 
 .event-list > li > time,
-.event-list > li > a > img  {
+.event-list > li > a > img,
+.user-list > li > a > img  {
   display: inline-block;
 }
 
 .event-list > li > time,
-.event-list > li > a > img {
+.event-list > li > a > img,
+.user-list > li > a > img {
   width: 120px;
   float: left;
 }
 
-.event-list > li > .info {
+.event-list > li > .info ,
+.user-list > li > .info { 
   background-color: white;
   overflow: hidden;
   padding-left: 5px;
 }
 
 .event-list > li > time,
-.event-list > li > a > img {
+.event-list > li > a > img , 
+.user-list > li > a > img {
   width: 120px;
   height: 120px;
   padding: 0px;
   margin: 0px;
 }
 
-.event-list > li > .info {
+.event-list > li > .info,
+.user-list > li > .info {
   position: relative;
   height: 120px;
   text-align: left;
@@ -332,11 +353,14 @@ background-color: rgb(200, 200, 200);
 }
 
 .event-list > li > .info > .title,
-.event-list > li > .info > .desc {
+.user-list > li > .info > .name
+.event-list > li > .info > .desc,
+.user-list > li > .info > .desc {
   padding: 0px 10px;
 }
 
-.event-list > li > .info > ul {
+.event-list > li > .info > ul,
+.user-list > li > .info > ul {
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -348,10 +372,8 @@ background-color: rgb(200, 200, 200);
     display: table;
     clear: both;
 }
+}
 
-/*.checkbox input[type=checkbox]{
-  
-}*/
 
 input[type=range] {
   -webkit-appearance: none;
@@ -479,6 +501,10 @@ input[type=range]:focus::-ms-fill-upper {
   color: #5bc0de;
 }
 
+.name a{
+  color: #5bc0de;
+}
+
 .price{
   display: none;
 }
@@ -498,6 +524,7 @@ input[type=range]:focus::-ms-fill-upper {
    background-color:#DCDCDC;
    border:none;
 }
+
 .row{
   margin-right:0px;
   margin-left: 0px;
@@ -514,36 +541,14 @@ body{
 
 /*footer*/
 .footer{
- /* position: absolute; 
+ position: absolute; 
  width: 100%;
  padding-top: 10px;
  padding-bottom: 10px;
- padding-right: 10px;*/
-
-  position:fixed;
-  left:0px;
-  bottom:0px;
-  height:30px;
-  width:100%;
-  background:#999;
+ padding-right: 10px;
 }
 
 .footer p {
-    text-align: right;
-    margin-bottom: 0;
-}
-
-/*#footer {
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:30px;
-   width:100%;
-   background:#999;
-}*/
-
-/* IE 6 */
-* html #footer {
-   position:absolute;
-   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+ text-align: right;
+ margin-bottom: 0;
 }

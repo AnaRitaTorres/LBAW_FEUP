@@ -4,7 +4,7 @@
 		<span class="month">{$month}</span>
 		<span class="year">{$year}</span>
 	</time>
-	<a href={$link}><img alt="Logan" src={$event.picture} /></a>
+	<a href={$link}><img src={$event.picture} /></a>
 	<div class="info">
 		<h2 class="title"><a href={$link}>{$event.title}</a></h2>
 		<p class="desc">{$event.type}</p>

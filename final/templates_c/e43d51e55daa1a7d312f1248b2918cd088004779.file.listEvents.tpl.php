@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-05-25 10:01:41
+<?php /* Smarty version Smarty-3.1.15, created on 2017-05-27 00:28:44
          compiled from "/opt/lbaw/lbaw1661/public_html/final/templates/events/listEvents.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2067154891590ad636ce54d2-04621071%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e43d51e55daa1a7d312f1248b2918cd088004779' => 
     array (
       0 => '/opt/lbaw/lbaw1661/public_html/final/templates/events/listEvents.tpl',
-      1 => 1495702892,
+      1 => 1495841321,
       2 => 'file',
     ),
   ),
@@ -46,7 +46,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </span>
 	</time>
 	<a href=<?php echo $_smarty_tpl->tpl_vars['link']->value;?>
-><img alt="Logan" src=<?php echo $_smarty_tpl->tpl_vars['event']->value['picture'];?>
+><img src=<?php echo $_smarty_tpl->tpl_vars['event']->value['picture'];?>
  /></a>
 	<div class="info">
 		<h2 class="title"><a href=<?php echo $_smarty_tpl->tpl_vars['link']->value;?>

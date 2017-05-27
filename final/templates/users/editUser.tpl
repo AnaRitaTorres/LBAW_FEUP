@@ -112,18 +112,13 @@
             <div class="col-md-1">
               <button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-ok"></i> Submit</button>
             </div>
+            <div class="col-md-1">
+              <button type="button"  onclick="window.location.href='profilePage.php?id={$info.idcustomer}'" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+            </div>
         </div>
 
       </fieldset>
     </form>
-
-
-      <label class="col-md-4 control-label" ></label>
-      <div class="col-md-1">
-        <a href="profilePage.php?id={$info.idcustomer}"><button class="btn btn-info"><i class="glyphicon glyphicon-remove"></i> Cancel</button></a>
-      </div>
-
-    
-  </div>
+    </div>
   </div>
 </div>

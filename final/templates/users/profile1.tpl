@@ -8,12 +8,10 @@
         <h3 class="profilePage text-center">{$name}</h3>
         <h5 class="text-center">@{$username}</h5>
         <div id="Content" class="navbar navbar-default">
-          <hr/>
           <div class="row">
             <div class="col-md-10">
               <p><i class="glyphicon glyphicon-user"></i>
                 {$name}
-              </p>
               </p>
             </div>
           </div>

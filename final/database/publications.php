@@ -1,24 +1,25 @@
 <?php
-	function createPublication($type, $idevent, $idcustomer, $date, $comment, $file){
+	function createPublication($type, $idevent, $idcustomer, $comment, $file){
 		if($type == "comment" && $comment != null && $file == null){
-			createComment( $idevent, $idcustomer, $date, $comment);
+			createComment( $idevent, $idcustomer, $comment);
 		}else if($type == "file" && $comment == null && $file != null){
-			createFile( $idevent, $idcustomer, $date, $file);
+			createFile( $idevent, $idcustomer, $file);
 		}
 	}
 
-	function createComment($idevent, $idcustomer, $date, $comment){
+	function createComment($idevent, $idcustomer, $comment){
 		global $conn;
 		$stmt = $conn->prepare("INSERT INTO publication (type, idEvent, idCustomer, date, comment) values
 		('comment', ?, ?, current_date, ?)");
 		$stmt->execute(array($idevent, $idcustomer, $comment));
+		return $conn->lastInsertId();
 	}
 
-	function createFile($idevent, $idcustomer, $date, $file){
+	function createFile($idevent, $idcustomer, $file){
 		global $conn;
 		$stmt = $conn->prepare("INSERT INTO publication(type, date, comment, file)
-								VALUES('file',?,NULL,?)");
-		$stmt->execute(array($date, $file));
+								VALUES('file',current_date ,NULL,?)");
+		$stmt->execute(array($file));
 	}
 
 	function updateLikes($idpub, $idevent, $idcustomer, $likes){

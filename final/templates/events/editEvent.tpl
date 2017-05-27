@@ -120,13 +120,15 @@
 		  </div>
           <div class="form-group">
             <label class="col-md-4 control-label"></label>
-            <div class="col-md-4">
+            <div class="col-md-1">
               <button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-ok"></i> Submit</button>
-              <button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
             </div>
+            <div class="col-md-1">
+               <button type="button" onclick="window.location.href='eventPage.php?id={$info.idevent}'" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+           </div>
           </div>
       </fieldset>
     </form>
-    </div>
+   </div>
   </div>
 </div>

@@ -98,5 +98,11 @@
     </div>
 
     <div class="col-sm-offset-1 col-sm-8">
-       <nav class="navbar navbar-default ES">
+      <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Events</a></li>
+          <li><a data-toggle="tab" href="#users">Users</a></li>
+        </ul>
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <nav class="navbar navbar-default ES">
                 <ul class="event-list">

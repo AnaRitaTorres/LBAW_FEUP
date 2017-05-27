@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-05-25 09:42:33
+<?php /* Smarty version Smarty-3.1.15, created on 2017-05-27 01:41:01
          compiled from "/opt/lbaw/lbaw1661/public_html/final/templates/events/searchPage.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1688761033590e057b835e89-92426813%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '250c7f7a7d507dc8b7385c18341de6308f8cf9e3' => 
     array (
       0 => '/opt/lbaw/lbaw1661/public_html/final/templates/events/searchPage.tpl',
-      1 => 1495701746,
+      1 => 1495845652,
       2 => 'file',
     ),
   ),
@@ -119,6 +119,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </div>
 
     <div class="col-sm-offset-1 col-sm-8">
-       <nav class="navbar navbar-default ES">
+      <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Events</a></li>
+          <li><a data-toggle="tab" href="#users">Users</a></li>
+        </ul>
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <nav class="navbar navbar-default ES">
                 <ul class="event-list">
 <?php }} ?>

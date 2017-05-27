@@ -90,13 +90,21 @@
 		return $stmt->fetchAll();
 	}
 	
-	function getAge($birthday)
-	{
+	function getAge($birthday){
 		$now = time();
 		$dob = strtotime($birthday);
 		$difference = $now - $dob;
 		$age = floor($difference / 31556926);
 		return $age;
+	}
+
+  function searchUsersString($string){
+		var_dump($string);
+		global $conn;
+		$stmt = $conn->prepare("SELECT *, ts_rank(to_tsvector(name),query) AS rank FROM customer, to_tsquery(?) AS query ORDER BY rank DESC");
+		$string = $string.":*";
+		$stmt->execute(array($string));
+		return $stmt->fetchAll();
 	}
 
 

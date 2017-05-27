@@ -2,16 +2,15 @@
   include_once('../../config/init.php');
   include_once('../common/header.php');
   include_once ('../../database/events.php');
+  include_once ('../../database/users.php');
 
   $smarty->display("events/searchPage.tpl");
 
   $string = $_GET['Search'];
-
-
-  $events = searchEventsString($_GET['Search']);
-
-
- foreach($events as $event){
+  
+  $events = searchEventsString($string);
+  
+  foreach($events as $event){
     $time = date('g:ia', strtotime($event['time']));
     $orderdate = explode('-', $event['date']);
     $monthNum = $orderdate[1];
@@ -35,6 +34,24 @@
     $smarty->assign('event',$event);
     $smarty->assign('link', $link);
     $smarty->display('events/listEvents.tpl');
+  }
+
+   $smarty->display("events/middleEventSearch.tpl");
+  
+   $users = searchUsersString($string);
+
+   foreach($users as $user){
+    
+    $name = $user['name'];
+    $surname = $user['surname'];
+    $username = $user['username'];
+    $link = "../../pages/users/profilePage.php?id=";
+    $link .= $user['idcustomer'];
+    $smarty->assign('name',$name);
+    $smarty->assign('username',$username);
+    $smarty->assign('surname',$surname);
+    $smarty->assign('link',$link);
+    $smarty->display('users/listUsers.tpl');
   }
 
   $smarty->display("events/closeEventSearch.tpl");

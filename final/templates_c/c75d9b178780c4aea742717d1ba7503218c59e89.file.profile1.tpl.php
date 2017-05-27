@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-05-04 08:58:02
+<?php /* Smarty version Smarty-3.1.15, created on 2017-05-26 17:34:44
          compiled from "/opt/lbaw/lbaw1661/public_html/final/templates/users/profile1.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1332532451590ad6744e1e28-33390794%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c75d9b178780c4aea742717d1ba7503218c59e89' => 
     array (
       0 => '/opt/lbaw/lbaw1661/public_html/final/templates/users/profile1.tpl',
-      1 => 1493884677,
+      1 => 1495816352,
       2 => 'file',
     ),
   ),
@@ -42,13 +42,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <h5 class="text-center">@<?php echo $_smarty_tpl->tpl_vars['username']->value;?>
 </h5>
         <div id="Content" class="navbar navbar-default">
-          <hr/>
           <div class="row">
             <div class="col-md-10">
               <p><i class="glyphicon glyphicon-user"></i>
                 <?php echo $_smarty_tpl->tpl_vars['name']->value;?>
 
-              </p>
               </p>
             </div>
           </div>

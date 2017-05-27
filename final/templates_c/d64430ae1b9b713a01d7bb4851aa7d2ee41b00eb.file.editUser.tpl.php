@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-05-25 09:40:17
+<?php /* Smarty version Smarty-3.1.15, created on 2017-05-26 18:44:58
          compiled from "/opt/lbaw/lbaw1661/public_html/final/templates/users/editUser.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:632745890590ad96e6d02b5-15089355%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd64430ae1b9b713a01d7bb4851aa7d2ee41b00eb' => 
     array (
       0 => '/opt/lbaw/lbaw1661/public_html/final/templates/users/editUser.tpl',
-      1 => 1495701702,
+      1 => 1495819980,
       2 => 'file',
     ),
   ),
@@ -158,20 +158,15 @@ $_smarty_tpl->tpl_vars['success']->_loop = true;
             <div class="col-md-1">
               <button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-ok"></i> Submit</button>
             </div>
+            <div class="col-md-1">
+              <button type="button"  onclick="window.location.href='profilePage.php?id=<?php echo $_smarty_tpl->tpl_vars['info']->value['idcustomer'];?>
+'" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+            </div>
         </div>
 
       </fieldset>
     </form>
-
-
-      <label class="col-md-4 control-label" ></label>
-      <div class="col-md-1">
-        <a href="profilePage.php?id=<?php echo $_smarty_tpl->tpl_vars['info']->value['idcustomer'];?>
-"><button class="btn btn-info"><i class="glyphicon glyphicon-remove"></i> Cancel</button></a>
-      </div>
-
-    
-  </div>
+    </div>
   </div>
 </div>
 <?php }} ?>
