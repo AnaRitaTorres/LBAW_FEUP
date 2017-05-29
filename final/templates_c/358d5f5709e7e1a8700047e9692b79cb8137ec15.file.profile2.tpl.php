@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-05-26 17:34:44
+<?php /* Smarty version Smarty-3.1.15, created on 2017-05-29 19:52:38
          compiled from "/opt/lbaw/lbaw1661/public_html/final/templates/users/profile2.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1769517803590ad67469c559-62200048%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '358d5f5709e7e1a8700047e9692b79cb8137ec15' => 
     array (
       0 => '/opt/lbaw/lbaw1661/public_html/final/templates/users/profile2.tpl',
-      1 => 1495816468,
+      1 => 1496084048,
       2 => 'file',
     ),
   ),
@@ -38,9 +38,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       Hosted<canvas id="myHostedEvents"></canvas>
     </div>
     <div class="col-xs-offset-1 col-xs-5">
-      Invited<canvas id="myInvitedEvents"></canvas>
+     Attended<canvas id="myInvitedEvents"></canvas>
     </div>
-    <div class="col-xs-offset-2 col-xs-8">
+    <div class="col-xs-offset-1 col-xs-10">
       <canvas id="myTitle"></canvas>
     </div>
   </div>

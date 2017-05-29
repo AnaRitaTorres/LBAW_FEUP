@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-05-27 01:55:35
+<?php /* Smarty version Smarty-3.1.15, created on 2017-05-29 04:27:27
          compiled from "/opt/lbaw/lbaw1661/public_html/final/templates/events/middleEventSearch.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:11366797085928b5e45ea8e3-88784327%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9c657eadc14e3eb439cc4fb0cea0cbc2e4922796' => 
     array (
       0 => '/opt/lbaw/lbaw1661/public_html/final/templates/events/middleEventSearch.tpl',
-      1 => 1495846535,
+      1 => 1496028444,
       2 => 'file',
     ),
   ),
@@ -21,9 +21,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5928b5e471db18_32286154')) {function content_5928b5e471db18_32286154($_smarty_tpl) {?></ul>
 </nav>
-<p>See More</p>
+
 </div>
 
  <div id="users" class="tab-pane fade">
     <nav class="navbar navbar-default ES">
-    <ul class="user-list"><?php }} ?>
+    <script type="text/javascript" src="../../js/hideSearch.js"></script>
+    <ul class="user-list">
+
+    <script type="text/javascript" src="../../js/eventSearch.js"></script><?php }} ?>

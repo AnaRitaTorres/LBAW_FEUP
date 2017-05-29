@@ -3,7 +3,7 @@
         <nav id="event-image" class="navbar navbar-default">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="../../images/events.png" alt="" class="img-responsive">
+                    <img src="../../images/events.png" alt="event picture" class="img-responsive">
                 </div>
                 <div class="col-md-6 text-center">
                     <div class="title">

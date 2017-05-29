@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-05-27 01:41:01
+<?php /* Smarty version Smarty-3.1.15, created on 2017-05-29 04:29:12
          compiled from "/opt/lbaw/lbaw1661/public_html/final/templates/events/searchPage.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1688761033590e057b835e89-92426813%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '250c7f7a7d507dc8b7385c18341de6308f8cf9e3' => 
     array (
       0 => '/opt/lbaw/lbaw1661/public_html/final/templates/events/searchPage.tpl',
-      1 => 1495845652,
+      1 => 1496028543,
       2 => 'file',
     ),
   ),
@@ -19,18 +19,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_590e057b984084_47508134',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_590e057b984084_47508134')) {function content_590e057b984084_47508134($_smarty_tpl) {?><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js">
-</script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
-<script type="text/javascript" src="../../js/calendar.js"></script>
-<script type="text/javascript" src="../../js/eventSearch.js"></script>
-
-<div class="container specific">
+<?php if ($_valid && !is_callable('content_590e057b984084_47508134')) {function content_590e057b984084_47508134($_smarty_tpl) {?><div class="container specific">
   <div class="row">
 
 
     <div class="col-sm-3">
-      <nav class="navbar navbar-default ES">
+      <nav id="filtersBox" class="navbar navbar-default ES">
 
         <form method="post">
           <h2 id="filters">Filters</h2>
@@ -121,10 +115,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div class="col-sm-offset-1 col-sm-8">
       <ul class="nav nav-tabs">
           <li class="active"><a data-toggle="tab" href="#home">Events</a></li>
-          <li><a data-toggle="tab" href="#users">Users</a></li>
+          <li id="usersTab"><a data-toggle="tab" href="#users">Users</a></li>
         </ul>
         <div class="tab-content">
           <div id="home" class="tab-pane fade in active">
             <nav class="navbar navbar-default ES">
+             <script type="text/javascript" src="../../js/hideSearch.js"></script>
                 <ul class="event-list">
-<?php }} ?>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js">
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+<script type="text/javascript" src="../../js/calendar.js"></script>
+<script type="text/javascript" src="../../js/eventSearch.js"></script><?php }} ?>

@@ -13,6 +13,7 @@
       if(isEventFromUser($_SESSION['id'], $_GET['id'])){
         $smarty->assign('id',$id);
         $smarty->assign('info',$info);
+        $smarty->assign('create', $create);
         $smarty->display('events/editEvent.tpl');
       }
       else{
@@ -21,7 +22,6 @@
 
     }
     else if($create == 1){
-      $smarty->assign('create',$create);
       $smarty->display('events/editEvent.tpl');
     }
     else{

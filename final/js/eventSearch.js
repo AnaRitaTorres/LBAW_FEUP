@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+  var selectFive = true;
   var location_north = true;
   var location_center = true;
   var location_south = true;
@@ -59,7 +59,6 @@ $(document).ready(function () {
   $('#price').on('change', function() {
     use_price = true;
     price = document.getElementById("price").value;
-    console.log(price);
     filter();
   });
 
@@ -69,7 +68,10 @@ $(document).ready(function () {
       $(date).show();
     }
     else{
-      $('.event').show();
+      if(selectFive){
+        $('.event-list li:lt(10)').show();
+      }
+      else $('.event').show();
     }
     if (!location_north)
       $('.Norte').hide();
@@ -96,13 +98,8 @@ $(document).ready(function () {
   }
 
 
-  // var price = getElementById("range");
-  // if ($('.price') <= price)
-  //   $('.evento').show();
-  // else
-  //   $('.evento').hide();
-
 });
+
 
 function showValue(newValue) {
   document.getElementById("range").innerHTML = newValue;

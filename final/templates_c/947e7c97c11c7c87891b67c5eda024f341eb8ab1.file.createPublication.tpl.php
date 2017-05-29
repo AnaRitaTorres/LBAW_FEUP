@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-05-27 14:42:20
+<?php /* Smarty version Smarty-3.1.15, created on 2017-05-29 21:40:17
          compiled from "/opt/lbaw/lbaw1661/public_html/final/templates/events/createPublication.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:8105929565911860f15e0e0-15900525%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '947e7c97c11c7c87891b67c5eda024f341eb8ab1' => 
     array (
       0 => '/opt/lbaw/lbaw1661/public_html/final/templates/events/createPublication.tpl',
-      1 => 1495892533,
+      1 => 1496090408,
       2 => 'file',
     ),
   ),
@@ -29,7 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <article class="row">
   <div class="col-md-2 col-sm-2 hidden-xs">
     <figure class="thumbnail">
-      <img class="img-responsive" src=<?php echo $_smarty_tpl->tpl_vars['session']->value['picture'];?>
+      <img class="img-responsive" alt="profile picture" src=<?php echo $_smarty_tpl->tpl_vars['session']->value['picture'];?>
  />
       <figcaption class="text-center">@<?php echo $_smarty_tpl->tpl_vars['session']->value['username'];?>
 </figcaption>
@@ -42,7 +42,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
           <div class="comment-user"><i class="fa fa-user"></i> <?php echo $_smarty_tpl->tpl_vars['session']->value['name'];?>
 </div>
         </header>
-        <form class="form-horizontal" method="post" >
+        <form class="form-horizontal" method="post" enctype="multipart/form-data" >
           <input type="hidden" id="idevent" name="idevent" value=<?php echo $_smarty_tpl->tpl_vars['idevent']->value;?>
  />
           <div id="box" class="comment-post">
@@ -50,7 +50,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <br />
           </div>
             <div class="col-md-offset-9">
-              <button type="button" id="cancer" class="btn btn-info pull-right">Publish</button>
+              <button type="button" id="publish_pub" class="btn btn-info pull-right">Publish</button>
             </div>
          </form>
       </div>

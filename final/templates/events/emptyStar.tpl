@@ -1,1 +1,1 @@
-<i class="glyphicon glyphicon-star" aria-hidden="true"></i>
+<span><i class="glyphicon glyphicon-star-empty" aria-hidden="true"></i></span> 

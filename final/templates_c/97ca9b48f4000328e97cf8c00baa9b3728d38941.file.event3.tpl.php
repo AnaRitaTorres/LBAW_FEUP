@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-05-12 16:35:22
+<?php /* Smarty version Smarty-3.1.15, created on 2017-05-29 22:55:45
          compiled from "/opt/lbaw/lbaw1661/public_html/final/templates/events/event3.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2130338166590ad6c29a7735-10059845%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '97ca9b48f4000328e97cf8c00baa9b3728d38941' => 
     array (
       0 => '/opt/lbaw/lbaw1661/public_html/final/templates/events/event3.tpl',
-      1 => 1494603294,
+      1 => 1496091268,
       2 => 'file',
     ),
   ),
@@ -20,6 +20,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'info' => 0,
+    'session' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -62,21 +63,30 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </nav>
 </div>
 <div class="col-sm-offset-1 col-sm-8">
+  <?php if ($_smarty_tpl->tpl_vars['session']->value['username']!=null) {?>
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#home">Google Maps</a></li>
     <li><a data-toggle="tab" href="#menu1">Publications</a></li>
+    <li><a data-toggle="tab" href="#menu2">Evaluate</a></li>
+    <li><a data-toggle="tab" href="#menu3">Hosts</a></li>
   </ul>
+  <?php } else { ?>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Google Maps</a></li>
+    <li><a data-toggle="tab" href="#menu1">Publications</a></li>
+    <li><a data-toggle="tab" href="#menu3">Hosts</a></li>
+  </ul>
+  <?php }?>
 
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active" style="height: 25em">
-      <iframe id="map" style="width:100%; height:100%;" class="img-responsive center-block" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=<?php echo $_smarty_tpl->tpl_vars['info']->value['address'];?>
+      <iframe id="map" style="width:100%; height:100%;" alt="google maps" class="img-responsive center-block" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=<?php echo $_smarty_tpl->tpl_vars['info']->value['address'];?>
 &key=AIzaSyCdqMmRf8c1f_yTgtjt7zT_5tdO5UOPka4" allowfullscreen></iframe>
     </div>
 
     <div id="menu1" class="tab-pane fade">
       <div class="row">
-        <!-- Principal -->
-        <div class="comments-container">
+          <div class="comments-container">
           <div class="row">
             <div class="col-md-12">
               <section class="comment-list">

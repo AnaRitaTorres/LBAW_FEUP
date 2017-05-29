@@ -5,12 +5,11 @@
 
   if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-    $type = "comment";
     $idevent = $_POST['idevent'];
     $idcustomer = $_SESSION['id'];
-    $comment = $_POST['comment'];
 
-		createPublication("$type", $idevent, $idcustomer,  $comment, null);
+    $comment = $_POST['comment'];
+    createPublication("comment", $idevent, $idcustomer,  $comment, null);
 
     $user = getUserInformation($_SESSION['id']);
     $userLink = "../users/profilePage.php?id=";
@@ -23,7 +22,7 @@
     $smarty->assign('session', $_SESSION);
     $smarty->display('events/publication.tpl');
     $smarty->display('events/createReply.tpl');
-  }
+}
 
 
 ?>

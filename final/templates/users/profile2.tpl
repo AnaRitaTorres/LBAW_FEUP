@@ -10,9 +10,9 @@
       Hosted<canvas id="myHostedEvents"></canvas>
     </div>
     <div class="col-xs-offset-1 col-xs-5">
-      Invited<canvas id="myInvitedEvents"></canvas>
+     Attended<canvas id="myInvitedEvents"></canvas>
     </div>
-    <div class="col-xs-offset-2 col-xs-8">
+    <div class="col-xs-offset-1 col-xs-10">
       <canvas id="myTitle"></canvas>
     </div>
   </div>

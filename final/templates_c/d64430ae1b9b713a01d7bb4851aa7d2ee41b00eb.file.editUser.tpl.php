@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-05-26 18:44:58
+<?php /* Smarty version Smarty-3.1.15, created on 2017-05-29 22:57:57
          compiled from "/opt/lbaw/lbaw1661/public_html/final/templates/users/editUser.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:632745890590ad96e6d02b5-15089355%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd64430ae1b9b713a01d7bb4851aa7d2ee41b00eb' => 
     array (
       0 => '/opt/lbaw/lbaw1661/public_html/final/templates/users/editUser.tpl',
-      1 => 1495819980,
+      1 => 1496091441,
       2 => 'file',
     ),
   ),
@@ -28,17 +28,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_590ad96e84d8a3_61199279')) {function content_590ad96e84d8a3_61199279($_smarty_tpl) {?><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-<script type="text/javascript" src="../../js/calendar.js"></script>
+<?php if ($_valid && !is_callable('content_590ad96e84d8a3_61199279')) {function content_590ad96e84d8a3_61199279($_smarty_tpl) {?>
 
     <div class="row">
       <div class="col-md-10 ">
         <form class="form-horizontal" action="../../actions/users/editProfile.php" method="post" enctype="multipart/form-data">
           <fieldset>
-            <!-- Form Name -->
             <legend>Edit Profile</legend>
-            <!-- Name input-->
            <div class="form-group">
             <label class="col-md-4 control-label" for="Name">Name</label>
             <div class="col-md-4">
@@ -51,7 +47,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
               </div>
             </div>
           </div>
-          <!--Surname Input-->
           <div class="form-group">
             <label class="col-md-4 control-label" for="Surname" >Surname</label>
             <div class="col-md-4">
@@ -64,14 +59,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
               </div>
             </div>
           </div>
-            <!-- Upload Photo Button -->
           <div class="form-group">
             <label class="col-md-4 control-label" for="Upload_photo">Upload photo</label>
             <div class="col-md-4">
               <input id="fileToUpload" name="fileToUpload" class="input-file" type="file">
             </div>
           </div>
-          <!-- Date Of Birth Input-->
           <div class="form-group">
             <label class="col-md-4 control-label" for="Date Of Birth">Date Of Birth</label>
               <div class="col-md-4">
@@ -87,7 +80,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </div>
 			
           </div>
-          <!-- Gender Radios (inline) -->
           <div class="form-group">
             <label class="col-md-4 control-label" for="Gender">Gender</label>
             <div class="col-md-4">
@@ -102,7 +94,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
              </label>
           </div>
         </div>
-        <!-- Phone Number input-->
         <div class="form-group">
           <label class="col-md-4 control-label" for="Phone Number ">Phone Number </label>
           <div class="col-md-4">
@@ -115,7 +106,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
               </div>
             </div>
         </div>
-        <!-- Email address input-->
         <div class="form-group">
           <label class="col-md-4 control-label" for="Email Address">Email Address</label>
           <div class="col-md-4">
@@ -152,21 +142,22 @@ $_smarty_tpl->tpl_vars['success']->_loop = true;
 			    </div>
 			</div>
 		</div>
-          <!-- Submit and Cancel Button -->
           <div class="form-group">
             <label class="col-md-4 control-label" ></label>
-            <div class="col-md-1">
+            <div class="col-md-1 col-xs-3">
               <button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-ok"></i> Submit</button>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-1 col-xs-3 ">
               <button type="button"  onclick="window.location.href='profilePage.php?id=<?php echo $_smarty_tpl->tpl_vars['info']->value['idcustomer'];?>
 '" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
             </div>
-        </div>
+          </div>
 
       </fieldset>
     </form>
     </div>
   </div>
 </div>
-<?php }} ?>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+<script type="text/javascript" src="../../js/calendar.js"></script><?php }} ?>

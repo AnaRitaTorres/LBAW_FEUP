@@ -1,6 +1,5 @@
 function createComment(){
-  $('button#cancer').click(function(){
-    console.log("cliquei");
+  $('button#publish_pub').click(function(){
     var idevent = $("#idevent").val();
     var comment = $("#comment").val();
     $.post('../../api/events/createPublication.php',{

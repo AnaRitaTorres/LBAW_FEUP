@@ -7,9 +7,15 @@
   $smarty->display("events/searchPage.tpl");
 
   $string = $_GET['Search'];
-  
-  $events = searchEventsString($string);
-  
+
+  if($string!=null){
+    $events = searchEventsString($string);
+   }
+   else{
+     $events = listEvents();
+   }
+
+
   foreach($events as $event){
     $time = date('g:ia', strtotime($event['time']));
     $orderdate = explode('-', $event['date']);
@@ -37,22 +43,29 @@
   }
 
    $smarty->display("events/middleEventSearch.tpl");
-  
-   $users = searchUsersString($string);
+
+   if($string!=null){
+     $users = searchUsersString($string);
+   }
+   else{
+     $users = listUsers();
+   }
 
    foreach($users as $user){
-    
-    $name = $user['name'];
-    $surname = $user['surname'];
-    $username = $user['username'];
-    $link = "../../pages/users/profilePage.php?id=";
-    $link .= $user['idcustomer'];
-    $smarty->assign('name',$name);
-    $smarty->assign('username',$username);
-    $smarty->assign('surname',$surname);
-    $smarty->assign('link',$link);
-    $smarty->display('users/listUsers.tpl');
-  }
+
+      $name = $user['name'];
+      $surname = $user['surname'];
+      $username = $user['username'];
+      $link = "../../pages/users/profilePage.php?id=";
+      $link .= $user['idcustomer'];
+      $smarty->assign('user', $user);
+      $smarty->assign('name',$name);
+      $smarty->assign('username',$username);
+      $smarty->assign('surname',$surname);
+      $smarty->assign('link',$link);
+      $smarty->display('users/listUsers.tpl');
+    }
+
 
   $smarty->display("events/closeEventSearch.tpl");
 

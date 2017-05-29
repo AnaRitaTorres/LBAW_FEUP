@@ -4,7 +4,7 @@
     <div class="navbar-content">
       <div class="row">
         <div class="col-md-5">
-          <img src={$picture} alt="Alternate Text" class="img-responsive"/>
+          <img src={$picture} alt="Profile picture" class="img-responsive"/>
         </div>
         <div class="col-md-6">
           <span>{$name}</span>

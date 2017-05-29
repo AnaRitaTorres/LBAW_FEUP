@@ -313,6 +313,13 @@ function notGoToTheatreEvent($idcustomer, $idevent){
 		return $stmt->fetchAll();
 	}
 
+	function listEvents() {
+		global $conn;
+		$stmt = $conn->prepare("SELECT * FROM event");
+		$stmt->execute();
+		return $stmt->fetchAll();
+	}
+
 	function updateEvent($idevent, $title, $type, $district, $area, $address, $zip_code, $date, $time, $price, $overview, $picture){
 		global $conn;
 		$stmt = $conn->prepare("UPDATE event SET
@@ -351,6 +358,27 @@ function notGoToTheatreEvent($idcustomer, $idevent){
 		$stmt->execute(array($idcustomer, $idevent));
   }
 
+	function verifyHosts($idevent){
+		global $conn;
+		$stmt = $conn->prepare("SELECT * FROM host WHERE idevent = ?");
+		$stmt->execute(array($idevent));
+		return count($stmt->fetchAll());
+	}
+
+	function verifyIfIsHost($idcustomer, $idevent){
+		global $conn;
+    $stmt = $conn->prepare("SELECT * FROM host WHERE idcustomer = ? AND idevent = ?");
+    $stmt->execute(array($idcustomer, $idevent));
+    return $stmt->fetch() == true;
+	}
+
+	function getEventHosts($idevent){
+		global $conn;
+    $stmt = $conn->prepare("SELECT * FROM host WHERE idevent = ?");
+    $stmt->execute(array( $idevent));
+    return $stmt->fetchAll();
+	}
+
   function deleteEvent($idevent)
   {
 	  global $conn;
@@ -360,11 +388,9 @@ function notGoToTheatreEvent($idcustomer, $idevent){
 
 	function searchEventsString($string){
 		global $conn;
-		$s = '%';
-		$s .= $string;
-		$s .= '%';
-		$stmt = $conn->prepare("SELECT * FROM event WHERE title LIKE ?");
-		$stmt->execute(array($s));
+		$stmt = $conn->prepare("SELECT *, ts_rank(to_tsvector(title), query)  AS rank FROM event, to_tsquery(?) AS query ORDER BY rank DESC LIMIT 20");
+		$string = $string.":*";
+		$stmt->execute(array($string));
 		return $stmt->fetchAll();
 	}
 
@@ -372,6 +398,27 @@ function notGoToTheatreEvent($idcustomer, $idevent){
 		global $conn;
 		$stmt = $conn->prepare("SELECT * FROM event WHERE event.date >= current_date ORDER BY date ASC LIMIT 10");
 		$stmt->execute();
+		return $stmt->fetchAll();
+	}
+
+	function rateEvent($idevent, $idcustomer, $rate) {
+		global $conn;
+		$stmt = $conn->prepare("INSERT INTO rate (idcustomer, idevent, rate) VALUES (?, ?, ?)");
+		$stmt->execute(array($idcustomer, $idevent, $rate));
+		return $stmt->fetchAll();
+	}
+
+	function userRated($idevent, $idcustomer){
+		global $conn;
+		$stmt = $conn->prepare("SELECT * FROM rate WHERE idevent = ? AND idcustomer = ?;");
+		$stmt->execute(array($idevent, $idcustomer));
+		return $stmt->fetch() == true;
+	}
+
+	function updateRateEvent($idevent, $idcustomer, $rate) {
+		global $conn;
+		$stmt = $conn->prepare("UPDATE rate SET rate=? WHERE idcustomer=? AND idevent=?;");
+		$stmt->execute(array($rate, $idcustomer, $idevent));
 		return $stmt->fetchAll();
 	}
 
@@ -385,9 +432,9 @@ function notGoToTheatreEvent($idcustomer, $idevent){
 	function eventDateValid($date)
 	{
 		$now = time();
-		$dob = strtotime($birthday);
-		$difference = $now - $dob;
-		$age = floor($difference / 31556926);
-		return $age;
+		if(strtotime($date) < strtotime($now))
+			return false;
+		else
+			return true;
 	}
 ?>

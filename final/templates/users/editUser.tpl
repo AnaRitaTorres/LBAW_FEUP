@@ -1,14 +1,10 @@
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-<script type="text/javascript" src="../../js/calendar.js"></script>
+
 
     <div class="row">
       <div class="col-md-10 ">
         <form class="form-horizontal" action="../../actions/users/editProfile.php" method="post" enctype="multipart/form-data">
           <fieldset>
-            <!-- Form Name -->
             <legend>Edit Profile</legend>
-            <!-- Name input-->
            <div class="form-group">
             <label class="col-md-4 control-label" for="Name">Name</label>
             <div class="col-md-4">
@@ -20,7 +16,6 @@
               </div>
             </div>
           </div>
-          <!--Surname Input-->
           <div class="form-group">
             <label class="col-md-4 control-label" for="Surname" >Surname</label>
             <div class="col-md-4">
@@ -32,14 +27,12 @@
               </div>
             </div>
           </div>
-            <!-- Upload Photo Button -->
           <div class="form-group">
             <label class="col-md-4 control-label" for="Upload_photo">Upload photo</label>
             <div class="col-md-4">
               <input id="fileToUpload" name="fileToUpload" class="input-file" type="file">
             </div>
           </div>
-          <!-- Date Of Birth Input-->
           <div class="form-group">
             <label class="col-md-4 control-label" for="Date Of Birth">Date Of Birth</label>
               <div class="col-md-4">
@@ -53,7 +46,6 @@
             </div>
 			
           </div>
-          <!-- Gender Radios (inline) -->
           <div class="form-group">
             <label class="col-md-4 control-label" for="Gender">Gender</label>
             <div class="col-md-4">
@@ -68,7 +60,6 @@
              </label>
           </div>
         </div>
-        <!-- Phone Number input-->
         <div class="form-group">
           <label class="col-md-4 control-label" for="Phone Number ">Phone Number </label>
           <div class="col-md-4">
@@ -80,7 +71,6 @@
               </div>
             </div>
         </div>
-        <!-- Email address input-->
         <div class="form-group">
           <label class="col-md-4 control-label" for="Email Address">Email Address</label>
           <div class="col-md-4">
@@ -106,19 +96,21 @@
 			    </div>
 			</div>
 		</div>
-          <!-- Submit and Cancel Button -->
           <div class="form-group">
             <label class="col-md-4 control-label" ></label>
-            <div class="col-md-1">
+            <div class="col-md-1 col-xs-3">
               <button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-ok"></i> Submit</button>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-1 col-xs-3 ">
               <button type="button"  onclick="window.location.href='profilePage.php?id={$info.idcustomer}'" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
             </div>
-        </div>
+          </div>
 
       </fieldset>
     </form>
     </div>
   </div>
 </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+<script type="text/javascript" src="../../js/calendar.js"></script>

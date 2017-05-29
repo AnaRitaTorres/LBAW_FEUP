@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-05-27 15:48:32
+<?php /* Smarty version Smarty-3.1.15, created on 2017-05-29 22:41:30
          compiled from "/opt/lbaw/lbaw1661/public_html/final/templates/events/createReply.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20321844105911878c876ff5-83278753%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9af34775c8238728612f7875ac8ac6ceebd987a4' => 
     array (
       0 => '/opt/lbaw/lbaw1661/public_html/final/templates/events/createReply.tpl',
-      1 => 1495896497,
+      1 => 1496094083,
       2 => 'file',
     ),
   ),
@@ -19,17 +19,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_5911878c88bad3_41950539',
   'variables' => 
   array (
-    'session' => 0,
-    'user' => 0,
-    'idevent' => 0,
     'pub' => 0,
+    'session' => 0,
+    'idevent' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5911878c88bad3_41950539')) {function content_5911878c88bad3_41950539($_smarty_tpl) {?><article class="row" hidden>
+<?php if ($_valid && !is_callable('content_5911878c88bad3_41950539')) {function content_5911878c88bad3_41950539($_smarty_tpl) {?><article class="row" id="reply<?php echo $_smarty_tpl->tpl_vars['pub']->value['idpub'];?>
+" hidden>
   <div class="col-md-2 col-sm-2 col-md-offset-1 col-sm-offset-0 hidden-xs">
     <figure class="thumbnail">
-      <img class="img-responsive" src=<?php echo $_smarty_tpl->tpl_vars['session']->value['picture'];?>
+      <img class="img-responsive" alt="profile picture"  src=<?php echo $_smarty_tpl->tpl_vars['session']->value['picture'];?>
  />
       <figcaption class="text-center">@<?php echo $_smarty_tpl->tpl_vars['session']->value['username'];?>
 </figcaption>
@@ -39,8 +39,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div id="pub" class="panel panel-default arrow left">
       <div class="panel-body">
         <header class="text-left">
-          <!--<div class="comment-user">Reply to <?php echo $_smarty_tpl->tpl_vars['user']->value['name'];?>
-</div>-->
           <div class="comment-user"><i class="fa fa-user"></i> <?php echo $_smarty_tpl->tpl_vars['session']->value['name'];?>
 </div>
         </header>
@@ -50,7 +48,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
           <input type="hidden" id="idpub"  name="idpub" value=<?php echo $_smarty_tpl->tpl_vars['pub']->value['idpub'];?>
  />
           <div class="comment-post">
-            <textarea class="form-control" rows="3" id="description" name="description" placeholder="Reply"></textarea>
+            <textarea class="form-control" rows="3" id="description<?php echo $_smarty_tpl->tpl_vars['pub']->value['idpub'];?>
+" name="description" placeholder="Reply"></textarea>
             <br/>
           </div>
             <div class="col-md-offset-9">

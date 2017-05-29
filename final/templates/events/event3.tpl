@@ -33,20 +33,29 @@
 </nav>
 </div>
 <div class="col-sm-offset-1 col-sm-8">
+  {if $session.username != NULL}
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#home">Google Maps</a></li>
     <li><a data-toggle="tab" href="#menu1">Publications</a></li>
+    <li><a data-toggle="tab" href="#menu2">Evaluate</a></li>
+    <li><a data-toggle="tab" href="#menu3">Hosts</a></li>
   </ul>
+  {else}
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Google Maps</a></li>
+    <li><a data-toggle="tab" href="#menu1">Publications</a></li>
+    <li><a data-toggle="tab" href="#menu3">Hosts</a></li>
+  </ul>
+  {/if}
 
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active" style="height: 25em">
-      <iframe id="map" style="width:100%; height:100%;" class="img-responsive center-block" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q={$info.address}&key=AIzaSyCdqMmRf8c1f_yTgtjt7zT_5tdO5UOPka4" allowfullscreen></iframe>
+      <iframe id="map" style="width:100%; height:100%;" alt="google maps" class="img-responsive center-block" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q={$info.address}&key=AIzaSyCdqMmRf8c1f_yTgtjt7zT_5tdO5UOPka4" allowfullscreen></iframe>
     </div>
 
     <div id="menu1" class="tab-pane fade">
       <div class="row">
-        <!-- Principal -->
-        <div class="comments-container">
+          <div class="comments-container">
           <div class="row">
             <div class="col-md-12">
               <section class="comment-list">

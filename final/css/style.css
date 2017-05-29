@@ -3,11 +3,16 @@ header{
   z-index:2;
 }
 
+.modal-backdrop {
+  z-index: 0;
+}
+
 header .navbar-brand{
   font-family: 'Playfair Display', serif;
   font-size: 40px;
   padding-top: 10px;
 }
+
 
 header .navbar-nav .dropdown{
    border-radius:5px;
@@ -19,12 +24,17 @@ header .navbar-nav .dropdown:hover{
   border-radius:5px;
 }
 
-header .navbar-nav .logout{
+header .navbar-nav .logout,
+.loginButton,
+.registerButton{
    border-radius:5px;
    font-weight: bold;
+   background-color:#DCDCDC;
 }
 
-header .navbar-nav .logout:hover{
+header .navbar-nav .logout:hover,
+.loginButton:hover,
+.registerButton:hover{
   background-color: #5bc0de;
   border-radius:5px;
 }
@@ -33,27 +43,8 @@ header .navbar-nav .row{
   margin-right:0px;
   margin-left:0px;
   margin-bottom: 0px;
-  padding:10px;
-  padding-top:20px;
  }
 
-header #form_register{
-  width: 300px;
-}
-
-header #form_register .row {
-  font-size:1em;
-  padding:0;
-}
-
-header #form_login{
-  width: 300px;
-}
-
-header #form_login .row {
-  font-size:1em;
-  padding:0;
-}
 
 header .navbar-wrapper {
   position: absolute;
@@ -96,7 +87,19 @@ header .navbar-right{
   padding-right:20px;
 }
 
+#closeLogin,
+#closeHost,
+#closeRegister,
+#closeHelp{
+  border:none;
+}
 
+#closeLogin:hover,
+#closeHost:hover,
+#closeRegister
+#closeHelp:hover{
+  background:transparent;
+}
 
 /*main page*/
 
@@ -139,6 +142,36 @@ header .navbar-right{
 }
 
 /*event page*/
+#menu1,
+#menu2,
+#menu3 {
+  padding-top: 25px;
+}
+
+#myModalHost .modal-content{
+	
+	background-color: #ffffff;
+}
+
+
+#searchResult li{
+  color: #ffffff;
+}
+.host{
+	list-style:none;
+}
+
+#rating_stars{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 2.1em;
+}
+
 
 .comments-container #pub{
   background-color:#DCDCDC;
@@ -168,18 +201,14 @@ h3.eventPage{
     padding:0px;
 }
 
-
-#menu1{
-  padding-top:25px;
-}
-
 #Edit{
   padding-left:20px;
   padding-right:20px;
 }
 
-#thumbsUp, #thumbsDown{
+.like{
 	margin-left:10px;
+	margin-right:10px;
 }
 
 /*search page*/
@@ -264,7 +293,7 @@ font-weight: 700;
 margin: 0px;
 }
 
-.event-list > li > .info > .desc , 
+.event-list > li > .info > .desc ,
 .user-list > li > .info > .desc {
 font-size: 13pt;
 font-weight: 300;
@@ -329,14 +358,14 @@ background-color: rgb(200, 200, 200);
 }
 
 .event-list > li > .info ,
-.user-list > li > .info { 
+.user-list > li > .info {
   background-color: white;
   overflow: hidden;
   padding-left: 5px;
 }
 
 .event-list > li > time,
-.event-list > li > a > img , 
+.event-list > li > a > img ,
 .user-list > li > a > img {
   width: 120px;
   height: 120px;
@@ -539,16 +568,29 @@ body{
   padding-top: 5em;
 }
 
+textarea{
+  resize: vertical;
+}
+
 /*footer*/
 .footer{
- position: absolute; 
+ position: absolute;
  width: 100%;
  padding-top: 10px;
  padding-bottom: 10px;
  padding-right: 10px;
+ margin-top: 5px;
 }
 
 .footer p {
  text-align: right;
  margin-bottom: 0;
+}
+
+#problem{
+  height: 150px;
+}
+
+.help{
+  list-style: none;
 }

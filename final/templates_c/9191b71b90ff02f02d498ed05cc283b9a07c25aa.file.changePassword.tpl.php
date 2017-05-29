@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-05-26 18:45:10
+<?php /* Smarty version Smarty-3.1.15, created on 2017-05-29 20:16:27
          compiled from "/opt/lbaw/lbaw1661/public_html/final/templates/users/changePassword.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:93928288959150cb73f09c8-62213560%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9191b71b90ff02f02d498ed05cc283b9a07c25aa' => 
     array (
       0 => '/opt/lbaw/lbaw1661/public_html/final/templates/users/changePassword.tpl',
-      1 => 1495820560,
+      1 => 1496085478,
       2 => 'file',
     ),
   ),
@@ -19,18 +19,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_59150cb755ff48_94636889',
   'variables' => 
   array (
+    'BASE_URL' => 0,
     'FIELD_ERRORS' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_59150cb755ff48_94636889')) {function content_59150cb755ff48_94636889($_smarty_tpl) {?><div class="row">
   <div class="col-md-10 ">
-    <form class="form-horizontal" action="../../actions/users/changePassword.php" method="post">
+    <form class="form-horizontal" action="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+actions/users/changePassword.php" method="post">
       <fieldset>
-        <!-- Form Name -->
         <legend>Change Password</legend>
-
-        <!--Password Input-->
         <div class="form-group">
             <label class="col-md-4 control-label" for="Password">Password</label>
            
@@ -73,21 +72,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <span class="field_error"><?php echo $_smarty_tpl->tpl_vars['FIELD_ERRORS']->value['new'];?>
 </span>
               </div>
-            
           </div>
         </div>
 
-        <!-- Submit and Cancel Button -->
-        <div class="form-group">
+         <div class="form-group">
           <label class="col-md-4 control-label"></label>
-          <div class="col-md-1">
+          <div class="col-md-1 col-xs-3">
             <button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-ok"></i> Submit</button>
           </div>
-          <div class="col-md-1">
+          <div class="col-md-1 col-xs-3">
             <button type="button" onclick="window.location.href='../common/home.php'" class="btn btn-info"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
           </div>
         </div>
       </fieldset>
     </form>
-      </div>
+  </div>
 </div><?php }} ?>

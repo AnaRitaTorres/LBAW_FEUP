@@ -5,7 +5,7 @@
     global $conn;
 	$age = getAge($birthday);
     $stmt = $conn->prepare("INSERT INTO customer (name, surname, email, gender, birthday, password, phoneNumber,age, username) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt->execute(array($name, $surname, $email, $gender, $birthday, hash('sha256', $password), $phoneNumber, $username));
+    $stmt->execute(array($name, $surname, $email, $gender, $birthday, hash('sha256', $password), $phoneNumber,$age, $username));
   }
 
   function updateUserWPhoto($username, $name, $surname,$birthday, $gender, $phoneNumber, $email, $picture){
@@ -99,11 +99,17 @@
 	}
 
   function searchUsersString($string){
-		var_dump($string);
 		global $conn;
 		$stmt = $conn->prepare("SELECT *, ts_rank(to_tsvector(name),query) AS rank FROM customer, to_tsquery(?) AS query ORDER BY rank DESC");
 		$string = $string.":*";
 		$stmt->execute(array($string));
+		return $stmt->fetchAll();
+	}
+
+	function listUsers(){
+		global $conn;
+		$stmt = $conn->prepare("SELECT * FROM customer");
+		$stmt->execute();
 		return $stmt->fetchAll();
 	}
 

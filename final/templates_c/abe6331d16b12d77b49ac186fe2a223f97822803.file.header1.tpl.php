@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-05-12 03:32:12
+<?php /* Smarty version Smarty-3.1.15, created on 2017-05-29 22:55:45
          compiled from "/opt/lbaw/lbaw1661/public_html/final/templates/common/header1.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:699607153590ad636b904d4-89670414%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'abe6331d16b12d77b49ac186fe2a223f97822803' => 
     array (
       0 => '/opt/lbaw/lbaw1661/public_html/final/templates/common/header1.tpl',
-      1 => 1494556328,
+      1 => 1496091331,
       2 => 'file',
     ),
   ),
@@ -32,8 +32,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   <link rel="stylesheet" href="../../css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/> -->
-  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>

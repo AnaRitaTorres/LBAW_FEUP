@@ -1,10 +1,10 @@
-<script type="text/javascript" src="../../js/charts.js"></script>
+
 
 <div class="container specific">
   <div class="row">
     <div id="profile" class="col-md-3">
       <nav class="navbar navbar-default">
-        <img src={$picture} alt="Alternate Text" class="img-responsive center-block" />
+        <img src={$picture} alt="Profile picture" class="img-responsive center-block" />
         <h3 class="profilePage text-center">{$name}</h3>
         <h5 class="text-center">@{$username}</h5>
         <div id="Content" class="navbar navbar-default">
@@ -55,3 +55,5 @@
           <div id="home" class="tab-pane fade in active">
             <nav class="ES">
               <ul class="event-list">
+
+<script type="text/javascript" src="../../js/charts.js"></script>

@@ -1,9 +1,8 @@
- $(document).ready(function(){
-      $("#replyPub").click(function(){
-        $id = $(this).val();
-      });
+$(document).ready(function(){
+  $(".replyPub").click(function(){
+    $id = $(this).val();
+    $name = '#reply' + $id;
 
-      $("#replyPub").unbind('click').click(function(){
-          $("#reply").slideToggle  ("slow");
-      });
+    $($name).slideToggle  ("slow");
   });
+});

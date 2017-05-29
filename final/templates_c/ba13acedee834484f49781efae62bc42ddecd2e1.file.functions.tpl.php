@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2017-05-04 08:20:22
+<?php /* Smarty version Smarty-3.1.15, created on 2017-05-29 19:54:59
          compiled from "/opt/lbaw/lbaw1661/public_html/final/templates/users/functions.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:329970774590ad636cb4360-45649324%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ba13acedee834484f49781efae62bc42ddecd2e1' => 
     array (
       0 => '/opt/lbaw/lbaw1661/public_html/final/templates/users/functions.tpl',
-      1 => 1493882358,
+      1 => 1496084099,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.15',
+  'unifunc' => 'content_590ad636cc7398_99626757',
   'variables' => 
   array (
     'username' => 0,
@@ -24,8 +26,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'profilePath' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.15',
-  'unifunc' => 'content_590ad636cc7398_99626757',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_590ad636cc7398_99626757')) {function content_590ad636cc7398_99626757($_smarty_tpl) {?><li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span <span class="glyphicon glyphicon-user"></span>&nbsp;<?php echo $_smarty_tpl->tpl_vars['username']->value;?>
@@ -35,7 +35,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       <div class="row">
         <div class="col-md-5">
           <img src=<?php echo $_smarty_tpl->tpl_vars['picture']->value;?>
- alt="Alternate Text" class="img-responsive"/>
+ alt="Profile picture" class="img-responsive"/>
         </div>
         <div class="col-md-6">
           <span><?php echo $_smarty_tpl->tpl_vars['name']->value;?>
